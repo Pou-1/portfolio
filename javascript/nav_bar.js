@@ -12,34 +12,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    var numberOfNavBarLiHasChildren = 2;
+    var open = 0;
+    var NavBarLiHasChildren = document.getElementById('NavBarLiHasChildren');
+    NavBarLiHasChildren.addEventListener('click', function (event) {
+        if(open == 0){
+            this.style.backgroundColor = 'var(--white)';
+            this.style.borderTopRightRadius = '10px';
+            this.style.borderTopLeftRadius = '10px';
+            
+            this.querySelector('.SubMenu').style.display = 'block';
 
-    for(var i = 1; i < numberOfNavBarLiHasChildren + 1; i++){
-        var open = 0;
-        var NavBarLiHasChildren = document.getElementById('NavBarLiHasChildren' + i);
-        NavBarLiHasChildren.addEventListener('click', function (event) {
+            this.querySelector('a').style.color = 'var(--grey)';
+            this.querySelector('a').querySelector('div').querySelector('.Span').style.transform= 'rotate(-180deg)';
 
-            if(open == 0){
-                this.style.backgroundColor = 'var(--white)';
-                this.style.borderTopRightRadius = '10px';
-                this.style.borderTopLeftRadius = '10px';
-                
-                this.querySelector('.SubMenu').style.display = 'block';
-
-                this.querySelector('a').style.color = 'var(--grey)';
-                this.querySelector('a').querySelector('div').querySelector('.Span').style.transform= 'rotate(-180deg)';
-
-                open = 1;
-            }else {
-                this.style.backgroundColor = 'transparent';
-                this.style.border = 'none';
-                this.querySelector('.SubMenu').style.display = 'none';
-                this.querySelector('a').removeAttribute('style');
-                this.querySelector('a').querySelector('div').querySelector('.Span').removeAttribute('style');
-                open = 0;
-            }
-        });
-    }
+            open = 1;
+        }else {
+            this.style.backgroundColor = 'transparent';
+            this.style.border = 'none';
+            this.querySelector('.SubMenu').style.display = 'none';
+            this.querySelector('a').removeAttribute('style');
+            this.querySelector('a').querySelector('div').querySelector('.Span').removeAttribute('style');
+            open = 0;
+        }
+    });
 
     function closeAllSubMenus() {
         var subMenus = document.querySelectorAll('.SubMenu');

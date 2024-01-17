@@ -1,0 +1,21 @@
+.Presentation{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.Presentation > div > img{
+  width: 450px;
+  border-radius: 450px;
+  overflow: hidden;
+}
+
+.Presentation > div:first-of-type{
+  width: 800px;
+}
+
+.Skills{
+  background-color: var(--white);
+  color: var(--black);
+  height: 600px;
+  width: 100%;
+}

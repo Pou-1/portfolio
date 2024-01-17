@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Ubuntu&display=swap');
-
 :root
 {
   --element : #FF8600;
@@ -20,6 +18,10 @@
   --darker : #222222;
   --darkness : #0e0c0f;
 
+  --yellowLighter: #d2e924;
+  --yellow: #ecea4e;
+  --yellowDarker: #e8dfdf;
+
   --black : #000000;
   --blackLighter: #1a1a1a;
 
@@ -35,10 +37,6 @@
 
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Inter', sans-serif;
-}
-
-.main{
-  padding: 20px;
 }
 
 .transparent{
@@ -69,6 +67,16 @@ header{
 .aligne{
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.aligneCenterHorizontally{
+  display: flex;
+  align-items: center;
+}
+
+.aligneCenterVertically{
+  display: flex;
   justify-content: center;
 }
 
@@ -103,7 +111,6 @@ button.button:hover{
   border-radius: 20px;
   text-align: center;
   /*box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.04);*/
-  width: 30%;
   font-size: 30px;
 }
 
@@ -112,14 +119,13 @@ button.button:hover{
 }
 
 .title > hr{
-  width: 60%;
+  width: 100%;
   background-color: var(--white);
   height: 3px;
 }
 
 .content{
-  width: 80%;
-  padding: 50px;
+  width: 100%;
 }
 
 .inline{

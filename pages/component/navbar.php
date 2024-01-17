@@ -1,17 +1,17 @@
-        <link rel="stylesheet" href="../style/style.css">
-        <link rel="stylesheet" href="../style/animation.css">
-        <link rel="stylesheet" href="../style/nav_bar.css">
-        <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animation.css">
+    <link rel="stylesheet" href="../style/nav_bar.css">
+    <link rel="stylesheet" href="../style/footer.css">
 
-        <!-- Google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-        <!-- Google Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     </head>
     <body>
@@ -29,10 +29,10 @@
                     <li><a href="../index.php">
                         Home<hr>
                     </a></li>
-                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren1">
+                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren">
                         <a href="#">
                             <div class="Line">
-                                Profil
+                                Works
                                 <span class="Span aligne">
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </span>
@@ -40,8 +40,8 @@
                             <hr>
                         </a>
                         <ul class="SubMenu">
-                            <li><a href="#">
-                                Subpage<hr>
+                            <li><a href="works.php">
+                                All Works<hr>
                             </a></li>
                             <li class="NavBarLiHasChildren">
                                 <a href="#">
@@ -67,50 +67,9 @@
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="array.php">
-                        Array<hr>
+                    <li><a href="about.php">
+                        About<hr>
                     </a></li>
-                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren2">
-                        <a href="mail.php">
-                            <div class="Line">
-                                MoéMoé
-                                <span class="Span aligne">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <hr>
-                        </a>
-                        <ul class="SubMenu">
-                            <li><a href="sign_up.php">
-                                Panier<hr>
-                            </a></li>
-                            <li class="NavBarLiHasChildren">
-                                <a href="#">
-                                    <div class="Line">
-                                        Subpage
-                                        <span class="Span aligne">
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </span>
-                                    </div>
-                                    <hr>
-                                </a>
-                                <ul class="SubSection">
-                                    <li><a href="array.php">
-                                        a<hr>
-                                    </a></li>
-                                    <li><a href="#">
-                                        Panier<hr>
-                                    </a></li>
-                                    <li><a href="#">
-                                        Panier<hr>
-                                    </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="log_in.php">
-                                Panier<hr>
-                            </a></li>
-                        </ul>
-                    </li>
                     <li><a href="#"></a></li>
                 </ul>
             </nav>

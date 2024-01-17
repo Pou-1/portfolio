@@ -2,64 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Homepage</title>
+        <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
+        <link rel="stylesheet" href="style/index.css">
         <?php include('pages/component/navbar_index.php'); ?>
 
-        <div class="Content">
-            <div class="Left">
-            </div>
-            <div class="Middle">
-                <div class="MiddleBox">
-                    <div class="Box"><img src="img/Caroussel/- Koutetsujou no Kabaneri - Mumei.jpg" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/ChildrenOfTheWhales.png" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/Hauru.jpg" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/Kon (Kemono Jihen).jpg" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/MadeInAbyss.png" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/Myamura.png" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/Sohma Kyo - Fruits Basket.jpg" alt=""></div>
-                    <div class="Box"><img src="img/Caroussel/StrangerByTheBeach.jpg" alt=""></div>
+        <div class="aligne content Column">
+            <div class="Presentation Line">
+                <div class="aligneCenterVertically Column">
+                    <h2>Hello, I am Cyprien De La Poëze D'Harambure</h2>
+                    <p>
+                        I'm a student in Software & Web Developpement.
+                        Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
+                    </p>
                 </div>
-                <div class="MiddleBox">
-                    <div class="Box">1</div>
-                    <div class="Box">1</div>
-                    <div class="Box">1</div>
-                    <div class="Box">1</div>
-                    <div class="Box">1</div>
+                <div>
+                    <img src="img/pfp.jpeg" alt="A picture of me">
                 </div>
-
-
-                <ul class="List" id="List">
-                    HEY
-                    <li id="ListLi0">0</li>
-                    <li id="ListLi1">1</li>
-                    <li id="ListLi2">2</li>
-                    <li id="ListLi3">3</li>
-                    <li id="ListLi4">4</li>
-                    <li id="ListLi5">5</li>
-                    <li id="ListLi6">6</li>
-                </ul>
-
-                <button type="button" class="AppearAnimation" id="AppearAnimationButton">Apparaitre</button>
-                <div class="AnimationDiv" id="AnimationDiv">
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                    <div class="AnimationBox animation-constante"></div>
-                </div>
-
             </div>
-            <div class="Right">
+
+            <div class="Skills aligneCenterHorizontally Column">
+                <h2>Skills</h2>
+                <p>
+                    afeafafaegggggg
+                    afeafafaeggggggad
+                    fafa
+                </p>
             </div>
-        </div>
-        <div class="FormDiv">
-          
         </div>
 
         <?php include('pages/component/footer_index.php'); ?>
-
     </body>
 </html>

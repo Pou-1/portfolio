@@ -29,10 +29,10 @@
                     <li><a href="#">
                         Home<hr>
                     </a></li>
-                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren1">
+                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren">
                         <a href="#">
                             <div class="Line">
-                                Profil
+                                Works
                                 <span class="Span aligne">
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </span>
@@ -40,8 +40,8 @@
                             <hr>
                         </a>
                         <ul class="SubMenu">
-                            <li><a href="#">
-                                Subpage<hr>
+                            <li><a href="pages/works.php">
+                                All works<hr>
                             </a></li>
                             <li class="NavBarLiHasChildren">
                                 <a href="#">
@@ -67,50 +67,9 @@
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="pages/array.php">
-                        Panier<hr>
+                    <li><a href="pages/about.php">
+                        About<hr>
                     </a></li>
-                    <li class="NavBarLiHasChildren" id="NavBarLiHasChildren2">
-                        <a href="#">
-                            <div class="Line">
-                                Subpage
-                                <span class="Span aligne">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                            <hr>
-                        </a>
-                        <ul class="SubMenu">
-                            <li><a href="pages/sign_up.php">
-                                Panier<hr>
-                            </a></li>
-                            <li class="NavBarLiHasChildren">
-                                <a href="#">
-                                    <div class="Line">
-                                        Subpage
-                                        <span class="Span aligne">
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </span>
-                                    </div>
-                                    <hr>
-                                </a>
-                                <ul class="SubSection">
-                                    <li><a href="pages/array.php">
-                                        a<hr>
-                                    </a></li>
-                                    <li><a href="#">
-                                        Panier<hr>
-                                    </a></li>
-                                    <li><a href="#">
-                                        Panier<hr>
-                                    </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="pages/log_in.php">
-                                Panier<hr>
-                            </a></li>
-                        </ul>
-                    </li>
                     <li><a href="#"></a></li>
                 </ul>
             </nav>
