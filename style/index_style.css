@@ -1,0 +1,79 @@
+
+.Middle{
+    padding: 1%;
+    width: 60%;
+  }
+  
+  .MiddleBox{
+    display: flex;
+  }
+  
+  .Box{
+    flex-grow: 1;
+    background-color: var(--element);
+    margin: 1%;
+    transition: flex-basis 0.5s ease;
+    /*opacity: 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Box:hover {
+    transition: all 0.3s ease;
+    color: var(--element);
+    flex-grow: 2;
+    cursor: pointer;
+    background: var(--darker)
+  }
+  
+  .Box:not(hover){
+    transition: all 0.3s ease;
+  }
+  
+  .Box > img {
+    width: 100%;
+  }
+  
+  .Left, .Right{
+    flex: 1;
+  }
+  
+  .Content{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .List{
+    width: 20%;
+    height: auto;
+    font-size: 20px;
+    list-style: none;
+    background-color: var(--element);
+    text-align: center;
+  }
+  
+  .List > li{
+    transition: all 0.4s ease;
+    background-color: var(--element);
+    display: none;
+  }
+  
+  .List > li:hover{
+    cursor: pointer;
+    background-color: var(--darkness);
+    color: var(--base);
+    transform: scale(1.08);
+  }
+  
+  .AnimationDiv{
+    display: flex;
+  }
+  
+  .AnimationDiv > .AnimationBox{
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 1%;
+  }

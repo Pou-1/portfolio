@@ -1,0 +1,13 @@
+.FormEmail > div > label{
+    width: 100px;
+    display: inline-block;
+}
+
+.FormEmail > div > textarea, .FormEmail > div > input{
+    width: 500px;
+}
+
+.FormEmail > div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

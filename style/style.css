@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Ubuntu&display=swap');
+
+:root
+{
+  --element : #FF8600;
+  --base: #ffffff;
+
+  --blueLighter: #97dbff;
+  --blue: #6cccff;
+  --blueDarker: #4ea3d2;
+
+  --whiteLighter: #ffffff;
+  --white: #eeeeee;
+  --whiteDarker: #e8dfdf;
+
+  --grey : #838383;
+  --greyLighter : #aeadad;
+
+  --dark : #272728;
+  --darker : #222222;
+  --darkness : #0e0c0f;
+
+  --black : #000000;
+  --blackLighter: #1a1a1a;
+
+
+  --red : #df2733;
+
+  --good : #00ff04;
+  --bad : #dc2323;
+
+  --BigTitle : 32px;
+  --title : 25px;
+  --font : 20px;
+
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+}
+
+.main{
+  padding: 20px;
+}
+
+.transparent{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+body{
+  font-weight: 400;
+  margin: 0;
+  color: var(--white);
+  font-size: var(--font);
+  background-color: var(--blackLighter);
+
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header{
+  z-index: 999;
+  top: 0;
+  position: sticky;
+  margin-bottom: 50px;
+}
+
+.aligne{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Line{
+  display: flex;
+  flex-direction: row;
+}
+
+.Column{
+  display: flex;
+  flex-direction: column;
+}
+
+button.button{
+  padding: 15px;
+  font-size: 25px;
+  background-color: var(--element);
+  border: none;
+  color: var(--darkness);
+  transition: all 0.4s ease-out;
+  border-radius: 10px;
+}
+
+button.button:hover{
+  color: var(--element);
+  cursor: pointer;
+  background-color: var(--darkness);
+}
+
+.title{
+  background-color: var(--blackLighter);
+  border-radius: 20px;
+  text-align: center;
+  /*box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.04);*/
+  width: 30%;
+  font-size: 30px;
+}
+
+.title h1 {
+  margin: 0px;
+}
+
+.title > hr{
+  width: 60%;
+  background-color: var(--white);
+  height: 3px;
+}
+
+.content{
+  width: 80%;
+  padding: 50px;
+}
+
+.inline{
+  display: block ruby;
+}
+
+.textleft{
+  text-align: left;
+}
+
+.textright{
+  text-align: right;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.SoftColor{
+  color: var(--grey) !important;
+}
+
+@media screen and (max-width: 999px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .form-Global {
+    width: 80%;
+  }
+
+  .inline{
+    display: block;
+  }
+}

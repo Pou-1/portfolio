@@ -1,0 +1,82 @@
+table.array_horizontal, table.array_vertical{
+    border-radius: 20px;
+    overflow: hidden;
+    color: var(--black);
+    width: 100%;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.04);
+}
+
+table.array_horizontal{
+    margin-bottom: 50px;
+}
+
+table.array_horizontal > thead{
+    background-color: var(--dark);
+    color: var(--red);
+}
+
+table.array_horizontal th{
+    font-size: 30px;
+}
+
+table.array_horizontal th{
+    font-size: 40px;
+}
+
+table.array_horizontal th, table.array_horizontal  td{
+    padding: 30px;
+    text-align: left;
+}
+
+table.array_horizontal tr:hover th{
+    background-color: var(--darkness);
+}
+
+table.array_horizontal tr:hover td{
+    background-color: var(--greyLighter);
+}
+
+table.array_horizontal tr:nth-child(even) {
+    background-color: var(--whiteDarker);
+}
+
+table.array_horizontal tr:nth-child(odd):not(thead tr) {
+    background-color: var(--white);
+}
+
+
+
+table.array_vertical tr td:first-child{
+    background-color: var(--dark);
+    color: var(--red);
+}
+
+table.array_vertical th{
+    font-size: 30px;
+}
+
+table.array_vertical th{
+    font-size: 40px;
+}
+
+table.array_vertical th, table.array_vertical  td{
+    padding: 30px;
+    text-align: left;
+}
+
+table.array_vertical tr:hover td:first-child{
+    background-color: var(--darkness);
+}
+
+table.array_vertical tr:hover td:not(:first-child){
+    background-color: var(--grey) !important;
+}
+
+table.array_vertical tr td:nth-child(odd):not(:first-child) {
+    background-color: var(--whiteDarker);
+}
+
+table.array_vertical tr td:nth-child(even) {
+    background-color: var(--whiteLighter);
+}
