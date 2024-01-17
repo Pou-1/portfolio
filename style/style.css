@@ -40,6 +40,7 @@
 }
 
 .transparent{
+  cursor: none;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
 }
@@ -55,13 +56,43 @@ body{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  cursor: none;
 }
 
 header{
   z-index: 999;
   top: 0;
   position: sticky;
+  cursor: none;
   margin-bottom: 50px;
+}
+
+a{
+  cursor: none;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--red);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+  transition: width 0.5s, height 0.5s ease; /* Ajoutez la transition ici */
+}
+
+.hovered {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+  pointer-events: none;
+  width: 65px;
+  background-color: rgba(223, 39, 51, 0.6);
+  height: 65px;
+  transition: width 0.5s, height 0.5s ease; /* Ajoutez la transition ici */
 }
 
 .aligne{
@@ -102,7 +133,6 @@ button.button{
 
 button.button:hover{
   color: var(--element);
-  cursor: pointer;
   background-color: var(--darkness);
 }
 

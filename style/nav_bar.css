@@ -49,7 +49,6 @@
   .NavBar > ul > li > a:hover, .SubMenu > li > a:hover, .SubSection > li > a:hover{
     color: var(--red);
     transition: all 0.7s ease;
-    cursor: pointer;
   }
 
   .NavBar > ul > li > a:hover > hr, .SubMenu > li > a:hover > hr, .SubSection > li > a:hover > hr {
@@ -127,7 +126,6 @@
   
   .menu-btn {
     padding: 10px;
-    cursor: pointer;
     position: relative;
     background-color: var(--darker);
     display: none;

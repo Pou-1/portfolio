@@ -74,4 +74,5 @@
                 </ul>
             </nav>
         </header>
+        <div class="custom-cursor" id="cursor"></div>
         <div class="main">

@@ -1,4 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const customCursor = document.getElementById('cursor');
+    console.log(customCursor)
+
+    const links = document.querySelectorAll('.NavBar a, .NavBarLiHasChildren a');
+
+    document.addEventListener('mousemove', function (e) {
+        customCursor.style.left = e.pageX + 'px';
+        customCursor.style.top = e.pageY + 'px';
+    });
+
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function () {
+            customCursor.classList.add('hovered');
+            customCursor.classList.remove('custom-cursor');
+        });
+
+        link.addEventListener('mouseleave', function () {
+            customCursor.classList.add('custom-cursor');
+            customCursor.classList.remove('hovered');
+        });
+    });
 
     let ButtonClicked = 0;
     document.getElementById('ShowNav').addEventListener('click', function() {
