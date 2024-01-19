@@ -35,7 +35,16 @@ function scrollToTitle(element) {
   const titleElement = document.getElementById("Index" + element);
 
   if (titleElement) {
+    // Désactiver le défilement pendant le scrollIntoView
+    document.body.style.overflow = 'hidden';
+
     titleElement.scrollIntoView({ behavior: 'smooth' });
+
+    // Réactiver le défilement après une courte période (par exemple, 1000 millisecondes)
+    setTimeout(function () {
+      document.body.style.overflow = '';
+    }, 1000);
+    
     console.log("Scroll to : " + element);
   }
 }
@@ -74,6 +83,7 @@ function incrementerCompteur() {
 
 // Utiliser la fonction pour définir en continu la variable en fonction de la direction du défilement
 incrementerCompteur();
+
 
 
 //window.addEventListener('scroll', incrementerCompteur);
