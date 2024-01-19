@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const customCursor = document.getElementById('cursor');
-    console.log(customCursor)
 
     const links = document.querySelectorAll('.NavBar a, .NavBarLiHasChildren a');
 

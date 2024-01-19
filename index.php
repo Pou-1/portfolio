@@ -22,12 +22,44 @@
         </div>
 
         <div class="Skills aligneCenterHorizontally Column">
-            <h2>Skills</h2>
+            <div class="titleWhite Column">
+                <h1>Skills</h1>
+                <hr>
+            </div>
             <p>
                 afeafafaegggggg
                 afeafafaeggggggad
                 fafa
             </p>
+        </div>
+
+        <div class="title Column">
+            <h1>Works</h1>
+            <hr>
+        </div>
+
+        <div class="Carrousel">
+            <button>
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <div>
+                <a class="Works aligne Line" href="#">
+                    <div>
+                        <h2 class="aligne">PtiCuisto</h2>
+                        <p class="aligne">
+                            <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-php"></i>
+                        </p>
+                    </div>
+                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                </a>
+            </div>
+
+            <button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </div>
     </div>
     

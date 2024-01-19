@@ -69,6 +69,7 @@ header{
 
 a{
   cursor: none;
+  text-decoration: none;
 }
 
 .custom-cursor {
