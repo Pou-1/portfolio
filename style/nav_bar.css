@@ -12,12 +12,12 @@
   }
   
   .NavBar > ul > li:first-child {
-    flex-grow: 6;
+    flex-grow: 8;
   }
 
   .NavBar > ul > li {
     list-style: none;
-    flex-grow: 1;
+    flex-grow: 0.5;
     display: flex;
     position: relative;
   }

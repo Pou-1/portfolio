@@ -1,17 +1,25 @@
-/* --------------------------------------- INDEX --------------------------------------- */
-const links = document.querySelectorAll('.Works i');
-    const customCursor = document.getElementById('cursor');
+var indexCourant = 0;
+var elementsCarousel = document.querySelectorAll('.Works');
+var precedentButton = document.getElementById('precedent');
+var suivantButton = document.getElementById('suivant');
 
-    links.forEach(link => {
-        link.addEventListener('mouseenter', function () {
-            customCursor.classList.add('hovered');
-            customCursor.classList.remove('custom-cursor');
-        });
+function afficherElement(index) {
+  elementsCarousel.forEach(function(element, i) {
+    element.style.display = i === index ? 'flex' : 'none';
+  });
+}
 
-        link.addEventListener('mouseleave', function () {
-            customCursor.classList.add('custom-cursor');
-            customCursor.classList.remove('hovered');
-        });
-    });
+function suivant() {
+  indexCourant = (indexCourant + 1) % elementsCarousel.length;
+  afficherElement(indexCourant);
+}
 
-/* --------------------------------------- END INDEX --------------------------------------- */
+function precedent() {
+  indexCourant = (indexCourant - 1 + elementsCarousel.length) % elementsCarousel.length;
+  afficherElement(indexCourant);
+}
+
+afficherElement(indexCourant);
+
+suivantButton.addEventListener('click', suivant);
+precedentButton.addEventListener('click', precedent);

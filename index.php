@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
     <link rel="stylesheet" href="style/index.css">
-    <?php include('pages/component/navbar_index.php'); ?>
+    <?php include('pages/component/navbar.php'); ?>
 
     <div class="aligne content Column">
         <div class="Presentation Line">
@@ -38,11 +39,11 @@
             <hr>
         </div>
 
-        <div class="Carrousel">
-            <button>
+        <div class="Carrousel aligne">
+            <button id="precedent">
                 <i class="fa-solid fa-arrow-left"></i>
             </button>
-            <div>
+            <div class="carousel-container">
                 <a class="Works aligne Line" href="#">
                     <div>
                         <h2 class="aligne">PtiCuisto</h2>
@@ -55,15 +56,58 @@
                     </div>
                     <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
                 </a>
-            </div>
 
-            <button>
+                <a class="Works aligne Line" href="#">
+                    <div>
+                        <h2 class="aligne">2</h2>
+                        <p class="aligne">
+                            <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-php"></i>
+                        </p>
+                    </div>
+                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                </a>
+
+                <a class="Works aligne Line" href="#">
+                    <div>
+                        <h2 class="aligne">3</h2>
+                        <p class="aligne">
+                            <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-php"></i>
+                        </p>
+                    </div>
+                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                </a>
+
+                <a class="Works aligne Line" href="#">
+                    <div>
+                        <h2 class="aligne">4</h2>
+                        <p class="aligne">
+                            <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-php"></i>
+                        </p>
+                    </div>
+                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                </a>
+            </div>
+            <button id="suivant">
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
     </div>
-    
-    <?php include('pages/component/footer_index.php'); ?>
-    </body>
 
+    <script src="javascript/script.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/nav_bar.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>
+
+    </body>
 </html>

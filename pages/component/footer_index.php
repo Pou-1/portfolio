@@ -19,7 +19,6 @@
         </footer>
         
         <script src="javascript/script.js"></script>
-        <script src="javascript/index.js"></script>
         <script src="javascript/nav_bar.js"></script>
         
         <!-- Font Awesome -->

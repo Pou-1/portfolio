@@ -1,0 +1,3 @@
+Redirect "/" "/index.php"
+
+Redirect "/about" "pages/about.php"

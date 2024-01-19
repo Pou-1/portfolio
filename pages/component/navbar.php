@@ -26,7 +26,7 @@
             <nav class="NavBar" id="NavBar">
                 <ul id="UlMenu">
                     <li><a href="#"></a></li>
-                    <li><a href="../index.php">
+                    <li><a href="/">
                         Home<hr>
                     </a></li>
                     <li class="NavBarLiHasChildren" id="NavBarLiHasChildren">
@@ -67,7 +67,7 @@
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="about.php">
+                    <li><a href="/about">
                         About<hr>
                     </a></li>
                     <li><a href="#"></a></li>

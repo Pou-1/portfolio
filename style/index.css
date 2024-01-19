@@ -20,9 +20,34 @@
   width: 100%;
 }
 
+.title{
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.titleWhite{
+  margin-top: 70px;
+  background-color: transparent !important;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.titleWhite h1 {
+  margin: 0px;
+}
+
+.titleWhite > hr{
+  background-color: var(--black);
+  width: 100%;
+  height: 3px;
+  margin-bottom: 20px;
+}
+
+/* CAROUSEL */
+
 .Works{
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 60px;
   color: var(--white);
 }
 
@@ -58,32 +83,24 @@
   transition: all 0.2s ease-in-out;
 }
 
-.title{
-  margin-top: 70px;
-  margin-bottom: 20px;
-}
-
-.titleWhite{
-  margin-top: 70px;
-  background-color: transparent !important;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.titleWhite h1 {
-  margin: 0px;
-}
-
-.titleWhite > hr{
-  background-color: var(--black);
-  width: 100%;
-  height: 3px;
-  margin-bottom: 20px;
-}
-
-/* CAROUSEL */
 .Carrousel{
-  width: 100%;
-  
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.Carrousel > button{
+  width: 10%;
+  background-color: rgba(223, 39, 51, 0.2);
+  color: var(--white);
+  border: none;
+  height: 400px;
+  cursor: none;
+}
+
+.Carrousel > a{
+  width: 80%;
+  height: 100%;
 }
