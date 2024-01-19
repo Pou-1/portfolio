@@ -21,5 +21,8 @@
         <script src="javascript/script.js"></script>
         <script src="javascript/nav_bar.js"></script>
         
+        <!-- Scroll Biblio test -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>

@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="../style/animation.css">
     <link rel="stylesheet" href="../style/nav_bar.css">
     <link rel="stylesheet" href="../style/footer.css">
-
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +67,7 @@
                             </a></li>
                         </ul>
                     </li>
-                    <li><a href="/about">
+                    <li><a href="/pages/about.php">
                         About<hr>
                     </a></li>
                     <li><a href="#"></a></li>

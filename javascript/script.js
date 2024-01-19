@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const customCursor = document.querySelector('.custom-cursor');
 
     document.addEventListener('mousemove', function (e) {
-        // Met à jour la position de la div en fonction de la position de la souris
         customCursor.style.left = e.pageX + 'px';
         customCursor.style.top = e.pageY + 'px';
     });

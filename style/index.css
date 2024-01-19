@@ -1,6 +1,10 @@
+.FullScreenHeight{
+  height: 100vh;
+}
+
 .Presentation{
-  margin-bottom: 50px;
-  margin-top: 50px;
+  height: 80%;
+  
 }
 
 .Presentation > div > img{

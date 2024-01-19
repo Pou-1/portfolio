@@ -9,20 +9,22 @@
     <?php include('pages/component/navbar.php'); ?>
 
     <div class="aligne content Column">
-        <div class="Presentation Line">
-            <div class="aligneCenterVertically Column">
-                <h2>Hello, I am Cyprien De La Poëze D'Harambure</h2>
-                <p>
-                    I'm a student in Software & Web Developpement.
-                    Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
-                </p>
-            </div>
-            <div>
-                <img src="img/pfp.jpeg" alt="A picture of me">
+        <div class="FullScreenHeight">
+            <div class="Presentation Line">
+                <div class="Column aligneCenterVertically">
+                    <h2>Hello, I am Cyprien De La Poëze D'Harambure</h2>
+                    <p>
+                        I'm a student in Software & Web Developpement.
+                        Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
+                    </p>
+                </div>
+                <div class="aligne">
+                    <img src="img/pfp.jpeg" alt="A picture of me">
+                </div>
             </div>
         </div>
 
-        <div class="Skills aligneCenterHorizontally Column">
+        <div class="Skills aligneCenterHorizontally Column" id="Index1">
             <div class="titleWhite Column">
                 <h1>Skills</h1>
                 <hr>
@@ -34,7 +36,7 @@
             </p>
         </div>
 
-        <div class="title Column">
+        <div class="title Column" id="Index2">
             <h1>Works</h1>
             <hr>
         </div>
