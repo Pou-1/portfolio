@@ -9,7 +9,7 @@
     <?php include('pages/component/navbar.php'); ?>
 
     <div class="aligne content Column">
-        <div class="FullScreenHeight">
+        <div class="FullScreenHeight" id="Index0">
             <div class="Presentation Line">
                 <div class="Column aligneCenterVertically">
                     <h2>Hello, I am Cyprien De La Poëze D'Harambure</h2>
@@ -36,71 +36,73 @@
             </p>
         </div>
 
-        <div class="title Column" id="Index2">
-            <h1>Works</h1>
-            <hr>
-        </div>
-
-        <div class="Carrousel aligne">
-            <button id="precedent">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <div class="carousel-container">
-                <a class="Works aligne Line" href="#">
-                    <div>
-                        <h2 class="aligne">PtiCuisto</h2>
-                        <p class="aligne">
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-php"></i>
-                        </p>
-                    </div>
-                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
-                </a>
-
-                <a class="Works aligne Line" href="#">
-                    <div>
-                        <h2 class="aligne">2</h2>
-                        <p class="aligne">
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-php"></i>
-                        </p>
-                    </div>
-                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
-                </a>
-
-                <a class="Works aligne Line" href="#">
-                    <div>
-                        <h2 class="aligne">3</h2>
-                        <p class="aligne">
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-php"></i>
-                        </p>
-                    </div>
-                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
-                </a>
-
-                <a class="Works aligne Line" href="#">
-                    <div>
-                        <h2 class="aligne">4</h2>
-                        <p class="aligne">
-                            <i class="fa-brands fa-square-js"></i>
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-php"></i>
-                        </p>
-                    </div>
-                    <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
-                </a>
+        <div class="WorkDiv aligne Column" id="Index2">
+            <div class="title Column">
+                <h1>Works</h1>
+                <hr>
             </div>
-            <button id="suivant">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+
+            <div class="Carrousel aligne">
+                <button id="precedent">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="carousel-container">
+                    <a class="Works aligne Line" href="#">
+                        <div>
+                            <h2 class="aligne">PtiCuisto</h2>
+                            <p class="aligne">
+                                <i class="fa-brands fa-square-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </p>
+                        </div>
+                        <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                    </a>
+
+                    <a class="Works aligne Line" href="#">
+                        <div>
+                            <h2 class="aligne">2</h2>
+                            <p class="aligne">
+                                <i class="fa-brands fa-square-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </p>
+                        </div>
+                        <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                    </a>
+
+                    <a class="Works aligne Line" href="#">
+                        <div>
+                            <h2 class="aligne">3</h2>
+                            <p class="aligne">
+                                <i class="fa-brands fa-square-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </p>
+                        </div>
+                        <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                    </a>
+
+                    <a class="Works aligne Line" href="#">
+                        <div>
+                            <h2 class="aligne">4</h2>
+                            <p class="aligne">
+                                <i class="fa-brands fa-square-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-php"></i>
+                            </p>
+                        </div>
+                        <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                    </a>
+                </div>
+                <button id="suivant">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -112,4 +114,5 @@
     <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>
 
     </body>
+
 </html>

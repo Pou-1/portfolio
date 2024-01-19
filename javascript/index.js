@@ -32,65 +32,51 @@ let compteur = 0;
 let isScrolling = false;
 
 function scrollToTitle(element) {
-    const titleElement = document.getElementById("Index" + element);
+  const titleElement = document.getElementById("Index" + element);
 
-    if (titleElement) {
-        titleElement.scrollIntoView({ behavior: 'smooth' });
-        console.log("Scroll to : " + element);
-    }
+  if (titleElement) {
+    titleElement.scrollIntoView({ behavior: 'smooth' });
+    console.log("Scroll to : " + element);
+  }
 }
 
 function incrementerCompteur() {
-    if (!isScrolling) {
+  let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+  
+  window.addEventListener('scroll', function () {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+      // Scroll down
+      if (!isScrolling) {
         isScrolling = true;
         compteur++;
         scrollToTitle(compteur);
         setTimeout(function () {
-            isScrolling = false;
+          isScrolling = false;
         }, 1000);
-    }
-}
-
-//window.addEventListener('scroll', incrementerCompteur);
-
-
-let isScrollingTop = false;
-let isScrollingBottom = false;
-
-function detectScrollDirection() {
-  let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  function handleScroll() {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      isScrollingTop = false;
-      isScrollingBottom = true;
-      console.log('bas');
-      compteur++;
+      }
     } else if (scrollTop < lastScrollTop) {
-      isScrollingTop = true;
-      isScrollingBottom = false;
-      console.log('haut');
-      compteur = compteur - 2;
+      // Scroll up
+      if (!isScrolling) {
+        isScrolling = true;
+        compteur = Math.max(0, compteur - 1); // Décompter, mais pas en dessous de zéro
+        scrollToTitle(compteur);
+        setTimeout(function () {
+          isScrolling = false;
+        }, 1000);
+      }
     }
-    scrollToTitle(compteur);
 
     lastScrollTop = scrollTop;
-
-    isScrollingTop = false;
-    isScrollingBottom = false;
-
-    setTimeout(function () {
-        requestAnimationFrame(handleScroll);
-    }, 1000);
-
-  }
-
-  requestAnimationFrame(handleScroll);
+  });
 }
 
-detectScrollDirection();
+// Utiliser la fonction pour définir en continu la variable en fonction de la direction du défilement
+incrementerCompteur();
+
+
+//window.addEventListener('scroll', incrementerCompteur);
 
 
 

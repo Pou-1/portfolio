@@ -20,7 +20,7 @@
 .Skills{
   background-color: var(--white);
   color: var(--black);
-  height: 600px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -85,6 +85,14 @@
   transform: scale(1.2);
   color: var(--red);
   transition: all 0.2s ease-in-out;
+}
+
+.WorkDiv{
+  height: 100vh;
+}
+
+.WorkDiv > title{
+  width: fit-content;
 }
 
 .Carrousel{
