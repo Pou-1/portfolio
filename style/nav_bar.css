@@ -1,5 +1,5 @@
 .NavBar {  
-  margin-top: 50px;
+  padding-top: 50px;
   font-size: 24px;
   display: flex;
   color: var(--base);

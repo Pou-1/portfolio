@@ -51,11 +51,14 @@
                         <div>
                             <h2 class="aligne">PtiCuisto</h2>
                             <p class="aligne">
-                                <i class="fa-brands fa-square-js"></i>
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <i class="fa-brands fa-php"></i>
+                                A Website to teach easily how to cook
                             </p>
+                            <div class="aligne Line">
+                                <p class="Tag">javascript</p>
+                                <p class="Tag">html</p>
+                                <p class="Tag">css</p>
+                                <p class="Tag">php</p>
+                            </div>
                         </div>
                         <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
                     </a>

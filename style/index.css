@@ -53,33 +53,55 @@
 .Works{
   margin-top: 60px;
   color: var(--white);
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .Works > div{
-  width: 40%;
+  position: absolute;
+  display: none;
+  border-radius: 10px;
+  bottom: 0px;
+}
+
+.Works:hover > div{
+  display: block;
+}
+
+.Works:hover > img{
+  opacity: 0.1;
 }
 
 .Works img{
-  width: 40%;
+  width: 95%;
+  border-radius: 10px;
 }
 
 .Works h2{
   font-weight: 400;
-  font-size: 90px;
+  font-size: 50px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
-.Works p{
+.Works > div > p{
   margin: 0;
+  color: var(--grey);
   font-weight: 400;
-  font-size: 90px;
+  font-size: 30px;
 }
 
-.Works i{
-  margin-left: 15px;
-  margin-right: 15px;
+.Works .Tag{
+  color: var(--red);
+  border: 2px solid var(--red);
+  background-color: var(--black);
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 15px;
 }
+
 
 .Works i:hover{
   transform: scale(1.2);

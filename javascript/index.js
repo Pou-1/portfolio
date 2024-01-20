@@ -36,7 +36,7 @@ function scrollToTitle(element) {
 
   if (titleElement) {
     document.body.style.overflow = 'hidden';
-    titleElement.scrollIntoView({ behavior: 'smooth' });
+    titleElement.scrollIntoView({ behavior: 'smooth'});
     if(titleElement.id == "Index1"){
         document.querySelectorAll('.NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a').forEach(function (element) {
             element.style.color = 'var(--black)';
