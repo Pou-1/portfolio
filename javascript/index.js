@@ -35,17 +35,22 @@ function scrollToTitle(element) {
   const titleElement = document.getElementById("Index" + element);
 
   if (titleElement) {
-    // Désactiver le défilement pendant le scrollIntoView
     document.body.style.overflow = 'hidden';
-
     titleElement.scrollIntoView({ behavior: 'smooth' });
+    if(titleElement.id == "Index1"){
+        document.querySelectorAll('.NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a').forEach(function (element) {
+            element.style.color = 'var(--black)';
+        });
+    }else{
+        document.querySelectorAll('.NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a').forEach(function (element) {
+            element.style.color = 'var(--white)';
+        });
+    }
 
-    // Réactiver le défilement après une courte période (par exemple, 1000 millisecondes)
     setTimeout(function () {
       document.body.style.overflow = '';
     }, 1000);
     
-    console.log("Scroll to : " + element);
   }
 }
 
@@ -56,7 +61,6 @@ function incrementerCompteur() {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-      // Scroll down
       if (!isScrolling) {
         isScrolling = true;
         compteur++;
@@ -66,10 +70,9 @@ function incrementerCompteur() {
         }, 1000);
       }
     } else if (scrollTop < lastScrollTop) {
-      // Scroll up
       if (!isScrolling) {
         isScrolling = true;
-        compteur = Math.max(0, compteur - 1); // Décompter, mais pas en dessous de zéro
+        compteur = Math.max(0, compteur - 1);
         scrollToTitle(compteur);
         setTimeout(function () {
           isScrolling = false;
@@ -81,14 +84,6 @@ function incrementerCompteur() {
   });
 }
 
-// Utiliser la fonction pour définir en continu la variable en fonction de la direction du défilement
 incrementerCompteur();
-
-
-
-//window.addEventListener('scroll', incrementerCompteur);
-
-
-
 
 /* --------------------------------------- END OF SCROLL --------------------------------------- */

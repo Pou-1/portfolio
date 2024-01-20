@@ -46,9 +46,9 @@
     transform: rotate(-90deg);
     display: inline-block;
   }
-  
-  .NavBar > ul > li > a:hover, .SubMenu > li > a:hover, .SubSection > li > a:hover{
-    color: var(--red);
+
+  .NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a{
+    color: var(--white);
     transition: all 0.7s ease;
   }
 
