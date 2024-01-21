@@ -29,6 +29,7 @@
                     <li><a href="/">
                         Home<hr>
                     </a></li>
+                    <!--
                     <li class="NavBarLiHasChildren" id="NavBarLiHasChildren">
                         <a href="#">
                             <div class="Line">
@@ -67,6 +68,7 @@
                             </a></li>
                         </ul>
                     </li>
+                     -->
                     <li><a href="/pages/about.php">
                         About<hr>
                     </a></li>
