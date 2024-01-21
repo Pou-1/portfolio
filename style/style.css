@@ -55,6 +55,14 @@
   scroll-snap-align: start;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--red);
+}
+
+::selection {
+  color: var(--red);
+}
+
 body{
   font-weight: 400;
   margin: 0;

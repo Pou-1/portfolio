@@ -12,7 +12,7 @@
         <div class="FullScreenHeight" id="Index0">
             <div class="Presentation Line">
                 <div class="Column aligneCenterVertically">
-                    <h2>Hello, I am Cyprien De La Poëze D'Harambure</h2>
+                    <h2>Hello there, I am Cyprien De La Poëze D'Harambure</h2>
                     <p>
                         I'm a student in Software & Web Developpement.
                         Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
@@ -51,7 +51,7 @@
                         <div>
                             <h2 class="aligne">PtiCuisto</h2>
                             <p class="aligne">
-                                A Website to teach easily how to cook
+                                A Website to learn easily how to cook
                             </p>
                             <div class="aligne Line">
                                 <p class="Tag">javascript</p>
