@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.Works i');
     cursorHover('.Carrousel > button');
     cursorHover('.Carrousel > div > a');
+    cursorHover('.NavBar a, .NavBarLiHasChildren a');
     /* --------------------------------------- END INDEX --------------------------------------- */
 
 });

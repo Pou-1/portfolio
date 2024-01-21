@@ -28,62 +28,42 @@ precedentButton.addEventListener('click', precedent);
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
-let compteur = 0;
-let isScrolling = false;
+document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.getElementById('slider');
+  let currentSlide = 0;
 
-function scrollToTitle(element) {
-  const titleElement = document.getElementById("Index" + element);
-
-  if (titleElement) {
-    document.body.style.overflow = 'hidden';
-    titleElement.scrollIntoView({ behavior: 'smooth'});
-    if(titleElement.id == "Index1"){
-        document.querySelectorAll('.NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a').forEach(function (element) {
-            element.style.color = 'var(--black)';
-        });
-    }else{
-        document.querySelectorAll('.NavBar > ul > li > a, .SubMenu > li > a, .SubSection > li > a').forEach(function (element) {
-            element.style.color = 'var(--white)';
-        });
-    }
-
-    setTimeout(function () {
-      document.body.style.overflow = '';
-    }, 1000);
-    
+  function scrollToSlide(index) {
+    const offset = -index * 100;
+    slider.style.transform = `translateY(${offset}vh)`;
   }
-}
 
-function incrementerCompteur() {
-  let lastScrollTop = window.scrollY || document.documentElement.scrollTop;
-  
-  window.addEventListener('scroll', function () {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-      if (!isScrolling) {
-        isScrolling = true;
-        compteur++;
-        scrollToTitle(compteur);
-        setTimeout(function () {
-          isScrolling = false;
-        }, 1000);
-      }
-    } else if (scrollTop < lastScrollTop) {
-      if (!isScrolling) {
-        isScrolling = true;
-        compteur = Math.max(0, compteur - 1);
-        scrollToTitle(compteur);
-        setTimeout(function () {
-          isScrolling = false;
-        }, 1000);
-      }
+  document.addEventListener('wheel', function(event) {
+    if (event.deltaY > 0 && currentSlide < 2) {
+      currentSlide++;
+    } else if (event.deltaY < 0 && currentSlide > 0) {
+      currentSlide--;
     }
 
-    lastScrollTop = scrollTop;
+    scrollToSlide(currentSlide);
   });
-}
 
-incrementerCompteur();
+  let touchStartY = 0;
+
+  document.addEventListener('touchstart', function(event) {
+    touchStartY = event.touches[0].clientY;
+  });
+
+  document.addEventListener('touchend', function(event) {
+    const touchEndY = event.changedTouches[0].clientY;
+
+    if (touchEndY < touchStartY && currentSlide < 2) {
+      currentSlide++;
+    } else if (touchEndY > touchStartY && currentSlide > 0) {
+      currentSlide--;
+    }
+
+    scrollToSlide(currentSlide);
+  });
+});
 
 /* --------------------------------------- END OF SCROLL --------------------------------------- */

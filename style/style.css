@@ -63,6 +63,10 @@
   color: var(--red);
 }
 
+.main{
+  margin-top: -100px;
+}
+
 body{
   font-weight: 400;
   margin: 0;

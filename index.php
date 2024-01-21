@@ -7,24 +7,42 @@
     <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
     <link rel="stylesheet" href="style/index.css">
     <?php include('pages/component/navbar.php'); ?>
+<!---->
+    <div class="slider-container"  id="slider">
+    <div class="slide slide1">
+       
+     
+    </div>
+    <div class="slide slide2">
+      <h2>TEST2</h2>
+    </div>
+    <div class="slide slide3">
+      <h2>TEST3</h2>
+    </div>
+  </div> 
 
-    <div class="aligne content Column">
-        <div class="FullScreenHeight" id="Index0">
-            <div class="Presentation Line">
-                <div class="Column aligneCenterVertically">
-                    <h2>Hello there, I am Cyprien De La Poëze D'Harambure</h2>
-                    <p>
-                        I'm a student in Software & Web Developpement.
-                        Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
-                    </p>
-                </div>
-                <div class="aligne">
-                    <img src="img/pfp.jpeg" alt="A picture of me">
-                </div>
+  <style>
+    .slide.slide1 { background-color: blue; }
+    .slide.slide2 { background-color: green; }
+    .slide.slide3 { background-color: red; }
+  </style>
+
+
+    <div class="aligne content Column sliderContainer">
+        <div class="Presentation aligne Line slide">
+            <div class="Column aligneCenterVertically">
+                <h2>Hello there, I am Cyprien De La Poëze D'Harambure</h2>
+                <p>
+                    I'm a student in Software & Web Developpement.
+                    Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
+                </p>
+            </div>
+            <div class="aligne">
+                <img src="img/pfp.jpeg" alt="A picture of me">
             </div>
         </div>
 
-        <div class="Skills aligneCenterHorizontally Column" id="Index1">
+        <div class="Skills slide aligneCenterHorizontally Column">
             <div class="titleWhite Column">
                 <h1>Skills</h1>
                 <hr>
@@ -36,7 +54,7 @@
             </p>
         </div>
 
-        <div class="WorkDiv aligne Column" id="Index2">
+        <div class="WorkDiv aligne Column slide">
             <div class="title Column">
                 <h1>Works</h1>
                 <hr>
@@ -108,6 +126,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <script src="javascript/script.js"></script>
     <script src="javascript/index.js"></script>

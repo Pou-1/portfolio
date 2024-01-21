@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const customCursor = document.getElementById('cursor');
 
     const links = document.querySelectorAll('.NavBar a, .NavBarLiHasChildren a');
@@ -76,3 +76,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 });
+*/

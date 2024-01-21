@@ -1,9 +1,17 @@
-.FullScreenHeight{
-  height: 100vh;
+body {
+  overflow: hidden;
 }
 
-.Presentation{
-  height: 80%;
+.slider-container {
+  height: 300vh;
+  overflow: hidden;
+  transition: transform 1s ease;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .Presentation > div > img{
@@ -19,8 +27,6 @@
 .Skills{
   background-color: var(--white);
   color: var(--black);
-  height: 100vh;
-  width: 100%;
 }
 
 .title{
@@ -106,10 +112,6 @@
   transform: scale(1.2);
   color: var(--red);
   transition: all 0.2s ease-in-out;
-}
-
-.WorkDiv{
-  height: 100vh;
 }
 
 .WorkDiv > title{
