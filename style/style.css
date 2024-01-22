@@ -1,26 +1,36 @@
 :root
 {
-  --element : #FF8600;
-  --base: #ffffff;
+  --orangeLighter : #eda14a;
+  --orange : #e08319;
+  --orangeDarker : #d28023;
+
+  --greenLighter: #2fed2f;
+  --green: #2fed2f;
+  --greenDarker: #32b732;
+
+  --purpleLighter: #7d2adc;
+  --purple: #7d2adc;
+  --purpleDarker: #7d2adc;
+
+  --pinkLighter: #df50dc;
+  --pink: #df50dc;
+  --pinkDarker: #c833c4;
 
   --blueLighter: #97dbff;
   --blue: #6cccff;
-  --blueDarker: #4ea3d2;
+  --blueDarker: #4b9eca;
 
   --whiteLighter: #ffffff;
   --white: #eeeeee;
   --whiteDarker: #e8dfdf;
 
+  --greyDarker : #5b5959;
   --grey : #838383;
   --greyLighter : #aeadad;
 
-  --dark : #272728;
-  --darker : #222222;
-  --darkness : #0e0c0f;
-
-  --yellowLighter: #d2e924;
-  --yellow: #ecea4e;
-  --yellowDarker: #e8dfdf;
+  --candyLighter: #d2e924;
+  --candy: #ecea4e;
+  --candyDarker: #e71f58;
 
   --black : #000000;
   --blackLighter: #1a1a1a;
@@ -66,6 +76,11 @@
 .main{
   position: absolute;
   top: 0;
+  width: 100%;
+}
+
+html{
+  cursor: none;
 }
 
 body{
@@ -174,6 +189,23 @@ button.button:hover{
 .title > hr{
   width: 100%;
   background-color: var(--white);
+  height: 3px;
+}
+
+.Subtitle{
+  font-size: 20px;
+  width: 100%;
+  margin-left: 40%;
+}
+
+.Subtitle h1 {
+  margin: 0px;
+}
+
+.Subtitle > hr{
+  margin: 0;
+  width: 10%;
+  background-color: var(--black);
   height: 3px;
 }
 

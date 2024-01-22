@@ -88,17 +88,62 @@ body {
   color: var(--black);
 }
 
+.Skills > .Line{
+  height: inherit;
+  gap: 30px;
+}
+
+.Skills > div > p{
+  font-size: 80px;
+  margin: 0;
+  margin-top: 20px;
+  height: 150px;
+  border-radius: 10px;
+  width: 150px;
+  border: 3px solid var(--red);
+  color: var(--red);
+}
+
+.Skills1 p:nth-child(1){
+  border: 3px solid var(--blueDarker);
+  color: var(--blueDarker);
+}
+.Skills1 p:nth-child(2){
+  border: 3px solid var(--candyDarker);
+  color: var(--candyDarker);
+}
+.Skills1 p:nth-child(3){
+  border: 3px solid var(--pinkDarker);
+  color: var(--pinkDarker);
+}
+.Skills1 p:nth-child(4){
+  border: 3px solid var(--purpleDarker);
+  color: var(--purpleDarker);
+}
+.Skills2 p:nth-child(1){
+  border: 3px solid var(--greenDarker);
+  color: var(--greenDarker);
+}
+.Skills2 p:nth-child(2){
+  border: 3px solid var(--orangeDarker);
+  color: var(--orangeDarker);
+}
+.Skills2 p:nth-child(3){
+  border: 3px solid var(--red);
+  color: var(--red);
+}
+
 .title{
   margin-top: 70px;
   margin-bottom: 20px;
 }
 
+.titleBlack{
+  margin-top: 190px;
+}
+
 .titleWhite{
-  margin-top: 70px;
   background-color: transparent !important;
-  border-radius: 20px;
-  text-align: center;
-  font-size: 30px;
 }
 
 .titleWhite h1 {
@@ -106,10 +151,7 @@ body {
 }
 
 .titleWhite > hr{
-  background-color: var(--black);
-  width: 100%;
-  height: 3px;
-  margin-bottom: 20px;
+  background-color: var(--black) !important;
 }
 
 /* CAROUSEL */

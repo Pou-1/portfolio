@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Cyprien De La Poëze D'Harambure - Portfolio/About</title>
-
-        <?php include('component/navbar.php'); ?>
+        <?php include('component/link.php'); ?>
+</head>
+<body>
+    <?php include('component/navbar.php'); ?>
 
         <div class="aligne Column">
             <div class="title Column">

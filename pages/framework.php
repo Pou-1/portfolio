@@ -2,18 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>aaaa</title>
+        <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
+        <?php include('component/link.php'); ?>
+</head>
+<body>
+    <?php include('component/navbar.php'); ?>
 
-        <?php include('component/navbar.php'); ?>
-
-        <div class="aligne Column">
-            <div class="title Column">
-                <h1>Array</h1>
-                <hr>
-            </div>
-            <div class="content">
-            </div>
+        <div class="main">
         </div>
-        <?php include('component/footer.php'); ?>
-    </body>
+
+    <?php include('component/footer.php'); ?>
+</body>
 </html>
