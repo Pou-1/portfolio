@@ -55,7 +55,7 @@
   scroll-snap-align: start;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
   color: var(--red);
 }
 
@@ -64,7 +64,8 @@
 }
 
 .main{
-  margin-top: -100px;
+  position: absolute;
+  top: 0;
 }
 
 body{

@@ -29,13 +29,46 @@ precedentButton.addEventListener('click', precedent);
 
 /* --------------------------------------- SCROLL --------------------------------------- */
 document.addEventListener('DOMContentLoaded', function() {
+  function changeActualPage(newPageNumber) {
+    const validPageNumbers = [1, 2, 3];
+  
+    if (validPageNumbers.includes(newPageNumber)) {
+      const pages = document.querySelectorAll('.ScrollBar > .PageListDiv > p');
+      pages.forEach(page => page.classList.remove('actualPage'));
+      pages[newPageNumber - 1].classList.add('actualPage');
+    } else {
+      console.error('pas numéro entre 1 et 3 de page');
+    }
+  }
+  
   const slider = document.getElementById('slider');
   let currentSlide = 0;
+  const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
+  let isTransitioning = false;
 
   function scrollToSlide(index) {
     const offset = -index * 100;
     slider.style.transform = `translateY(${offset}vh)`;
+
+    changeActualPage(index+1);
+
+    isTransitioning = true;
+    setTimeout(function() {
+      if (isTransitioning) {
+        const color = (currentSlide === 1) ? 'var(--black)' : 'var(--white)';
+        navLinks.forEach(function(link) {
+          link.style.color = color;
+        });
+      }
+    }, 500);
   }
+
+  slider.addEventListener('transitionend', function() {
+    if (isTransitioning) {
+      isTransitioning = false;
+      slider.style.transition = '';
+    }
+  });
 
   document.addEventListener('wheel', function(event) {
     if (event.deltaY > 0 && currentSlide < 2) {
@@ -67,3 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /* --------------------------------------- END OF SCROLL --------------------------------------- */
+
+/* --------------------------------------- ANIMATION FADE IN --------------------------------------- */
+
+/* --------------------------------------- END OF ANIMATION FADE IN --------------------------------------- */
