@@ -205,9 +205,13 @@ button.button:hover{
 .Subtitle > hr{
   margin: 0;
   width: 10%;
-  background-color: var(--black);
   height: 3px;
 }
+
+.SubtitleBlack > hr{
+  background-color: var(--black);
+}
+
 
 .content{
   width: 100%;
