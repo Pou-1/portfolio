@@ -39,7 +39,7 @@
                     <h1>Skills</h1>
                     <hr>
                 </div>
-                <div class="Subtitle Column">
+                <div class="Subtitle SubtitleBlack Column">
                     <h1>Web</h1>
                     <hr>
                 </div>
@@ -49,7 +49,7 @@
                     <p class="aligne"><i class="fa-brands fa-php"></i></i></p>
                     <p class="aligne"><i class="fa-solid fa-database"></i></i></p>
                 </div>
-                <div class="Subtitle Column">
+                <div class="Subtitle SubtitleBlack Column">
                     <h1>Other</h1>
                     <hr>
                 </div>
