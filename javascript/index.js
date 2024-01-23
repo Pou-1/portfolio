@@ -97,10 +97,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollToSlide(currentSlide);
   });
+
+  /* --------------------------------------- ScrollBar --------------------------------------- */
+  const links = document.querySelectorAll(".ScrollBar > .PageListDiv > p");
+
+  links.forEach(link => {
+      link.addEventListener('mouseenter', function () {
+        link.style.visibility = "visible";
+        link.style.opacity = "1";
+        link.querySelector("span").style.visibility = "visible"
+        console.log(link.querySelector("span").innerText - 1);
+        link.style.transition = "opacity 0.5s ease-in-out";
+      });
+
+      link.addEventListener('click', function () {
+        scrollToSlide(link.querySelector("span").innerText - 1);
+      });
+
+      link.addEventListener('mouseleave', function () {
+        link.style.transition = "opacity 0.5s ease-in-out";
+        link.style.visibility = "";
+        link.style.opacity = "";
+        link.querySelector("span").style.visibility = ""
+      });
+    });
+  /* --------------------------------------- END OF ScrollBar --------------------------------------- */
+
 });
 
 /* --------------------------------------- END OF SCROLL --------------------------------------- */
 
-/* --------------------------------------- ANIMATION FADE IN --------------------------------------- */
-
-/* --------------------------------------- END OF ANIMATION FADE IN --------------------------------------- */

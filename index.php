@@ -46,15 +46,15 @@
                 <div class="Line Skills1">
                     <p class="aligne"><i class="fa-brands fa-html5"></i></p>
                     <p class="aligne"><i class="fa-brands fa-css3-alt"></i></i></p>
+                    <p class="aligne"><i class="fa-brands fa-square-js"></i></i></p>
                     <p class="aligne"><i class="fa-brands fa-php"></i></i></p>
-                    <p class="aligne"><i class="fa-solid fa-database"></i></i></p>
                 </div>
                 <div class="Subtitle SubtitleBlack Column">
                     <h1>Other</h1>
                     <hr>
                 </div>
                 <div class="Line Skills2">
-                    <p class="aligne"><i class="fa-brands fa-square-js"></i></i></p>
+                    <p class="aligne"><i class="fa-solid fa-database"></i></i></p>
                     <p class="aligne"><i class="fa-solid fa-c"></i></i></i></p>
                     <p class="aligne"><i class="fa-brands fa-java"></i></i></i></p>
                 </div>
