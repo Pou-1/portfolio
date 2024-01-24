@@ -44,19 +44,19 @@
                     <hr>
                 </div>
                 <div class="Line Skills1">
-                    <p class="aligne"><i class="fa-brands fa-html5"></i></p>
-                    <p class="aligne"><i class="fa-brands fa-css3-alt"></i></i></p>
-                    <p class="aligne"><i class="fa-brands fa-square-js"></i></i></p>
-                    <p class="aligne"><i class="fa-brands fa-php"></i></i></p>
+                    <p class="aligne Column"><i class="fa-brands fa-html5 aligne"></i><span class="hover-text">HTML</span></p>
+                    <p class="aligne Column"><i class="fa-brands fa-css3-alt aligne"></i><span class="hover-text">CSS</span></p>
+                    <p class="aligne Column"><i class="fa-brands fa-square-js aligne"></i><span class="hover-text">Javascript</span></p>
+                    <p class="aligne Column"><i class="fa-brands fa-php aligne"></i><span class="hover-text">PHP</span></p>
                 </div>
                 <div class="Subtitle SubtitleBlack Column">
-                    <h1>Other</h1>
+                    <h1>Others</h1>
                     <hr>
                 </div>
                 <div class="Line Skills2">
-                    <p class="aligne"><i class="fa-solid fa-database"></i></i></p>
-                    <p class="aligne"><i class="fa-solid fa-c"></i></i></i></p>
-                    <p class="aligne"><i class="fa-brands fa-java"></i></i></i></p>
+                    <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL and MySQL</span></p>
+                    <p class="aligne Column"><i class="fa-solid fa-c aligne"></i><span class="hover-text">C</span></p>
+                    <p class="aligne Column"><i class="fa-brands fa-java aligne"></i><span class="hover-text">JAVA</span></p>
                 </div>
             </div>
 
