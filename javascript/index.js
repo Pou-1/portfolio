@@ -1,3 +1,9 @@
+/* --------------------------------------- NAVBAR --------------------------------------- */
+var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a');
+homeLink.style.color = 'var(--red)';
+/* --------------------------------------- END OF NAVBAR --------------------------------------- */
+
+
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
 
 var indexCourant = 0;
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const slider = document.getElementById('slider');
   let currentSlide = 0;
-  const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
+  const navLinks = document.querySelectorAll('.NavBar > ul > li:nth-child(3) > a');
   let isTransitioning = false;
 
   function scrollToSlide(index) {
@@ -54,14 +60,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     isTransitioning = true;
     setTimeout(function() {
-      if (isTransitioning) {
-        const color = (currentSlide === 1) ? 'var(--black)' : 'var(--white)';
-        navLinks.forEach(function(link) {
-          link.style.color = color;
-        });
+      let color;
+      if (index != 1) {
+          color = 'var(--white)';
+      } else {
+          color = 'var(--black)';
       }
-    }, 500);
+      navLinks.forEach(function(link) {
+        link.style.color = color;
+    });
+    }, 200);
   }
+
 
   slider.addEventListener('transitionend', function() {
     if (isTransitioning) {
@@ -106,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
         link.style.visibility = "visible";
         link.style.opacity = "1";
         link.querySelector("span").style.visibility = "visible"
-        console.log(link.querySelector("span").innerText - 1);
         link.style.transition = "opacity 0.5s ease-in-out";
       });
 

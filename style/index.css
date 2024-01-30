@@ -77,6 +77,41 @@ body {
   width: 450px;
   border-radius: 450px;
   overflow: hidden;
+  margin-left: 50px;
+}
+
+.Presentation > div > *{
+  margin: 0;
+}
+
+.Presentation > div > div > div{
+  margin-top: 35px;
+  margin-left: 8px;
+}
+
+.Presentation > div > div > div > a{
+  color: var(--red);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.Presentation > div > div > div > hr{
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: var(--red);  
+  height: 3px;  
+  width: 0;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.Presentation > div > div a:hover + hr {
+  width: 100%;
+}
+
+.Presentation > div > p{
+  margin: 20px;
+  line-height: 1.5;
 }
 
 .Presentation > div:first-of-type{

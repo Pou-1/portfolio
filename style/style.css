@@ -106,6 +106,7 @@ a{
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 1000000;
+  visibility: hidden;
   transition: width 0.5s, height 0.5s ease;
 }
 

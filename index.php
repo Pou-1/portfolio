@@ -23,10 +23,16 @@
         <div class="slider-container" id="slider">
             <div class="Presentation aligne Line slide">
                 <div class="Column aligneCenterVertically">
-                    <h2>Hello there, I am Cyprien De La Poëze D'Harambure</h2>
+                    <div class="aligne">
+                        <h2>Hello there, I am</h2>
+                        <div>
+                            <a href="https://github.com/Firim4r">Cyprien De La Poëze D'Harambure</a>
+                            <hr>
+                        </div>
+                    </div>
                     <p>
                         I'm a student in Software & Web Developpement.
-                        Currently studing in the University of Caen in Normandie (France) for a University Bachelor.
+                        Currently studying in the University of Caen in Normandie (France) for a University Bachelor.
                     </p>
                 </div>
                 <div class="aligne">

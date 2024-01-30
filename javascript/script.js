@@ -2,10 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const customCursor = document.querySelector('.custom-cursor');
+    customCursor.style.visibility = 'hidden';
 
     document.addEventListener('mousemove', function (e) {
         customCursor.style.left = e.pageX + 'px';
         customCursor.style.top = e.pageY + 'px';
+        customCursor.style.visibility = 'visible';
     });
 
     function cursorHover(query){
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.NavBar a, .NavBarLiHasChildren a');
     cursorHover('.ScrollBar > div > button');
     cursorHover('.ScrollBar > .PageListDiv > p');
+    cursorHover('.Presentation > div > div > div > a');
     /* --------------------------------------- END INDEX --------------------------------------- */
 });
 
