@@ -62,7 +62,7 @@
 
             <div class="slide aligne Column">
                 <div class="title titleBlack Column">
-                    <h1>Skills</h1>
+                    <h1>Works</h1>
                     <hr>
                 </div>
                 <div class="Carrousel aligne">
