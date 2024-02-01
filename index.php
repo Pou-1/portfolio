@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <p>
-                        I'm a student in Software & Web Developpement.
+                        I'm a student in Software & Web Development.
                         Currently studying in the University of Caen in Normandie (France) for a University Bachelor.
                     </p>
                 </div>
@@ -60,7 +60,7 @@
                     <hr>
                 </div>
                 <div class="Line Skills2">
-                    <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL and MySQL</span></p>
+                    <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL</span></p>
                     <p class="aligne Column"><i class="fa-solid fa-c aligne"></i><span class="hover-text">C</span></p>
                     <p class="aligne Column"><i class="fa-brands fa-java aligne"></i><span class="hover-text">JAVA</span></p>
                 </div>
@@ -75,7 +75,7 @@
                     <button id="precedent">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    <div class="carousel-container">
+                    <div class="carousel-container aligne Line">
                         <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
                             <div>
                                 <h2 class="aligne">PtiCuisto</h2>
@@ -107,7 +107,33 @@
 
                         <a class="Works aligne Line" href="#">
                             <div>
+                                <h2 class="aligne">2</h2>
+                                <p class="aligne">
+                                    <i class="fa-brands fa-square-js"></i>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-php"></i>
+                                </p>
+                            </div>
+                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                        </a>
+
+                        <a class="Works aligne Line" href="#">
+                            <div>
                                 <h2 class="aligne">3</h2>
+                                <p class="aligne">
+                                    <i class="fa-brands fa-square-js"></i>
+                                    <i class="fa-brands fa-html5"></i>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <i class="fa-brands fa-php"></i>
+                                </p>
+                            </div>
+                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                        </a>
+
+                        <a class="Works aligne Line" href="#">
+                            <div>
+                                <h2 class="aligne">4</h2>
                                 <p class="aligne">
                                     <i class="fa-brands fa-square-js"></i>
                                     <i class="fa-brands fa-html5"></i>

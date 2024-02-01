@@ -8,6 +8,10 @@
   --green: #2fed2f;
   --greenDarker: #32b732;
 
+  --blueLighter: #5f6ee6;
+  --blue: #4659e4;
+  --blueeDarker: #2a3fdc;
+
   --purpleLighter: #7d2adc;
   --purple: #7d2adc;
   --purpleDarker: #7d2adc;
@@ -20,6 +24,14 @@
   --blue: #6cccff;
   --blueDarker: #4b9eca;
 
+  --cyanLighter: #8a93be;
+  --cyan: #8a93be;
+  --cyanDarker: #8a93be;
+
+  --navyblueLighter: #000080;
+  --navyblue: #000080;
+  --navyblueDarker: #000080;
+
   --whiteLighter: #ffffff;
   --white: #eeeeee;
   --whiteDarker: #e8dfdf;
@@ -27,6 +39,10 @@
   --greyDarker : #5b5959;
   --grey : #838383;
   --greyLighter : #aeadad;
+
+  --yellowDarker: #e9d44d;
+  --yellow: #e9d44d;
+  --yellowDarker: #e9d44d;
 
   --candyLighter: #d2e924;
   --candy: #ecea4e;

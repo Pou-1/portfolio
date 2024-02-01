@@ -1,36 +1,47 @@
 /* --------------------------------------- NAVBAR --------------------------------------- */
-var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a');
-homeLink.style.color = 'var(--red)';
+var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
+homeLink.style.width = '100%';
 /* --------------------------------------- END OF NAVBAR --------------------------------------- */
 
 
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+  const carrouselContainer = document.querySelector('.carousel-container');
+  const carrouselItemWidth = document.querySelector('.Works').offsetWidth + 20; // Ajouter la marge pour obtenir la largeur complète de chaque élément
 
-var indexCourant = 0;
-var elementsCarousel = document.querySelectorAll('.Works');
-var precedentButton = document.getElementById('precedent');
-var suivantButton = document.getElementById('suivant');
+  // Ajouter les éléments nécessaires pour le carrousel infini
+  carrouselContainer.innerHTML += carrouselContainer.innerHTML;
 
-function afficherElement(index) {
-    elementsCarousel.forEach(function (element, i) {
-        element.style.display = i === index ? 'flex' : 'none';
-    });
-}
+  const precedentButton = document.getElementById('precedent');
+  const suivantButton = document.getElementById('suivant');
 
-function suivant() {
-    indexCourant = (indexCourant + 1) % elementsCarousel.length;
-    afficherElement(indexCourant);
-}
+  precedentButton.addEventListener('click', function () {
+      scrollCarrousel(-carrouselItemWidth);
+  });
 
-function precedent() {
-    indexCourant = (indexCourant - 1 + elementsCarousel.length) % elementsCarousel.length;
-    afficherElement(indexCourant);
-}
+  suivantButton.addEventListener('click', function () {
+      scrollCarrousel(carrouselItemWidth);
+  });
 
-afficherElement(indexCourant);
+  function scrollCarrousel(scrollAmount) {
+      carrouselContainer.style.transition = 'transform 0.5s ease';
+      carrouselContainer.style.transform = `translateX(${-scrollAmount}px)`;
 
-suivantButton.addEventListener('click', suivant);
-precedentButton.addEventListener('click', precedent);
+      setTimeout(() => {
+          if (scrollAmount > 0) {
+              carrouselContainer.appendChild(carrouselContainer.firstElementChild.cloneNode(true));
+              carrouselContainer.firstElementChild.remove();
+          } else if (scrollAmount < 0) {
+              carrouselContainer.insertBefore(carrouselContainer.lastElementChild.cloneNode(true), carrouselContainer.firstElementChild);
+              carrouselContainer.lastElementChild.remove();
+          }
+
+          carrouselContainer.style.transition = 'none';
+          carrouselContainer.style.transform = 'translateX(0)';
+      }, 500);
+  }
+});
+
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
@@ -49,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const slider = document.getElementById('slider');
   let currentSlide = 0;
-  const navLinks = document.querySelectorAll('.NavBar > ul > li:nth-child(3) > a');
+  const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
   let isTransitioning = false;
 
   function scrollToSlide(index) {

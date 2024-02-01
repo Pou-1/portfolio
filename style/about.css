@@ -1,0 +1,22 @@
+.content > .content > .SubTitleAbout {
+    width: fit-content;
+    border: 3px solid var(--white);
+    border-radius: 25px;
+}
+
+.content > .titleAbout{
+    width: fit-content;
+    border: 3px solid var(--white);
+    border-radius: 25px;
+}
+
+.content > .titleAbout > h1{
+    font-size: 70px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.content > .content > .SubTitleAbout > h1 {
+    margin: 20px;
+    font-size: 30px;
+}

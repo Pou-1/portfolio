@@ -51,6 +51,7 @@
         </div>
     </body>
     <script src="../javascript/script.js"></script>
+    <script src="../javascript/workPage.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>
