@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.ScrollBar > div > button');
     cursorHover('.ScrollBar > .PageListDiv > p');
     cursorHover('.Presentation > div > div > div > a');
+    cursorHover('.media > i');
+    cursorHover('.content > .content > .SubTitleAbout');
     /* --------------------------------------- END INDEX --------------------------------------- */
 });
 

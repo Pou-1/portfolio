@@ -19,7 +19,6 @@
         </footer>
 
         <script src="../javascript/script.js"></script>
-        <script src="../javascript/nav_bar.js"></script>
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>
