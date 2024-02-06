@@ -15,26 +15,42 @@
                 <hr>
             </div>
             <div class="media">
-                <i class="fa-brands fa-github-alt"></i>
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github-alt"></i><span>1</span>
+                <i class="fa-regular fa-envelope"></i><span>1</span>
+                <i class="fa-brands fa-linkedin"></i><span>1</span>
             </div>
             <div class="content aligne Column">
                 <div class="titleAbout Column">
                     <h1>Passions</h1>
-                </div>
-                <div class="content">
-                    <div class="Column SubTitleAbout aligne" id="AboutDrawing">
-                        <h1>Drawing</h1>
-                    </div>
-                    <div class="content">
-                        aaaaaaaaaaa
-                        <img src="../../img/pfp.jpeg" alt="">
-                    </div>
+                    <hr>
                 </div>
                 <div class="content">
                     <div class="Column SubTitleAbout aligne" id="AboutMusic">
                         <h1>Musics</h1>
+                    </div>
+                    <div class="content">
+                        <div class="DivPassionsMusics aligne">
+                            <a href="" class="aligne Line" id="Music1">
+                                <div class="TextWithHr">
+                                    <p>Matcha Puff</p>
+                                    <hr>
+                                </div>
+                                <div class="vinyl aligne">
+                                    <div class="dot"></div>
+                                    <div class="sillon1 sillon"></div>
+                                    <div class="sillon2 sillon"></div>
+                                    <div class="sillon3 sillon"></div>
+                                    <div class="sillon4 sillon"></div>
+                                    <div class="sillon5 sillon"></div>
+                                    <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="Column SubTitleAbout aligne" id="AboutDrawing">
+                        <h1>Drawing</h1>
                     </div>
                     <div class="content">
                         aaaaaaaaaaa
@@ -45,7 +61,7 @@
                         <h1>Design</h1>
                     </div>
                     <div class="content">
-                        aaaaaaaaaaa
+                        Andgel Je t'aime ! <3 
                     </div>
                 </div>
             </div>

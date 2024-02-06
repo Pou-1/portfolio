@@ -27,3 +27,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* --------------------------------------- END OF BUTTON PASSIONS --------------------------------------- */
+
+/* --------------------------------------- MUSIC API DEEZER --------------------------------------- */
+function getTitle(id, DivId) {
+    var div = document.getElementById(DivId)
+    var imgDiv = div.children[1];
+    var Title = div.children[0].children[0]
+    const callbackName = 'jsonpCallback_' + Date.now();
+    
+    window[callbackName] = function (data) {
+        console.log(data.title)
+        Title.textContent = data.title
+        var img = document.createElement('img')
+        img.src = data.album.cover_xl
+        imgDiv.appendChild(img)
+
+        delete window[callbackName];
+        script.remove();
+    };
+
+    const script = document.createElement('script');
+    script.src = `https://api.deezer.com/track/${id}&output=jsonp&callback=${callbackName}`;
+    document.body.appendChild(script);
+}
+
+getTitle("803034982", "Music1");
+/* --------------------------------------- END OF MUSIC API DEEZER --------------------------------------- */

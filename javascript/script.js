@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.Presentation > div > div > div > a');
     cursorHover('.media > i');
     cursorHover('.content > .content > .SubTitleAbout');
+    cursorHover('.DivPassionsMusics > a');
     /* --------------------------------------- END INDEX --------------------------------------- */
 });
 
