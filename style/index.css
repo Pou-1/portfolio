@@ -361,6 +361,54 @@ body {
 }
 
 .Works {
-  flex: 0 0 calc(33.33% - 20px); /* 1/3 de la largeur avec une marge entre les éléments */
+  flex: 0 0 calc(33.33% - 20px);
   margin: 0 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  :root
+  {
+    --font : 12px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Presentation > div > img{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .Presentation > div > img{
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .Presentation > div:first-of-type
+  {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+  :root
+  {
+    --font : 15px !important;
+  }
+  .Presentation > div > img{
+    width: 300px;
+    border-radius: 300px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .Presentation > div:first-of-type
+  {
+    width: 600px;
+  }
 }

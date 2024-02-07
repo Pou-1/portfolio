@@ -36,6 +36,5 @@ Feel free to reach out to me for collaboration, job opportunities, or just to sa
 - Email: your.email@example.com
 - LinkedIn: [LinkedIn Profile](LinkedIn-Profile-Link)
 - Portfolio: [Portfolio Link](Your-Portfolio-Link)
-- Twitter: [@YourTwitterHandle](Your-Twitter-Handle)
 
 Thank you for visiting my portfolio!
