@@ -1,77 +1,3 @@
-.content > .content > .SubTitleAbout {
-    width: 200px;
-    border: 3px solid var(--white);
-    border-radius: 25px;
-    margin: 20px;
-    margin-left: 150px;
-    transition: all 0.4s ease-in-out;
-}
-
-.content > .content > .SubTitleAbout:hover{
-    transform: scale(1.1);
-    border-color: var(--red);
-    color: var(--red);
-}
-
-.content > .content > .SubTitleAbout > h1 {
-    font-size: 30px;
-}
-
-.content > .content > .content {
-    transition: all 1.5s ease-in-out;
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-}
-
-.content > .titleAbout > h1{
-    font-size: 70px;
-    font-weight: 300;
-    margin: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.content > .titleAbout > hr{
-    position: relative;
-    width: 100%;
-    background-color: var(--white);
-    height: 3px;
-}
-
-.content > .content > .content.active {
-    visibility: visible;
-    width: auto;
-    height: auto;
-}
-
-.slide-in {
-    animation: slideIn 1.3s ease;
-}
-
-.slide-out {
-    animation: slideOut 1.3s ease;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-100%);
-    }
-}
-
 .media{
     margin-top: 40px;
 }
@@ -95,43 +21,89 @@
     box-shadow: 0px 0px 46px 10px rgb(223, 39, 51,1);
 }
 
-.media > span{
-    position: relative;
-    font-size: 15px;
-    right: 54px;
-    color: var(--white);
-    background-color: var(--red);
-    padding: 8px;
-    border-radius: 12px;
-    bottom: 61px;
-    font-weight: 700;
+.whiteBackground{
+    background-color: var(--white);
+    color: var(--black);
+    margin-top: 100px;
 }
 
-.DivPassionsMusics > a{
-    width: auto;
+.content > .titleAbout > h1{
+    font-size: 70px;
+    font-weight: 300;
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content > .titleAbout > hr{
+    position: absolute;
+    width: 70%;
+    background-color: var(--black);
+    height: 3px;
+}
+
+.content > .content > .SubTitleAbout {
+    width: fit-content;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.content > .content > .SubTitleAbout > h1 {
+    margin: 0;
+    font-size: 70px;
+}
+
+.content > .content > .SubTitleAbout > h1 > * {
+    font-weight: 600;
+}
+
+.content > .content > .SubTitleAbout > h1 > i:first-child{
+    margin-right: 25px;
+}
+
+.content > .content > .SubTitleAbout > h1 > i:nth-child(2){
+    margin-left: 25px;
+}
+
+.DivPassionsMusics{
+    gap: 80px;
+}
+
+.DivPassionsMusics > div{
+    width: 1200px;
     height: auto;
+    position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 30px;
-    border: 2px solid var(--white);
+    border: 2px solid var(--black);
     border-radius: 25px;
-    background-color: var(--white);
-    font-size: 50px;
-    transition: all 1.2s ease-out;
-    color: var(--black);
+    background-color: var(--blackLighter);
+    font-size: 40px;
+    transition: all 1.2s ease-in-out;
+    color: var(--white);
 }
 
-.DivPassionsMusics > a > .TextWithHr{
-    margin-right: 100px;
+.DivPassionsMusics > div > .Text{
+    width: 900px;
 }
 
-.DivPassionsMusics > a > .TextWithHr > p{
+.DivPassionsMusics > div > .Text > .TextWithHr{
+    width: fit-content;
+}
+
+.DivPassionsMusics > div > .Text > .TextWithHr > p{
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
-.DivPassionsMusics > a > .TextWithHr > hr{
+.DivPassionsMusics > div > .Text > .TextWithHr > hr{
     width: 100%;
     background-color: var(--red);
     height: 3px;
@@ -140,20 +112,33 @@
     margin: 0;
 }
 
-.DivPassionsMusics > a > *{
+.DivPassionsMusics > div > .Text > .TextWithHr > .ArtistName{
+    color: var(--grey);
+    font-size: 30px;
+    text-align: right;
+    width: 100%;
+}
+
+.DivPassionsMusics > div > *{
     padding: 0;
     margin: 0;
 }
 
-.DivPassionsMusics > a > .vinyl{
+.DivPassionsMusics > div > .vinyl{
     border-radius: 300px;
     width: 300px;
     height: 300px;
-    transition: all 1.2s ease-out;
+    transition: all 0.4s ease-in-out;
     background-color: var(--black);
+    border: 2px solid var(--white);
+    z-index: 9;
 }
 
-.DivPassionsMusics > a > .vinyl > .PlayButton{
+.DivPassionsMusics > div > .vinyl:hover{
+    border: 2px solid var(--red);
+}
+
+.DivPassionsMusics > div > .vinyl > .PlayButton{
     position: absolute;
     visibility: hidden;
     border-radius: 300px;
@@ -165,19 +150,26 @@
     z-index: 9999;
     cursor: none;
     font-size: 150px;
-    transition: all 1.2s ease-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.DivPassionsMusics > a > .vinyl > .PlayButton:hover{
-    color: var(--red);
+.DivPassionsMusics > div > .vinyl > .PlayButton:hover{
     border-color: var(--red);
 }
 
-.DivPassionsMusics > a:hover > .vinyl > .PlayButton{
+.DivPassionsMusics > div > .vinyl > .PlayButton:hover > i{
+    font-size: 165px;
+}
+
+.DivPassionsMusics > div:hover > .vinyl > .PlayButton{
     visibility: visible;
 }
 
-.DivPassionsMusics > a > .vinyl > .dot{
+.DivPassionsMusics > div > .vinyl > .PlayButton > i{
+    transition: all 0.4s ease-in-out;
+}
+
+.DivPassionsMusics > div > .vinyl > .dot{
     position: absolute;
     width: 15px;
     height: 15px;
@@ -186,50 +178,53 @@
     background-color: var(--black);
   }
 
-.DivPassionsMusics > a > .vinyl > .sillon{
+.DivPassionsMusics > div > .vinyl > .sillon{
     position: absolute;
     z-index: 1000;
     background-color: transparent;
     border: 2px solid var(--blackLight);
 }
 
-.DivPassionsMusics > a > .vinyl > .sillon1{
+.DivPassionsMusics > div > .vinyl > .sillon1{
     width: 90px;
     height: 90px;
     border-radius: 90px;
 }
 
-.DivPassionsMusics > a > .vinyl > .sillon2{
+.DivPassionsMusics > div > .vinyl > .sillon2{
     width: 140px;
     height: 140px;
     border-radius: 140px;
 }
 
-.DivPassionsMusics > a > .vinyl > .sillon3{
+.DivPassionsMusics > div > .vinyl > .sillon3{
     width: 200px;
     height: 200px;
     border-radius: 200px;
 }
 
-.DivPassionsMusics > a > .vinyl > .sillon4{
+.DivPassionsMusics > div > .vinyl > .sillon4{
     width: 250px;
     height: 250px;
     border-radius: 250px;
 }
 
-.DivPassionsMusics > a > .vinyl > .sillon5{
+.DivPassionsMusics > div > .vinyl > .sillon5{
     width: 270px;
     height: 270px;
     border-radius: 270px;
 }
 
-.DivPassionsMusics > a > .vinyl > img{
+.DivPassionsMusics > div > .vinyl > img{
     border-radius: 200px;
     width: 100px;
     height: 100px;
 }
 
-.DivPassionsMusics > a:hover{
-    background-color: var(--black);
-    color: var(--white);
+.firefly {
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 5;
 }
