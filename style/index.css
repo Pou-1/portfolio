@@ -164,7 +164,7 @@ body {
 }
 
 .Skills > div > p > i{
-  transition: all 0.65s ease-out;
+  transition: all 0.65s ease-in-out;
 }
 
 .Skills1 p:nth-child(1) > i{

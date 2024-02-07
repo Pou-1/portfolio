@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
-        <link rel="stylesheet" href="../style/workPage.css">
+        <link rel="stylesheet" href="../style/work_page.css">
         <?php include('component/link.php'); ?>
     </head>
     <body>
@@ -12,7 +12,7 @@
         <div class="main aligne Column">
             <h1 class="WorkPageTitle">Pti Cuisto</h1>
 
-            <p>PtiCuisto is a project i did with classmates, we got a client asking
+            <p>pticuisto is a project i did with classmates, we got a client asking
                 for a website to teach to the children how to cook</p>
                 
             <h2 class="h2Title">Constraints</h2>
@@ -42,11 +42,11 @@
             </ul>
             <h2 class="h2Title">Final product</h2>
             <div class="Column ColumnShare">
-                <img src="../../img/PtiCuisto/Accueil.png" alt="">
-                <img src="../../img/PtiCuisto/Liste_recettes.png" alt="">
-                <img src="../../img/PtiCuisto/Mousse_chocolat.png" alt="">
-                <img src="../../img/PtiCuisto/inscrire.png" alt="">
-                <img src="../../img/PtiCuisto/Mon_compte.png" alt="">
+                <img src="../../img/pticuisto/Accueil.png" alt="">
+                <img src="../../img/pticuisto/Liste_recettes.png" alt="">
+                <img src="../../img/pticuisto/Mousse_chocolat.png" alt="">
+                <img src="../../img/pticuisto/inscrire.png" alt="">
+                <img src="../../img/pticuisto/Mon_compte.png" alt="">
             </div>
         </div>
     </body>

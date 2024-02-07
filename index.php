@@ -78,7 +78,7 @@
                     <div class="carousel-container aligne Line">
                         <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
                             <div>
-                                <h2 class="aligne">PtiCuisto</h2>
+                                <h2 class="aligne">pticuisto</h2>
                                 <p class="aligne">
                                     A Website to learn easily how to cook
                                 </p>
@@ -89,7 +89,7 @@
                                     <p class="Tag">php</p>
                                 </div>
                             </div>
-                            <img src="../img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="../img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -102,7 +102,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -115,7 +115,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -128,7 +128,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -141,7 +141,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -154,7 +154,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/PtiCuisto_Front.png" alt="Picture of a work on a website">
+                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
                     </div>
                     <button id="suivant">
