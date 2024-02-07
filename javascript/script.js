@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.Presentation > div > div > div > a');
     cursorHover('.media > i');
     cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > input');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > i');
     /* --------------------------------------- END INDEX --------------------------------------- */
 });
 

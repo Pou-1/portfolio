@@ -81,7 +81,7 @@
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 30px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--blackLighter);
     border-radius: 25px;
     background-color: var(--blackLighter);
     font-size: 40px;
@@ -93,30 +93,52 @@
     width: 900px;
 }
 
-.DivPassionsMusics > div > .Text > .TextWithHr{
+.DivPassionsMusics > div > .Text > .WidthTextMusic {
+    width: 800px;
+}
+
+.DivPassionsMusics > div > .Text > .WidthTextMusic > .TextWithHr{
     width: fit-content;
 }
 
-.DivPassionsMusics > div > .Text > .TextWithHr > p{
+.DivPassionsMusics > div > .Text > .WidthTextMusic > .TextWithHr > p{
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.DivPassionsMusics > div > .Text > .TextWithHr > hr{
+.DivPassionsMusics > div > .Text > .WidthTextMusic > .TextWithHr > hr{
     width: 100%;
     background-color: var(--red);
     height: 3px;
     border: none;
     padding: 0;
     margin: 0;
+    transition: all 0.3s ease-in-out;
 }
 
-.DivPassionsMusics > div > .Text > .TextWithHr > .ArtistName{
+.DivPassionsMusics > div > .Text > .WidthTextMusic > .TextWithHr > .ArtistName{
     color: var(--grey);
     font-size: 30px;
     text-align: right;
     width: 100%;
+}
+
+.DivPassionsMusics > div > .Text > .Volume{
+    font-size: 50px;
+    position: relative;
+    top: -55px;
+    width: 50px;
+    left: -10px;
+}
+
+.DivPassionsMusics > div > .Text > .Volume > input{
+    transform: rotate(-90deg);
+    margin-top: 90px;
+    transition : all 0.3s ease-in-out;
+    cursor: none;
+    background-color: var(--white);
+    caret-color: var(--white);
 }
 
 .DivPassionsMusics > div > *{

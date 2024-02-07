@@ -9,26 +9,63 @@ function getTitle(ids, DivId) {
         (function (index) {
             var div = document.getElementById(DivId + index);
             var imgDiv = div.children[1];
-            var Title = div.children[0].children[0].children[0];
-            var ArtistName = div.children[0].children[0].children[2];
+            var Title = div.children[0].children[1].children[0].children[0];
+            var ArtistName = div.children[0].children[1].children[0].children[2];
 
             const callbackName = 'jsonpCallback_' + Date.now() + '_' + index;
 
+            var currentAudio = null;
             window[callbackName] = function (data) {
-                
                 var audio = new Audio(data.preview);
                 var playButton = div.children[1].children[6];
                 var playIcon = playButton.querySelector("i");
-                playButton.addEventListener("click", function(event) {
-                    event.preventDefault();
-                    if (audio.paused) {
-                        audio.play();
-                        playIcon.className = "fa-solid fa-pause";
+                var volumeSlider = div.children[0].children[0].children[1];
+                var volumeIcon = div.children[0].children[0].children[0];
+                var progressBar = div.children[0].children[1].children[0].children[1];
+                audio.volume = volumeSlider.value;
+                
+                volumeSlider.addEventListener('input', function() {
+                    var volumeIcon = div.querySelector(".Volume i");
+                    var volumeLevel = parseFloat(volumeSlider.value);
+                    if (volumeLevel === 0) {
+                        volumeIcon.className = 'fa-solid fa-volume-xmark';
+                    } else if (volumeLevel <= 0.5) {
+                        volumeIcon.className = 'fa-solid fa-volume-low';
                     } else {
-                        audio.pause();
-                        playIcon.className = "fa-solid fa-play";
+                        volumeIcon.className = 'fa-solid fa-volume-high';
+                    }
+                    audio.volume = volumeLevel;
+                });
+                
+                audio.addEventListener('timeupdate', function() {
+                    if(!audio.paused){
+                        progressBar.value = audio.currentTime;
+                        var percentage = (audio.currentTime / audio.duration) * 100;
+                        progressBar.style.width = percentage + '%';
                     }
                 });
+                
+                playButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+            
+                    if (currentAudio && currentAudio !== audio) {
+                        currentAudio.pause();
+                        currentAudio.currentTime = 0;
+                    }
+            
+                    currentAudio = audio;
+            
+                    if (audio.paused) {
+                        audio.play();
+                        playIcon.className = 'fa-solid fa-square';
+                    } else {
+                        audio.pause();
+                        audio.currentTime = 0;
+                        playIcon.className = 'fa-solid fa-play';
+                        progressBar.style.width = '100%';
+                    }
+                });
+            
 
                 ArtistName.textContent = 'By ' + data.artist.name
                 Title.textContent = data.title;
@@ -83,7 +120,7 @@ function createFirefly(container) {
 const numberOfFireflies = 50;
 var vinylElements = document.querySelectorAll('.vinyl');
 var numberOfVinyls = vinylElements.length;
-for (let i = 0; i < numberOfFireflies+1; i++) {
+for (let i = 0; i < numberOfFireflies + 1; i++) {
     for (let j = 0; j < numberOfVinyls; j++) {
         createFirefly(document.getElementById('Music' + j));
     }
