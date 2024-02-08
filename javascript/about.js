@@ -126,3 +126,34 @@ for (let i = 0; i < numberOfFireflies + 1; i++) {
     }
 }
 /* --------------------------------------- END OF FIREFLIES FOR MUSIC --------------------------------------- */
+
+/* --------------------------------------- SCROLL ON WHITE BACKGROUND --------------------------------------- */
+document.addEventListener("scroll", () => {
+    if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
+        const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
+        NavBarTexts.forEach(NavBarText => {
+            NavBarText.style.color = 'var(--black)'
+        });
+    }
+    if(document.getElementById('whiteBackground').getBoundingClientRect().top >= 135){
+        const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
+        NavBarTexts.forEach(NavBarText => {
+            NavBarText.style.color = 'var(--white)'
+        });
+    }
+
+    for(var i = 0; i < 3; i++){
+        var actualMusicDiv = document.getElementById('Music' + i);
+        if(actualMusicDiv.getBoundingClientRect().top < 135){
+            actualMusicDiv.style.width = '800px'
+            actualMusicDiv.children[0].style.width = '500px'
+            actualMusicDiv.children[0].children[1].children[0].style.fontSize = '27px'
+        }
+        console.log(actualMusicDiv.getBoundingClientRect().top)
+        if(actualMusicDiv.getBoundingClientRect().top < -280 || actualMusicDiv.getBoundingClientRect().top >= 135){
+            actualMusicDiv.style.width = ''
+            actualMusicDiv.children[0].style.width = ''
+            actualMusicDiv.children[0].children[1].children[0].style.fontSize = ''
+        }
+    }
+});

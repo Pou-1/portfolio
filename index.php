@@ -26,7 +26,7 @@
                     <div>
                         <h2>Hello there, I am</h2>
                         <div>
-                            <a href="https://github.com/Firim4r">Cyprien D'Harambure</a>
+                            <a href="https://github.com/Pou-1">Cyprien D'Harambure</a>
                             <hr>
                         </div>
                     </div>
