@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
+    <title>Cyprien D'Harambure - Portfolio</title>
 
     <link rel="stylesheet" href="../style/index.css">
     <?php include('pages/component/link.php'); ?>
@@ -23,10 +23,10 @@
         <div class="slider-container" id="slider">
             <div class="Presentation aligne Line slide">
                 <div class="Column aligneCenterVertically">
-                    <div class="aligne">
+                    <div>
                         <h2>Hello there, I am</h2>
                         <div>
-                            <a href="https://github.com/Firim4r">Cyprien De La Poëze D'Harambure</a>
+                            <a href="https://github.com/Firim4r">Cyprien D'Harambure</a>
                             <hr>
                         </div>
                     </div>

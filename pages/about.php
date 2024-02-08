@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cyprien De La Poëze D'Harambure - Portfolio/About</title>
+    <title>Cyprien D'Harambure - Portfolio/About</title>
     <?php include('component/link.php'); ?>
 </head>
 
@@ -17,9 +17,11 @@
             <hr>
         </div>
         <div class="media">
-            <i class="fa-brands fa-github-alt"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/Pou-1"><i class="fa-brands fa-github-alt"></i></a>
+            <a href="mailto:cyprien.dharambure@gmail.com?subject=Recherche%20Développeur&body=Bonjour%20Cyprien D'Harambure,%0D%0A%0D%0AJe%20suis%20intéressé%20par%20votre%20travail%20de%20développeur%20web.%20Pouvons-nous%20discuter%20plus%20en%20détail?">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/cyprien-d-harambure-6178b82b3"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="content whiteBackground aligne Column" id="whiteBackground">
             <div class="titleAbout aligne">
@@ -127,9 +129,9 @@
             </div>
         </div>
     </div>
-    <?php include('component/footer.php'); ?>
 
     <script src="../javascript/about.js"></script>
+    <script src="../javascript/script.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8708952b61.js" crossorigin="anonymous"></script>

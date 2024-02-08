@@ -85,7 +85,7 @@ function getTitle(ids, DivId) {
 }
 
 //get the id with "https://api.deezer.com/search?q=My%20GenerationThe%20Who"
-let ids = ["803034982", "1576645442", "136341550"];
+let ids = ["803034982", "1016945932", "1177977552"];
 
 getTitle(ids, "Music");
 

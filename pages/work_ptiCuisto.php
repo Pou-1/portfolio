@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
+        <title>Cyprien D'Harambure - Portfolio/Work/PtiCuisto</title>
         <link rel="stylesheet" href="../style/work_page.css">
         <?php include('component/link.php'); ?>
     </head>

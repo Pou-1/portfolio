@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Cyprien De La Poëze D'Harambure - Portfolio</title>
+        <title>Cyprien D'Harambure - Portfolio</title>
         <?php include('component/link.php'); ?>
 </head>
 <body>
@@ -11,6 +11,6 @@
         <div class="main">
         </div>
 
-    <?php include('component/footer.php'); ?>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
