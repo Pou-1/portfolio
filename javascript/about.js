@@ -149,7 +149,6 @@ document.addEventListener("scroll", () => {
             actualMusicDiv.children[0].style.width = '500px'
             actualMusicDiv.children[0].children[1].children[0].style.fontSize = '27px'
         }
-        console.log(actualMusicDiv.getBoundingClientRect().top)
         if(actualMusicDiv.getBoundingClientRect().top < -280 || actualMusicDiv.getBoundingClientRect().top >= 135){
             actualMusicDiv.style.width = ''
             actualMusicDiv.children[0].style.width = ''
