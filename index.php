@@ -71,11 +71,11 @@
                     <h1>Works</h1>
                     <hr>
                 </div>
-                <div class="Carrousel aligne">
-                    <button id="precedent">
+                <div class="Carrousel aligne" id="Carou">
+                    <button id="prevBtn" class="aligne">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    <div class="carousel-container aligne Line">
+                    <div class="carousel-container aligne Line slides">
                         <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
                             <div>
                                 <h2 class="aligne">pticuisto</h2>
@@ -157,7 +157,7 @@
                             <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
                     </div>
-                    <button id="suivant">
+                    <button id="nextBtn" class="aligne">
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>

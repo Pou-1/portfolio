@@ -247,10 +247,6 @@ body {
   margin-bottom: 20px;
 }
 
-.titleBlack{
-  margin-top: 190px;
-}
-
 .titleWhite{
   background-color: transparent !important;
 }
@@ -270,7 +266,6 @@ body {
 }
 
 .Works{
-  margin-top: 60px;
   color: var(--white);
   position: relative;
   transition: all 0.5s ease-in-out;
@@ -301,7 +296,6 @@ body {
   font-size: 50px;
   margin: 0;
   margin-bottom: 20px;
-  margin-top: 40px;
 }
 
 .Works > div > p{
@@ -335,7 +329,7 @@ body {
 .Carrousel{
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 200px;
+  margin-bottom: 69px;
   display: flex;
   align-items: center;
 }
@@ -357,19 +351,40 @@ body {
 
 .Carrousel {
   overflow: hidden;
+  position: relative;
   height: 70%;
+  width: 85%;
+}
+
+.Carrousel > button{
+  z-index: 5;
+  position: absolute;
+  height: 50px;
+  top: 40%;
+  border-radius: 50px;
+  width: 50px;
+}
+
+.Carrousel > #prevBtn{
+  left: 5px;
+}
+
+.Carrousel > #nextBtn{
+  right: 5px;
 }
 
 .carousel-container {
   display: flex;
-  transition: transform 0.5s ease;
+  width: 600%;
+  left: 0%;
+  position: absolute;
+  height: 100%;
+  transition: all 1s ease-in-out;
 }
 
 .Works {
-  flex: 0 0 calc(33.33% - 20px);
-  margin: 0 10px;
+  width: 100%;
 }
-
 
 @media screen and (max-width: 576px) {
 

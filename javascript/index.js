@@ -6,42 +6,59 @@ homeLink.style.width = '100%';
 
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
-  const carrouselContainer = document.querySelector('.carousel-container');
-  const carrouselItemWidth = document.querySelector('.Works').offsetWidth + 20; // Ajouter la marge pour obtenir la largeur complète de chaque élément
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const slides = document.querySelector('.slides');
+  let currentIndex = 0;
+  var lastIndex = document.querySelectorAll('.Works').length - 1;
 
-  // Ajouter les éléments nécessaires pour le carrousel infini
-  carrouselContainer.innerHTML += carrouselContainer.innerHTML;
+  prevBtn.style.display = "none"
 
-  const precedentButton = document.getElementById('precedent');
-  const suivantButton = document.getElementById('suivant');
-
-  precedentButton.addEventListener('click', function () {
-      scrollCarrousel(-carrouselItemWidth);
-  });
-
-  suivantButton.addEventListener('click', function () {
-      scrollCarrousel(carrouselItemWidth);
-  });
-
-  function scrollCarrousel(scrollAmount) {
-      carrouselContainer.style.transition = 'transform 0.5s ease';
-      carrouselContainer.style.transform = `translateX(${-scrollAmount}px)`;
-
-      setTimeout(() => {
-          if (scrollAmount > 0) {
-              carrouselContainer.appendChild(carrouselContainer.firstElementChild.cloneNode(true));
-              carrouselContainer.firstElementChild.remove();
-          } else if (scrollAmount < 0) {
-              carrouselContainer.insertBefore(carrouselContainer.lastElementChild.cloneNode(true), carrouselContainer.firstElementChild);
-              carrouselContainer.lastElementChild.remove();
-          }
-
-          carrouselContainer.style.transition = 'none';
-          carrouselContainer.style.transform = 'translateX(0)';
-      }, 500);
+  function displayButton(){
+      if(currentIndex == 0){
+          prevBtn.style.display = "none"
+      }else{
+          prevBtn.style.display = "flex"
+      }
+      if(currentIndex == lastIndex){
+          nextBtn.style.display = "none"
+      }else{
+          nextBtn.style.display = "flex"
+      }
   }
-});
 
+  prevBtn.addEventListener('click', function () {
+      slides.style.left = getPercenntage(100);
+      currentIndex--
+      displayButton()
+  });
+
+  nextBtn.addEventListener('click', function () {
+      slides.style.left = getPercenntage(-100);
+      currentIndex++
+      displayButton()
+  });
+
+  function getPercenntage(add){
+      var computedStyle = window.getComputedStyle(slides);
+      var leftValue = computedStyle.left;
+      var leftInPixels = parseFloat(leftValue);
+      var parentWidth = slides.parentElement.offsetWidth;
+      var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
+      return leftInPercentage;
+  }
+
+  slides.addEventListener('wheel', function(event) {
+      if (event.deltaY > 0 && currentIndex < lastIndex) {
+        currentIndex++;
+      } else if (event.deltaY < 0 && currentIndex > 0) {
+        currentIndex--;
+      }
+      var left = currentIndex * -100;
+      slides.style.left = `${left}%`;
+      displayButton()
+  });
+});
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
@@ -63,26 +80,28 @@ document.addEventListener('DOMContentLoaded', function() {
   const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
   let isTransitioning = false;
 
-  function scrollToSlide(index) {
-    const offset = -index * 100;
-    slider.style.transform = `translateY(${offset}vh)`;
+  function scrollToSlide(index, event) {
+    console.log(event.target)
+    if (!event.target.closest('#Carou')) {
+      const offset = -index * 100;
+      slider.style.transform = `translateY(${offset}vh)`;
 
-    changeActualPage(index+1);
+      changeActualPage(index+1);
 
-    isTransitioning = true;
-    setTimeout(function() {
-      let color;
-      if (index != 1) {
-          color = 'var(--white)';
-      } else {
-          color = 'var(--black)';
-      }
-      navLinks.forEach(function(link) {
-        link.style.color = color;
-    });
-    }, 200);
+      isTransitioning = true;
+      setTimeout(function() {
+        let color;
+        if (index != 1) {
+            color = 'var(--white)';
+        } else {
+            color = 'var(--black)';
+        }
+        navLinks.forEach(function(link) {
+          link.style.color = color;
+      });
+      }, 200);
+    }
   }
-
 
   slider.addEventListener('transitionend', function() {
     if (isTransitioning) {
@@ -97,26 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (event.deltaY < 0 && currentSlide > 0) {
       currentSlide--;
     }
-
-    scrollToSlide(currentSlide);
-  });
-
-  let touchStartY = 0;
-
-  document.addEventListener('touchstart', function(event) {
-    touchStartY = event.touches[0].clientY;
-  });
-
-  document.addEventListener('touchend', function(event) {
-    const touchEndY = event.changedTouches[0].clientY;
-
-    if (touchEndY < touchStartY && currentSlide < 2) {
-      currentSlide++;
-    } else if (touchEndY > touchStartY && currentSlide > 0) {
-      currentSlide--;
-    }
-
-    scrollToSlide(currentSlide);
+    scrollToSlide(currentSlide, event);
   });
 
   /* --------------------------------------- ScrollBar --------------------------------------- */
