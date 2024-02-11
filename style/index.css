@@ -282,10 +282,6 @@ body {
   display: block;
 }
 
-.Works:hover > img{
-  opacity: 0.1;
-}
-
 .Works img{
   width: 100%;
   border-radius: 10px;
@@ -313,13 +309,6 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   padding: 15px;
-}
-
-
-.Works i:hover{
-  transform: scale(1.2);
-  color: var(--red);
-  transition: all 0.2s ease-in-out;
 }
 
 .WorkDiv > title{
@@ -359,18 +348,18 @@ body {
 .Carrousel > button{
   z-index: 5;
   position: absolute;
-  height: 50px;
+  height: 100px;
   top: 40%;
-  border-radius: 50px;
-  width: 50px;
+  border-radius: 100px;
+  width: 100px;
 }
 
 .Carrousel > #prevBtn{
-  left: 5px;
+  left: 15px;
 }
 
 .Carrousel > #nextBtn{
-  right: 5px;
+  right: 15px;
 }
 
 .carousel-container {
