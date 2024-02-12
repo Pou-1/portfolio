@@ -156,3 +156,4 @@ document.addEventListener("scroll", () => {
         }
     }
 });
+/* --------------------------------------- END OF SCROLL ON WHITE BACKGROUND --------------------------------------- */

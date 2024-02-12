@@ -139,6 +139,36 @@ a{
   transition: width 0.5s, height 0.5s ease;
 }
 
+.hoveredWithText{
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000000;
+  pointer-events: none;
+  width: 165px;
+  background-color: rgba(223, 39, 51, 1);
+  height: 165px;
+  transition: width 0.5s, height 0.5s ease;
+}
+
+.hoveredWithText > div{
+  width: fit-content;
+  transition: all 6s ease-in-out;
+}
+
+.hoveredWithText > div > p{
+  margin: 0;
+}
+
+.hoveredWithText > div > hr{
+  width: 100%;
+  background-color: var(--white);
+  height: 3px;
+  border: none;
+  margin: 0;
+  animation: hrWidth 2s normal;
+}
+
 .aligne{
   display: flex;
   align-items: center;

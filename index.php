@@ -102,7 +102,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img src="img/works/makima.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -115,7 +115,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img src="img/works/nier.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -128,7 +128,7 @@
                                     <i class="fa-brands fa-php"></i>
                                 </p>
                             </div>
-                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img src="img/works/gojo.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">

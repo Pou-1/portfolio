@@ -10,36 +10,71 @@ document.addEventListener('DOMContentLoaded', function () {
         customCursor.style.visibility = 'visible';
     });
 
-    function cursorHover(query){
+    function cursorHover(query, text){
         const links = document.querySelectorAll(query);
         const customCursor = document.getElementById('cursor');
 
         links.forEach(link => {
             link.addEventListener('mouseenter', function () {
-                customCursor.classList.add('hovered');
                 customCursor.classList.remove('custom-cursor');
+                if(text != ''){
+                    addParagraphAndHrToDiv(customCursor, text)
+                    customCursor.classList.add('hoveredWithText');
+                }
+                else{
+                    customCursor.classList.add('hovered');
+                }
             });
 
             link.addEventListener('mouseleave', function () {
                 customCursor.classList.add('custom-cursor');
-                customCursor.classList.remove('hovered');
+                if(text != ''){
+                    customCursor.classList.remove('hoveredWithText');
+                }
+                else{
+                    customCursor.classList.remove('hovered');
+                }
+                deleteParagraphAndHrToDiv(customCursor)
             });
         });
     }
 
-    /* --------------------------------------- INDEX --------------------------------------- */
-    cursorHover('.Works i');
-    cursorHover('.Carrousel > button');
-    cursorHover('.Carrousel > div > a');
-    cursorHover('.NavBar a, .NavBarLiHasChildren a');
-    cursorHover('.ScrollBar > div > button');
-    cursorHover('.ScrollBar > .PageListDiv > p');
-    cursorHover('.Presentation > div > div > div > a');
-    cursorHover('.media > a');
-    cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton');
-    cursorHover('.DivPassionsMusics > div > .Text > .Volume > input');
-    cursorHover('.DivPassionsMusics > div > .Text > .Volume > i');
-    /* --------------------------------------- END INDEX --------------------------------------- */
+    function addParagraphAndHrToDiv(targetDiv, text) {
+        const existingDiv = targetDiv.querySelector('div');
+        const existingParagraph = targetDiv.querySelector('div > p');
+        const existingHr = targetDiv.querySelector('div > hr');
+      
+        if (!existingParagraph && !existingHr && !existingDiv) {
+            const div = document.createElement('div');
+            const paragraph = document.createElement('p');
+            paragraph.textContent = text;
+            const hr = document.createElement('hr');
+            targetDiv.appendChild(div);
+            div.appendChild(paragraph);
+            div.appendChild(hr);
+        }
+    }
+
+    function deleteParagraphAndHrToDiv(targetDiv) {
+        const existingDiv = targetDiv.querySelector('div');
+        if (existingDiv) {
+          targetDiv.removeChild(existingDiv);
+        }
+    }
+
+
+
+    cursorHover('.Works i', '');
+    cursorHover('.Carrousel > button', '');
+    cursorHover('.Carrousel > div > a', 'Go see');
+    cursorHover('.NavBar a, .NavBarLiHasChildren a', '');
+    cursorHover('.ScrollBar > div > button', '');
+    cursorHover('.ScrollBar > .PageListDiv > p', '');
+    cursorHover('.Presentation > div > div > div > a', '');
+    cursorHover('.media > a', '');
+    cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton', '');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '');
 });
 
 /* --------------------------------------- END MAIN --------------------------------------- */

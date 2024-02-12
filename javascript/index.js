@@ -3,7 +3,6 @@ var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
 homeLink.style.width = '100%';
 /* --------------------------------------- END OF NAVBAR --------------------------------------- */
 
-
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.getElementById('prevBtn');
@@ -27,17 +26,32 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
 
-  prevBtn.addEventListener('click', function () {
-      slides.style.left = getPercenntage(100);
-      currentIndex--
-      displayButton()
-  });
+  let scrollButtonDisable = false;
 
-  nextBtn.addEventListener('click', function () {
-      slides.style.left = getPercenntage(-100);
-      currentIndex++
-      displayButton()
+  prevBtn.addEventListener('click', function () {
+    if (!scrollButtonDisable) {
+      slides.style.left = getPercenntage(100);
+      currentIndex--;
+      displayButton();
+      disableScrollButton();
+    }
   });
+  
+  nextBtn.addEventListener('click', function () {
+    if (!scrollButtonDisable) {
+      slides.style.left = getPercenntage(-100);
+      currentIndex++;
+      displayButton();
+      disableScrollButton();
+    }
+  });
+  
+  function disableScrollButton() {
+    scrollButtonDisable = true;
+    setTimeout(function () {
+      scrollButtonDisable = false;
+    }, 1000);
+  }
 
   function getPercenntage(add){
       var computedStyle = window.getComputedStyle(slides);
@@ -48,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return leftInPercentage;
   }
 
-  slides.addEventListener('wheel', function(event) {
+  /*slides.addEventListener('wheel', function(event) {
       if (event.deltaY > 0 && currentIndex < lastIndex) {
         currentIndex++;
       } else if (event.deltaY < 0 && currentIndex > 0) {
@@ -57,8 +71,32 @@ document.addEventListener('DOMContentLoaded', function () {
       var left = currentIndex * -100;
       slides.style.left = `${left}%`;
       displayButton()
-  });
+  });*/
+
+  function detectScroll() {
+    let isScrolling = false;
+
+    function handleScroll() {
+      if (!isScrolling) {
+        if (event.deltaY > 0 && currentIndex < lastIndex) {
+          currentIndex++;
+        } else if (event.deltaY < 0 && currentIndex > 0) {
+          currentIndex--;
+        }
+        var left = currentIndex * -100;
+        slides.style.left = `${left}%`;
+        displayButton()
+        isScrolling = true;
+        setTimeout(function() {
+          isScrolling = false;
+        }, 1000);
+      }
+    }
+    slides.addEventListener('wheel', handleScroll);
+  }
+  detectScroll();
 });
+
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
@@ -81,7 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let isTransitioning = false;
 
   function scrollToSlide(index, event) {
-    console.log(event.target)
     if (!event.target.closest('#Carou')) {
       const offset = -index * 100;
       slider.style.transform = `translateY(${offset}vh)`;
@@ -110,15 +147,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  document.addEventListener('wheel', function(event) {
+  /*document.addEventListener('wheel', function(event) {
     if (event.deltaY > 0 && currentSlide < 2) {
       currentSlide++;
     } else if (event.deltaY < 0 && currentSlide > 0) {
       currentSlide--;
     }
     scrollToSlide(currentSlide, event);
-  });
+  });*/  
 
+  function detectScroll() {
+    let isScrolling = false;
+    function handleScroll() {
+      if (!isScrolling) {
+        if (event.deltaY > 0 && currentSlide < 2) {
+          currentSlide++;
+        } else if (event.deltaY < 0 && currentSlide > 0) {
+          currentSlide--;
+        }
+        scrollToSlide(currentSlide, event);
+        isScrolling = true;
+        setTimeout(function() {
+          isScrolling = false;
+        }, 1000);
+      }
+    }
+    document.addEventListener('wheel', handleScroll);
+  }
+  detectScroll();
+  
   /* --------------------------------------- ScrollBar --------------------------------------- */
   const links = document.querySelectorAll(".ScrollBar > .PageListDiv > p");
 
@@ -131,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       link.addEventListener('click', function () {
-        scrollToSlide(link.querySelector("span").innerText - 1);
+        scrollToSlide(link.querySelector("span").innerText - 1, event);
       });
 
       link.addEventListener('mouseleave', function () {
