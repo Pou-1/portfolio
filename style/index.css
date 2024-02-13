@@ -76,11 +76,18 @@ body {
 }
 
 /* --------------------------------------- PRESENTATION --------------------------------------- */
-.Presentation > div > img{
+.Presentation > .PresentationImg{
   width: 450px;
   border-radius: 450px;
   overflow: hidden;
   margin-left: 50px;
+}
+
+.Presentation > .PresentationImg > img{
+  transform: scale(1.5);
+  width: 100%;
+  position: relative;
+  top: 90px;
 }
 
 .Presentation > div > *{
@@ -253,25 +260,38 @@ body {
   width: fit-content;
 }
 
+.titleWithHrWhite{
+  margin-bottom: 30px
+}
+
 .Works{
   color: var(--white);
   position: relative;
   transition: all 0.5s ease-in-out;
 }
 
-.Works > div{
+.Works > .Tags{
   position: absolute;
-  display: none;
-  border-radius: 10px;
-  bottom: 0px;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  left: 25px;
 }
 
-.Works:hover > div{
-  display: block;
+.Works > .Tags > p{
+  visibility: hidden;
+}
+
+.Works:hover > .Tags > p{
+  visibility: visible;
 }
 
 .Works img{
-  width: 100%;
+  width: 80%;
+  transition: all 1s ease-in-out;
   border-radius: 10px;
 }
 
@@ -291,12 +311,12 @@ body {
 
 .Works .Tag{
   color: var(--red);
-  border: 2px solid var(--red);
-  background-color: var(--black);
+  background-color: var(--blackLighter);
   border-radius: 25px;
   margin-left: 5px;
   margin-right: 5px;
-  padding: 15px;
+  width: 50px;
+  height: 50px;
 }
 
 .WorkDiv > title{
@@ -306,9 +326,10 @@ body {
 .Carrousel{
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 69px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 65px;
+  position: relative;
+  height: 100%;
+  width: 65%;
 }
 
 .Carrousel > button{
@@ -320,17 +341,6 @@ body {
   height: 100%;
   cursor: none;
   z-index: 999;
-}
-
-.Carrousel > a > img{
-  width: 100%;
-}
-
-.Carrousel {
-  overflow: hidden;
-  position: relative;
-  height: 70%;
-  width: 85%;
 }
 
 .Carrousel > button{
@@ -357,10 +367,33 @@ body {
   position: absolute;
   height: 100%;
   transition: all 1s ease-in-out;
+  /*gap: 0.3%;*/
+}
+
+.ActualCaroussel{
+  width: 100% !important;
 }
 
 .Works {
   width: 100%;
+}
+
+.RightSlider{
+  position: absolute;
+  height: 100vh;
+  width: 17%;
+  z-index: 9;
+  top: 200vh;
+}
+
+.LeftSlider{
+  position: absolute;
+  height: 100vh;
+  width: 17%;
+  right: 0px;
+  top: 0;
+  z-index: 9;
+  top: 200vh;
 }
 /* --------------------------------------- END OF CAROUSEL --------------------------------------- */
 

@@ -59,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var leftInPixels = parseFloat(leftValue);
       var parentWidth = slides.parentElement.offsetWidth;
       var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
+      console.log(leftInPercentage)
       return leftInPercentage;
   }
 
@@ -78,11 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleScroll() {
       if (!isScrolling) {
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
         if (event.deltaY > 0 && currentIndex < lastIndex) {
           currentIndex++;
         } else if (event.deltaY < 0 && currentIndex > 0) {
           currentIndex--;
         }
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
         var left = currentIndex * -100;
         slides.style.left = `${left}%`;
         displayButton()
@@ -96,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   detectScroll();
 });
-
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */

@@ -35,8 +35,8 @@
                         Currently studying in the University of Caen in Normandie (France) for a University Bachelor.
                     </p>
                 </div>
-                <div class="aligne">
-                    <img src="../img/pfp.jpeg" alt="A picture of me">
+                <div class="aligne PresentationImg">
+                    <img src="../img/profil.jpg" alt="A picture of me">
                 </div>
             </div>
 
@@ -77,85 +77,61 @@
                     </button>
                     <div class="carousel-container aligne Line slides">
                         <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
-                            <div class="Date">
-                                <p>2017</p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
-                            <div>
-                                <h2 class="aligne">pticuisto</h2>
-                                <p class="aligne">
-                                    A Website to learn easily how to cook
-                                </p>
-                                <div class="aligne Line">
-                                    <p class="Tag">javascript</p>
-                                    <p class="Tag">html</p>
-                                    <p class="Tag">css</p>
-                                    <p class="Tag">php</p>
-                                </div>
-                            </div>
-                            <img src="../img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img class="ActualCaroussel" src="../img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
-                            <div>
-                                <h2 class="aligne">2</h2>
-                                <p class="aligne">
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                </p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
                             <img src="img/works/makima.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
-                            <div>
-                                <h2 class="aligne">2</h2>
-                                <p class="aligne">
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                </p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
                             <img src="img/works/nier.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
-                            <div>
-                                <h2 class="aligne">3</h2>
-                                <p class="aligne">
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                </p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
                             <img src="img/works/gojo.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
-                            <div>
-                                <h2 class="aligne">4</h2>
-                                <p class="aligne">
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                </p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
                             <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
-                            <div>
-                                <h2 class="aligne">4</h2>
-                                <p class="aligne">
-                                    <i class="fa-brands fa-square-js"></i>
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                </p>
+                            <div class="Tags">
+                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
+                                <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
                             <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
                         </a>
@@ -165,6 +141,8 @@
                     </button>
                 </div>
             </div>
+            <div class="RightSlider"></div>
+            <div class="LeftSlider"></div>
         </div>
     </div>
 
