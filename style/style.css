@@ -114,6 +114,7 @@ a{
   text-decoration: none;
 }
 
+/* --------------------------------------- CURSOR --------------------------------------- */
 .custom-cursor {
   position: absolute;
   width: 24px;
@@ -168,6 +169,7 @@ a{
   margin: 0;
   animation: hrWidth 2s normal;
 }
+/* --------------------------------------- END OF CURSOR --------------------------------------- */
 
 .aligne{
   display: flex;
@@ -269,6 +271,47 @@ button.button:hover{
 
 .SoftColor{
   color: var(--grey) !important;
+}
+
+.titleWithHr > h1{
+  font-size: 70px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--white);
+  z-index: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titleWithHr > hr{
+  position: absolute;
+  width: 70%;
+  background-color: var(--black);
+  height: 3px;
+}
+
+.titleWithHrWhite > h1{
+  font-size: 70px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--blackLighter);
+  color: var(--white);
+  z-index: 2;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titleWithHrWhite > hr{
+  position: absolute;
+  width: 70%;
+  background-color: var(--white);
+  height: 3px;
 }
 
 @media screen and (max-width: 999px) {

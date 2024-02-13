@@ -41,7 +41,7 @@
             </div>
 
             <div class="Skills slide aligneCenterHorizontally Column">
-                <div class="title titleWhite Column">
+                <div class="titleWithHr Column aligne">
                     <h1>Skills</h1>
                     <hr>
                 </div>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="slide aligne Column">
-                <div class="title titleBlack Column">
+                <div class="titleWithHrWhite Column aligne">
                     <h1>Works</h1>
                     <hr>
                 </div>
@@ -77,6 +77,9 @@
                     </button>
                     <div class="carousel-container aligne Line slides">
                         <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
+                            <div class="Date">
+                                <p>2017</p>
+                            </div>
                             <div>
                                 <h2 class="aligne">pticuisto</h2>
                                 <p class="aligne">

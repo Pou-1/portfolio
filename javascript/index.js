@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   detectScroll();
   
-  /* --------------------------------------- ScrollBar --------------------------------------- */
+  /* --------------------------------------- SCROLLBAR --------------------------------------- */
   const links = document.querySelectorAll(".ScrollBar > .PageListDiv > p");
 
   links.forEach(link => {
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.querySelector("span").style.visibility = ""
       });
     });
-  /* --------------------------------------- END OF ScrollBar --------------------------------------- */
+  /* --------------------------------------- END OF SCROLLBAR --------------------------------------- */
 
 });
 
