@@ -381,7 +381,7 @@ body {
 .RightSlider{
   position: absolute;
   height: 100vh;
-  width: 17%;
+  width: 17.5%;
   z-index: 9;
   top: 200vh;
 }
@@ -389,7 +389,7 @@ body {
 .LeftSlider{
   position: absolute;
   height: 100vh;
-  width: 17%;
+  width: 17.5%;
   right: 0px;
   top: 0;
   z-index: 9;

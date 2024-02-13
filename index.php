@@ -83,10 +83,10 @@
                                 <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
-                            <img class="ActualCaroussel" src="../img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img class="ActualCaroussel" src="../img/pticuisto/Liste_recettes.png" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="#">
+                        <a class="Works aligne Line" href="pages/works_sites/InstantWeather/index.html">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
@@ -96,7 +96,7 @@
                             <img src="img/works/makima.jpg" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="#">
+                        <a class="Works aligne Line" href="pages/works_sites/Pomodoro/index.html">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
@@ -106,14 +106,14 @@
                             <img src="img/works/nier.jpg" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="#">
+                        <a class="Works aligne Line" href="pages/works_sites/SAE-1.04/templates/index.html">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
-                            <img src="img/works/gojo.jpg" alt="Picture of a work on a website">
+                            <img src="img/works/dororo.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -123,7 +123,7 @@
                                 <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
-                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img src="img/works/takina.jpg" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line" href="#">
@@ -133,7 +133,7 @@
                                 <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                             </div>
-                            <img src="img/pticuisto_front.png" alt="Picture of a work on a website">
+                            <img src="img/works/sailor.jpeg" alt="Picture of a work on a website">
                         </a>
                     </div>
                     <button id="nextBtn" class="aligne">

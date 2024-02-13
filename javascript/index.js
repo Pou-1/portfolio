@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
   prevBtn.addEventListener('click', function () {
     if (!scrollButtonDisable) {
       slides.style.left = getPercenntage(100);
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
       currentIndex--;
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
       displayButton();
       disableScrollButton();
     }
@@ -40,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
   nextBtn.addEventListener('click', function () {
     if (!scrollButtonDisable) {
       slides.style.left = getPercenntage(-100);
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
       currentIndex++;
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
       displayButton();
       disableScrollButton();
     }
