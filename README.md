@@ -18,23 +18,10 @@ I am a passionate web developer with a strong background in front-end and back-e
 - **Version Control:** Git, GitHub
 - **Tool:** VS Code
 
-## Projects
-### Project 1: [Project Name](Project-Link)
-Description: A brief description of the project and its goals.
-
-Technologies Used: List of technologies and tools used in the project.
-
-### Project 2: [Project Name](Project-Link)
-Description: A brief description of the project and its goals.
-
-Technologies Used: List of technologies and tools used in the project.
-
-
 ## Contact
 Feel free to reach out to me for collaboration, job opportunities, or just to say hi!
 
-- Email: your.email@example.com
-- LinkedIn: [LinkedIn Profile](LinkedIn-Profile-Link)
-- Portfolio: [Portfolio Link](Your-Portfolio-Link)
+- LinkedIn: [LinkedIn Profile](www.linkedin.com/in/cyprien-dharambure)
+- Portfolio: [Portfolio Link](https://github.com/Pou-1/portfolio)
 
 Thank you for visiting my portfolio!
