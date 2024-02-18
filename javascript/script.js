@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         customCursor.style.visibility = 'visible';
     });
 
-    function cursorHover(query, text){
+    function cursorHover(query, text, color){
         const links = document.querySelectorAll(query);
         const customCursor = document.getElementById('cursor');
 
@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 else{
                     customCursor.classList.add('hovered');
                 }
+
+                if(color != ''){
+                    customCursor.style.backgroundColor = `rgba(${color}, 0.6)`
+                }
             });
 
             link.addEventListener('mouseleave', function () {
@@ -33,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 else{
                     customCursor.classList.remove('hovered');
+                }
+                if(color != ''){
+                    customCursor.style.backgroundColor = ``
                 }
                 deleteParagraphAndHrToDiv(customCursor)
             });
@@ -63,18 +70,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-    cursorHover('.Works i', '');
-    cursorHover('.Carrousel > button', '');
-    cursorHover('.Carrousel > div > a', 'Go see');
-    cursorHover('.NavBar a, .NavBarLiHasChildren a', '');
-    cursorHover('.ScrollBar > div > button', '');
-    cursorHover('.ScrollBar > .PageListDiv > p', '');
-    cursorHover('.Presentation > div > div > div > a', '');
-    cursorHover('.media > a', '');
-    cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton', '');
-    cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '');
-    cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '');
+    cursorHover('#boutonTelechargement', '', 'var(--whiteRGB)');
+    cursorHover('.Works i', '', '');
+    cursorHover('.Carrousel > button', '', '');
+    cursorHover('.Carrousel > div > a', 'Go see', '');
+    cursorHover('.NavBar a, .NavBarLiHasChildren a', '', '');
+    cursorHover('.ScrollBar > div > button', '', '');
+    cursorHover('.ScrollBar > .PageListDiv > p', '', '');
+    cursorHover('.Presentation > div > div > div > a', '', '');
+    cursorHover('.media > a', '', '');
+    cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton', '', '');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '', '');
+    cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '', '');
 });
 
 /* --------------------------------------- END MAIN --------------------------------------- */

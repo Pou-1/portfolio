@@ -210,3 +210,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* --------------------------------------- END OF SCROLL --------------------------------------- */
 
+/* --------------------------------------- CV DOWNLOAD BUTTON --------------------------------------- */
+function telechargerPDF() {
+  var lienPDF = "../external_files/CV Cyprien D'Harambure.pdf";
+  var lienTelechargement = document.createElement('a');
+  lienTelechargement.href = lienPDF;
+  lienTelechargement.download = 'CV-Cyprien-D-Harambure.pdf';
+
+  document.body.appendChild(lienTelechargement);
+  lienTelechargement.click();
+  document.body.removeChild(lienTelechargement);
+}
+
+document.getElementById('boutonTelechargement').addEventListener('click', telechargerPDF);
+/* --------------------------------------- END OF CV DOWNLOAD BUTTON --------------------------------------- */

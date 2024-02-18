@@ -1,63 +1,102 @@
 :root
 {
-  --orangeLighter : #eda14a;
-  --orange : #e08319;
-  --orangeDarker : #d28023;
-
+  --orangeLighter: #eda14a;
+  --orange: #e08319;
+  --orangeDarker: #d28023;
+  --orangeLighterRGB: 237, 161, 74;
+  --orangeRGB: 224, 131, 25;
+  --orangeDarkerRGB: 210, 128, 35;
+  
   --greenLighter: #2fed2f;
   --green: #2fed2f;
   --greenDarker: #32b732;
-
+  --greenLighterRGB: 47, 237, 47;
+  --greenRGB: 47, 237, 47;
+  --greenDarkerRGB: 50, 183, 50;
+  
   --blueLighter: #5f6ee6;
   --blue: #4659e4;
-  --blueeDarker: #2a3fdc;
-
+  --blueDarker: #2a3fdc;
+  --blueLighterRGB: 95, 110, 230;
+  --blueRGB: 70, 89, 228;
+  --blueDarkerRGB: 42, 63, 220;
+  
   --purpleLighter: #7d2adc;
   --purple: #7d2adc;
   --purpleDarker: #7d2adc;
-
+  --purpleLighterRGB: 125, 42, 220;
+  --purpleRGB: 125, 42, 220;
+  --purpleDarkerRGB: 125, 42, 220;
+  
   --pinkLighter: #df50dc;
   --pink: #df50dc;
   --pinkDarker: #c833c4;
-
+  --pinkLighterRGB: 223, 80, 220;
+  --pinkRGB: 223, 80, 220;
+  --pinkDarkerRGB: 200, 51, 196;
+  
   --blueLighter: #97dbff;
   --blue: #6cccff;
   --blueDarker: #4b9eca;
-
+  --blueLighterRGB: 151, 219, 255;
+  --blueRGB: 108, 204, 255;
+  --blueDarkerRGB: 75, 158, 202;
+  
   --cyanLighter: #8a93be;
   --cyan: #8a93be;
   --cyanDarker: #8a93be;
-
+  --cyanLighterRGB: 138, 147, 190;
+  --cyanRGB: 138, 147, 190;
+  --cyanDarkerRGB: 138, 147, 190;
+  
   --navyblueLighter: #000080;
   --navyblue: #000080;
   --navyblueDarker: #000080;
-
+  --navyblueLighterRGB: 0, 0, 128;
+  --navyblueRGB: 0, 0, 128;
+  --navyblueDarkerRGB: 0, 0, 128;
+  
   --whiteLighter: #ffffff;
   --white: #eeeeee;
+  --whiteRGB: 238, 238, 238;
   --whiteDarker: #e8dfdf;
-
-  --greyDarker : #5b5959;
-  --grey : #838383;
-  --greyLighter : #aeadad;
-
+  
+  --greyDarker: #5b5959;
+  --grey: #838383;
+  --greyLighter: #aeadad;
+  --greyDarkerRGB: 91, 89, 89;
+  --greyRGB: 131, 131, 131;
+  --greyLighterRGB: 174, 173, 173;
+  
   --yellowDarker: #e9d44d;
   --yellow: #e9d44d;
   --yellowDarker: #e9d44d;
-
+  --yellowDarkerRGB: 233, 212, 77;
+  --yellowRGB: 233, 212, 77;
+  --yellowDarkerRGB: 233, 212, 77;
+  
   --candyLighter: #d2e924;
   --candy: #ecea4e;
   --candyDarker: #e71f58;
+  --candyLighterRGB: 210, 233, 36;
+  --candyRGB: 236, 202, 78;
+  --candyDarkerRGB: 231, 31, 88;
 
-  --black : #000000;
+  --black: #000000;
   --blackLighter: #1a1a1a;
-
   --blackLight: #3d3939;
-
-  --red : #df2733;
-
-  --good : #00ff04;
-  --bad : #dc2323;
-
+  --blackRGB: 0, 0, 0;
+  --blackLighterRGB: 26, 26, 26;
+  --blackLightRGB: 61, 57, 57;
+  
+  --red: #df2733;
+  --redRGB: 223, 39, 51;
+  
+  --good: #00ff04;
+  --bad: #dc2323;
+  --goodRGB: 0, 255, 4;
+  --badRGB: 220, 35, 35;
+  
   --BigTitle : 32px;
   --title : 25px;
   --font : 20px;
@@ -185,6 +224,18 @@ a{
 .aligneCenterVertically{
   display: flex;
   justify-content: center;
+}
+
+.aligneRight{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.aligneLeft{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
 }
 
 .Line{

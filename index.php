@@ -34,6 +34,9 @@
                         I'm a student in Software & Web Development.
                         Currently studying in the University of Caen in Normandie (France) for a University Bachelor.
                     </p>
+                    <div class="aligneRight">
+                        <button id="boutonTelechargement">See my CV</button>
+                    </div>
                 </div>
                 <div class="aligne PresentationImg">
                     <img src="../img/profil.jpg" alt="A picture of me">
