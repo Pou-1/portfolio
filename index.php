@@ -79,7 +79,7 @@
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
                     <div class="carousel-container aligne Line slides">
-                        <a class="Works aligne Line" href="#">
+                        <a class="Works aligne Line workLink" href="#">
                             <div class="Tags">
                                 <p>NAUTILUS LARAVEL</p>
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
@@ -91,7 +91,7 @@
                             <img class="ActualCaroussel" src="img/works2/nier.jpg" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="pages/work_ptiCuisto.php">
+                        <a class="Works aligne Line workLink" href="pages/work_ptiCuisto.php">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
@@ -102,7 +102,7 @@
                             <img src="../img/works/pticuisto/pti_cuisto1.png" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="pages/works_sites/InstantWeather/index.html">
+                        <a class="Works aligne Line workLink" href="pages/works_sites/InstantWeather/index.html">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
@@ -111,7 +111,7 @@
                             <img src="img/works/instant_weather/Instant_weather.png" alt="Picture of a work on a website">
                         </a>
 
-                        <a class="Works aligne Line" href="pages/works_sites/Pomodoro/index.html">
+                        <a class="Works aligne Line workLink" href="pages/works_sites/Pomodoro/index.html">
                             <div class="Tags">
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                                 <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>

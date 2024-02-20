@@ -47,7 +47,7 @@
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
                     <div class="carousel-container aligne Line slides">
-                        <a class="Works aligne Line" href="#">
+                        <a class="Works aligne Line">
                             <div class="Tags">
                                 <p>NAUTILUS LARAVEL</p>
                                 <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
@@ -68,15 +68,6 @@
                                 <p class="Tag aligne"><i class="fa-brands fa-bootstrap"></i></p>
                             </div>
                             <img src="../../img/works/pticuisto/pti_cuisto2.png" alt="Picture of a work on a website">
-                        </a>
-
-                        <a class="Works aligne Line">
-                            <div class="Tags">
-                                <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
-                                <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
-                                <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
-                            </div>
-                            <img src="../../img/works/pticuisto/pti_cuisto3.png" alt="Picture of a work on a website">
                         </a>
 
                         <a class="Works aligne Line">

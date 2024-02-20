@@ -75,7 +75,6 @@
   .Works{
     color: var(--white);
     position: relative;
-    transition: all 0.5s ease-in-out;
   }
   
   .Works > .Tags{
@@ -98,8 +97,7 @@
   }
   
   .Works img{
-    width: 80%;
-    transition: all 1s ease-in-out;
+    width: 100%;
     border-radius: 10px;
   }
   
@@ -170,12 +168,11 @@
   
   .carousel-container {
     display: flex;
-    width: 1200%;
+    width: 1100%;
     left: 0%;
     position: absolute;
     height: 100%;
-    transition: all 1s ease-in-out;
-    /*gap: 0.3%;*/
+    transition: all 0.3s ease-in-out;
   }
   
   .ActualCaroussel{
@@ -189,10 +186,11 @@
   .RightSlider{
     position: absolute;
     height: 100vh;
-    width: 17.5%;
+    width: 17.55%;
     z-index: 9;
     bottom: 0;
     left: 0;
+    background-color: var(--blackLighter);
   }
   
   .LeftSlider{
@@ -202,6 +200,7 @@
     right: 0px;
     z-index: 9;
     bottom: 0;
+    background-color: var(--blackLighter);
   }
 
   .carousSliderWorks{

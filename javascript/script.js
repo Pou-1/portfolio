@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('#boutonTelechargement', '', 'var(--whiteRGB)');
     cursorHover('.Works i', '', '');
     cursorHover('.Carrousel > button', '', '');
-    cursorHover('.Carrousel > div > a', 'Go see', '');
+    cursorHover('.Carrousel > div > a.workLink', 'Go see', '');
     cursorHover('.NavBar a, .NavBarLiHasChildren a', '', '');
     cursorHover('.ScrollBar > div > button', '', '');
     cursorHover('.ScrollBar > .PageListDiv > p', '', '');
