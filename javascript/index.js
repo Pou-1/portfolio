@@ -224,3 +224,24 @@ function telechargerPDF() {
 
 document.getElementById('boutonTelechargement').addEventListener('click', telechargerPDF);
 /* --------------------------------------- END OF CV DOWNLOAD BUTTON --------------------------------------- */
+
+/* --------------------------------------- PRE CHARGE WEBSITE --------------------------------------- */
+/*function chargerPage(url) {
+  fetch(url)
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Erreur de chargement de la page');
+          }
+          return response.text();
+      })
+      .then(data => {
+          console.log('OK');
+      })
+      .catch(error => {
+          console.error('Erreur:', error.message);
+      });
+}
+
+const url = 'http://localhost:8000/pages/works_sites/InstantWeather/index.html';
+chargerPage(url);*/
+/* --------------------------------------- END OF PRE CHARGE WEBSITE --------------------------------------- */
