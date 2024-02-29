@@ -379,6 +379,18 @@ button.button:hover{
   padding-inline: 35px;
 }
 
+#hoverText {
+  display: none;
+  position: absolute;
+  top: -30px; /* Ajustez la position verticale selon vos besoins */
+  left: 0;
+  background-color: var(--blackLighter);
+  color: var(--whiteLighter);
+  padding: 10px;
+  padding-inline: 20px;
+  border-bottom: 3px solid var(--red);
+}
+
 @media screen and (max-width: 999px) {
   .flex {
     flex-direction: column;

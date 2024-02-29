@@ -126,8 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if(event.key === '6'){
                 UwU(yes);
-                yes = (yes === 1) ? 0 : 1;
             }
+            yes = (yes === 1) ? 0 : 1;
             userInput = '';
         }
     });

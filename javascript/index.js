@@ -245,3 +245,19 @@ document.getElementById('boutonTelechargement').addEventListener('click', telech
 const url = 'http://localhost:8000/pages/works_sites/InstantWeather/index.html';
 chargerPage(url);*/
 /* --------------------------------------- END OF PRE CHARGE WEBSITE --------------------------------------- */
+
+document.getElementById('IndexProfilImg').addEventListener('mouseover', function(e) {
+  document.getElementById('hoverText').style.display = 'block';
+  document.getElementById('hoverText').innerText = 'Me, kinda fruity <3';
+});
+
+document.getElementById('IndexProfilImg').addEventListener('mouseleave', function(e) {
+  document.getElementById('hoverText').style.display = 'none';
+});
+
+document.getElementById('IndexProfilImg').addEventListener('mousemove', function(e) {
+  var hoverText = document.getElementById('hoverText');
+  hoverText.style.left = e.pageX + 'px';
+  hoverText.style.top = e.pageY - 70 + 'px';
+  hoverText.style.zIndex = 9;
+});

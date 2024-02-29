@@ -13,3 +13,4 @@
         </nav>
     </header>
     <div class="custom-cursor aligne Column" id="cursor"></div>
+    <div id="hoverText"></div>
