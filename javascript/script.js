@@ -83,31 +83,52 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '', '');
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '', '');
 
-    function UwU(){
-        const currentColor = getComputedStyle(document.documentElement).getPropertyValue('--red').trim();
-        const newColor = (currentColor === '#dd81be') ? '#df2733' : '#dd81be';
-        document.documentElement.style.setProperty('--red', newColor);
-        
-        const currentColorHover = getComputedStyle(document.documentElement).getPropertyValue('--redRGB').trim();
-        const newColorHover = (currentColorHover === '221, 129, 190') ? '223, 39, 51' : '221, 129, 190';
-        document.documentElement.style.setProperty('--redRGB', newColorHover);
-
-        if(currentColor != '#dd81be'){
-            document.getElementById('IndexProfilImg').src = '../img/illustrations/profil3.jpg';
-            document.getElementById('IndexProfilImg').style.top = '180px';
+    function UwU(trans){
+        const newDiv = document.createElement('div');
+        newDiv.className = 'animated-div';
+        if(trans == 1){
+            document.documentElement.style.setProperty('--red', '#dd81be');
+            document.documentElement.style.setProperty('--redRGB', '223, 39, 51');
+            if(document.getElementById('IndexProfilImg')){
+                document.getElementById('IndexProfilImg').src = '../img/illustrations/profil3.jpg';
+                document.getElementById('IndexProfilImg').style.top = '180px';
+            }
+            newDiv.textContent = `you've been transified hehe OwO`;
         }
         else{
-            document.getElementById('IndexProfilImg').src = '../img/illustrations/profil.jpg';
-            document.getElementById('IndexProfilImg').style.top = '90px';
+            document.documentElement.style.setProperty('--red', '#df2733');
+            document.documentElement.style.setProperty('--redRGB', '221, 129, 190');
+            if(document.getElementById('IndexProfilImg')){
+                document.getElementById('IndexProfilImg').src = '../img/illustrations/profil.jpg';
+                document.getElementById('IndexProfilImg').style.top = '90px';
+            }
+            newDiv.textContent = `you've been put into the closet :c`;
         }
+        document.body.appendChild(newDiv);
+        setTimeout(function () {
+            newDiv.style.opacity = 0;
+            setTimeout(function () {
+                document.body.removeChild(newDiv);
+            }, 1000);
+        }, 1000);
     }
 
     let userInput = '';
+    var yes = 1;
     document.addEventListener('keydown', (event) => {
         userInput += event.key.toLowerCase();
-        if (event.key === '6' || userInput.includes('femboy') || userInput.includes('closet')) {
+        if (event.key === '6' || userInput.includes('trans') || userInput.includes('closet')) {
+            if(userInput.includes('trans')){
+                UwU(1);
+            }
+            if(userInput.includes('closet')){
+                UwU(0);
+            }
+            if(event.key === '6'){
+                UwU(yes);
+                yes = (yes === 1) ? 0 : 1;
+            }
             userInput = '';
-            UwU();
         }
     });
 });

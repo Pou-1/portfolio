@@ -365,6 +365,20 @@ button.button:hover{
   height: 3px;
 }
 
+.animated-div {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--red);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  padding-inline: 35px;
+}
+
 @media screen and (max-width: 999px) {
   .flex {
     flex-direction: column;
