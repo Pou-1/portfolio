@@ -1,3 +1,5 @@
 Redirect "/" "/index.php"
 
 Redirect "/about" "/pages/about.php"
+
+Redirect "/works/InstantWeather" "/pages/works_sites/InstantWeather/index.html"

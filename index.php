@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="aligne PresentationImg">
-                    <img src="../img/profil.jpg" alt="A picture of me">
+                    <img src="../img/illustrations/profil.jpg" alt="A picture of me" id="IndexProfilImg">
                 </div>
             </div>
 

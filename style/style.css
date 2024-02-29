@@ -174,7 +174,7 @@ a{
   z-index: 1000000;
   pointer-events: none;
   width: 65px;
-  background-color: rgba(223, 39, 51, 0.6);
+  background-color: rgba(var(--redRGB), 0.6);
   height: 65px;
   transition: width 0.5s, height 0.5s ease;
 }
@@ -186,7 +186,7 @@ a{
   z-index: 1000000;
   pointer-events: none;
   width: 165px;
-  background-color: rgba(223, 39, 51, 1);
+  background-color: rgba(var(--redRGB), 1);
   height: 165px;
   transition: width 0.5s, height 0.5s ease;
 }
@@ -331,7 +331,7 @@ button.button:hover{
   margin-bottom: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--white);
+  background-color: var(--whiteLighter);
   z-index: 2;
   padding-left: 10px;
   padding-right: 10px;

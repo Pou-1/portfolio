@@ -82,6 +82,34 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.DivPassionsMusics > div > .vinyl > .PlayButton', '', '');
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '', '');
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '', '');
+
+    function UwU(){
+        const currentColor = getComputedStyle(document.documentElement).getPropertyValue('--red').trim();
+        const newColor = (currentColor === '#dd81be') ? '#df2733' : '#dd81be';
+        document.documentElement.style.setProperty('--red', newColor);
+        
+        const currentColorHover = getComputedStyle(document.documentElement).getPropertyValue('--redRGB').trim();
+        const newColorHover = (currentColorHover === '221, 129, 190') ? '223, 39, 51' : '221, 129, 190';
+        document.documentElement.style.setProperty('--redRGB', newColorHover);
+
+        if(currentColor != '#dd81be'){
+            document.getElementById('IndexProfilImg').src = '../img/illustrations/profil3.jpg';
+            document.getElementById('IndexProfilImg').style.top = '180px';
+        }
+        else{
+            document.getElementById('IndexProfilImg').src = '../img/illustrations/profil.jpg';
+            document.getElementById('IndexProfilImg').style.top = '90px';
+        }
+    }
+
+    let userInput = '';
+    document.addEventListener('keydown', (event) => {
+        userInput += event.key.toLowerCase();
+        if (event.key === '6' || userInput.includes('femboy') || userInput.includes('closet')) {
+            userInput = '';
+            UwU();
+        }
+    });
 });
 
 /* --------------------------------------- END MAIN --------------------------------------- */

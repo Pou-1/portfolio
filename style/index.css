@@ -78,6 +78,7 @@ body {
 /* --------------------------------------- PRESENTATION --------------------------------------- */
 .Presentation > .PresentationImg{
   width: 450px;
+  height: 500px;
   border-radius: 450px;
   overflow: hidden;
   margin-left: 50px;
@@ -141,7 +142,7 @@ body {
 
 /* --------------------------------------- SKILLS --------------------------------------- */
 .Skills{
-  background-color: var(--white);
+  background-color: var(--whiteLighter);
   color: var(--black);
 }
 
@@ -472,5 +473,8 @@ body {
   .Presentation > div:first-of-type
   {
     width: 600px;
+  }
+  .Presentation > div > div > div{
+    margin-top: 19.5px;
   }
 }
