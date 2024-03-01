@@ -152,28 +152,76 @@ body {
   color: var(--black);
 }
 
+.Skills > .titleWithHr {
+  margin-bottom: -35px;
+}
+
+.Skills > .Line > .ColumnSkill{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Skills > .Line > .ColumnSkill:first-child{
+  margin-left: 150px;
+}
+
+.Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child{
+  margin-top: 135px;
+}
+
+.Skills > .Line > .ColumnSkill > button.skillButton{
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  height: 90px;
+  width: 90px;
+  transition: all 0.2s ease-in-out;
+  cursor: none;
+  font-size: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  border: 3px solid var(--black);
+}
+
+.Skills > .Line > .ColumnSkill > button.skillButton:hover{
+  transform: scale(1.3);
+  border: 3px solid var(--red);
+  background-color: transparent;
+  color: var(--red);
+}
+
+.Skills > .Line > .ColumnSubSkill{
+  width: 59%;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
 .Skills > .Line{
-  height: inherit;
   gap: 50px;
 }
 
-.Skills > div > p > i{
-  font-size: 80px;
-  margin: 0;
-  margin-top: 20px;
-  height: 150px;
-  border-radius: 10px;
-  width: 150px;
-  border: 3px solid var(--red);
-  color: var(--red);
-  display: flex !important;
+.Skills > .Line > .ColumnSubSkill > .Line{
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
-.Skills > div > p{
+.Skills > .Line > .ColumnSubSkill > div > p > img{
+  font-size: 80px;
+  padding: 20px;
+  margin: 0;
+  margin-top: 20px;
+  width: 150px;
+  border-bottom: 3px solid var(--black);
+  display: flex !important;
+}
+.Skills > .Line > .ColumnSubSkill > div > p{
   transition: all 0.2s ease-in-out;
 }
 
-.Skills > div > p:hover{
+.Skills > .Line > .ColumnSubSkill > div > p:hover{
   transform: scale(1.15);
 }
 
@@ -187,75 +235,76 @@ body {
   border-radius: 50px;
 }
 
-.Skills > div > p > i{
+.Skills > .Line > .ColumnSubSkill > div > p > img{
   transition: all 0.65s ease-in-out;
+  color: var(--black);
 }
-
-.Skills1 p:nth-child(1) > i{
+/*
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(1) > i{
   border: 3px solid var(--orangeDarker);
   color: var(--orangeDarker);
 }
-.Skills1 p:nth-child(1):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(1):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
 }
 
-.Skills1 p:nth-child(2) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(2) > i{
   border: 3px solid var(--blueDarker);
   color: var(--blueDarker);
 }
-.Skills1 p:nth-child(2):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(2):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--blueDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--blueDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--blueDarkerRGB), 0.95);
 }
 
-.Skills1 p:nth-child(3) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(3) > i{
   border: 3px solid var(--yellowDarker);
   color: var(--yellowDarker);
 }
-.Skills1 p:nth-child(3):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(3):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--yellowDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--yellowDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--yellowDarkerRGB), 0.95);
 }
 
-.Skills1 p:nth-child(4) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(4) > i{
   border: 3px solid var(--cyanDarker);
   color: var(--cyanDarker);
 }
-.Skills1 p:nth-child(4):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(4):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--cyanDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--cyanDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--cyanDarkerRGB), 0.95);
 }
 
-.Skills2 p:nth-child(1) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(5) > i{
   border: 3px solid var(--orangeDarker);
   color: var(--orangeDarker);
 }
-.Skills2 p:nth-child(1):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(5):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--orangeDarkerRGB), 0.95);
 } 
 
-.Skills2 p:nth-child(2) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(6) > i{
   border: 3px solid var(--navyblueDarker);
   color: var(--navyblueDarker);
 }
-.Skills2 p:nth-child(2):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(6):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--navyblueDarkerRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--navyblueDarkerRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--navyblueDarkerRGB), 0.95);
 }
 
-.Skills2 p:nth-child(3) > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(7) > i{
   border: 3px solid var(--red);
   color: var(--red);
 }
-.Skills2 p:nth-child(3):hover > i{
+.Skills > .Line > .ColumnSubSkill > .SubSkills p:nth-child(7):hover > i{
   -webkit-box-shadow:0px 0px 46px 10px rgba(var(--redRGB), 0.95);
   -moz-box-shadow: 0px 0px 46px 10px rgba(var(--redRGB), 0.95);
   box-shadow: 0px 0px 46px 10px rgba(var(--redRGB), 0.95);

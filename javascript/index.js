@@ -252,7 +252,8 @@ document.getElementById('IndexProfilImg').addEventListener('mouseover', function
 });
 
 document.getElementById('IndexProfilImg').addEventListener('mouseleave', function(e) {
-  document.getElementById('hoverText').style.display = 'none';
+  document.getElementById('hoverText'
+  ).style.display = 'none';
 });
 
 document.getElementById('IndexProfilImg').addEventListener('mousemove', function(e) {

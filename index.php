@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../style/index.css">
     <?php include('pages/component/link.php'); ?>
 </head>
+
 <body>
     <?php include('pages/component/navbar.php'); ?>
     <div class="ScrollBar Line" id="ScrollBar">
@@ -39,33 +40,48 @@
                     </div>
                 </div>
                 <div class="aligne PresentationImg">
-                    <img src="../img/illustrations/profil.jpg" alt="A picture of me" id="IndexProfilImg">
+                    <img src="../img/illustrations/index/pfp/profil.jpg" alt="A picture of me" id="IndexProfilImg">
                 </div>
             </div>
 
-            <div class="Skills slide aligneCenterHorizontally Column">
+            <div class="Skills slide Column">
                 <div class="titleWithHr Column aligne">
                     <h1>Skills</h1>
                     <hr>
                 </div>
-                <div class="Subtitle SubtitleBlack Column">
-                    <h1>Web</h1>
-                    <hr>
-                </div>
-                <div class="Line Skills1">
-                    <p class="aligne Column"><i class="fa-brands fa-html5 aligne"></i><span class="hover-text">HTML</span></p>
-                    <p class="aligne Column"><i class="fa-brands fa-css3-alt aligne"></i><span class="hover-text">CSS</span></p>
-                    <p class="aligne Column"><i class="fa-brands fa-square-js aligne"></i><span class="hover-text">Javascript</span></p>
-                    <p class="aligne Column"><i class="fa-brands fa-php aligne"></i><span class="hover-text">PHP</span></p>
-                </div>
-                <div class="Subtitle SubtitleBlack Column">
-                    <h1>Others</h1>
-                    <hr>
-                </div>
-                <div class="Line Skills2">
-                    <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL</span></p>
-                    <p class="aligne Column"><i class="fa-solid fa-c aligne"></i><span class="hover-text">C</span></p>
-                    <p class="aligne Column"><i class="fa-brands fa-java aligne"></i><span class="hover-text">JAVA</span></p>
+                <div class="Line">
+                    <div class="ColumnSkill">
+                        <button class="skillButton" id="skillButton_HumanSkill"><i class="fa-solid fa-person"></i></button>
+                        <button class="skillButton" id="skillButton_MobileDevelopmentSkill"><i class="fa-solid fa-mobile-screen"></i></button>
+                        <button class="skillButton" id="skillButton_DatabaseManagementSkill"><i class="fa-solid fa-database"></i></button>
+                        <button class="skillButton" id="skillButton_SystemAdministrationSkill"><i class="fa-solid fa-terminal"></i></button>
+                    </div>
+                    <div class="ColumnSkill">
+                        <button class="skillButton" id="skillButton_ProgrammingSkill"><i class="fa-solid fa-computer"></i></button>
+                        <button class="skillButton" id="skillButton_WebDevelopmentSkill"><i class="fa-solid fa-globe"></i></button>
+                        <button class="skillButton" id="skillButton_VirtualizationSkill"><i class="fa-solid fa-layer-group"></i></button>
+                        <button class="skillButton" id="skillButton_ProjectManagementSkill"><i class="fa-solid fa-people-group"></i></button>
+                    </div>
+                    <div class="ColumnSubSkill">
+                        <div class="Line SubSkills">
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/html_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/css_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/js_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/php_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/laravel_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/bootstrap_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/vue_logo.png" alt=""><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><img src="img/illustrations/index/skills/tailwind_logo.png" alt=""><span class="hover-text">CSS</span></p>
+
+                            <!-- <p class="aligne Column"><i class="fa-brands fa-html5 aligne"></i><span class="hover-text">HTML</span></p>
+                            <p class="aligne Column"><i class="fa-brands fa-css3-alt aligne"></i><span class="hover-text">CSS</span></p>
+                            <p class="aligne Column"><i class="fa-brands fa-square-js aligne"></i><span class="hover-text">Javascript</span></p>
+                            <p class="aligne Column"><i class="fa-brands fa-php aligne"></i><span class="hover-text">PHP</span></p>
+                            <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL</span></p>
+                            <p class="aligne Column"><i class="fa-solid fa-c aligne"></i><span class="hover-text">C</span></p>
+                            <p class="aligne Column"><i class="fa-brands fa-java aligne"></i><span class="hover-text">JAVA</span></p> -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
