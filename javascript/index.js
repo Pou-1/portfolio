@@ -1,55 +1,51 @@
-/* --------------------------------------- NAVBAR --------------------------------------- */
-var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
-homeLink.style.width = '100%';
-/* --------------------------------------- END OF NAVBAR --------------------------------------- */
-
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
-document.addEventListener('DOMContentLoaded', function () {
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const slides = document.querySelector('.slides');
-  let currentIndex = 0;
-  var lastIndex = document.querySelectorAll('.Works').length - 1;
+function carrousel(){
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const slides = document.querySelector('.slides');
+    let currentIndex = 0;
+    var lastIndex = document.querySelectorAll('.Works').length - 1;
 
-  prevBtn.style.display = "none"
+    prevBtn.style.display = "none"
 
-  function displayButton(){
-      if(currentIndex == 0){
-          prevBtn.style.display = "none"
-      }else{
-          prevBtn.style.display = "flex"
+    function displayButton() {
+      if (currentIndex == 0) {
+        prevBtn.style.display = "none"
+      } else {
+        prevBtn.style.display = "flex"
       }
-      if(currentIndex == lastIndex){
-          nextBtn.style.display = "none"
-      }else{
-          nextBtn.style.display = "flex"
+      if (currentIndex == lastIndex) {
+        nextBtn.style.display = "none"
+      } else {
+        nextBtn.style.display = "flex"
       }
-  }
-
-  let scrollButtonDisable = false;
-
-  prevBtn.addEventListener('click', function () {
-    if (!scrollButtonDisable) {
-      slides.style.left = getPercenntage(100);
-      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
-      currentIndex--;
-      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
-      displayButton();
-      disableScrollButton();
     }
-  });
-  
-  nextBtn.addEventListener('click', function () {
-    if (!scrollButtonDisable) {
-      slides.style.left = getPercenntage(-100);
-      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
-      currentIndex++;
-      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
-      displayButton();
-      disableScrollButton();
-    }
-  });
-  
+
+    let scrollButtonDisable = false;
+
+    prevBtn.addEventListener('click', function () {
+      if (!scrollButtonDisable) {
+        slides.style.left = getPercenntage(100);
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
+        currentIndex--;
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
+        displayButton();
+        disableScrollButton();
+      }
+    });
+
+    nextBtn.addEventListener('click', function () {
+      if (!scrollButtonDisable) {
+        slides.style.left = getPercenntage(-100);
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
+        currentIndex++;
+        document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
+        displayButton();
+        disableScrollButton();
+      }
+    });
+  detectScroll();
+
   function disableScrollButton() {
     scrollButtonDisable = true;
     setTimeout(function () {
@@ -57,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1000);
   }
 
-  function getPercenntage(add){
-      var computedStyle = window.getComputedStyle(slides);
-      var leftValue = computedStyle.left;
-      var leftInPixels = parseFloat(leftValue);
-      var parentWidth = slides.parentElement.offsetWidth;
-      var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
-      console.log(leftInPercentage)
-      return leftInPercentage;
+  function getPercenntage(add) {
+    var computedStyle = window.getComputedStyle(slides);
+    var leftValue = computedStyle.left;
+    var leftInPixels = parseFloat(leftValue);
+    var parentWidth = slides.parentElement.offsetWidth;
+    var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
+    console.log(leftInPercentage)
+    return leftInPercentage;
   }
 
   /*slides.addEventListener('wheel', function(event) {
@@ -94,22 +90,26 @@ document.addEventListener('DOMContentLoaded', function () {
         slides.style.left = `${left}%`;
         displayButton()
         isScrolling = true;
-        setTimeout(function() {
+        setTimeout(function () {
           isScrolling = false;
         }, 1000);
       }
     }
     slides.addEventListener('wheel', handleScroll);
   }
-  detectScroll();
-});
+}
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
-document.addEventListener('DOMContentLoaded', function() {
+function scroll(){
+  const slider = document.getElementById('slider');
+  let currentSlide = 0;
+  const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
+  let isTransitioning = false;
+
   function changeActualPage(newPageNumber) {
     const validPageNumbers = [1, 2, 3];
-  
+
     if (validPageNumbers.includes(newPageNumber)) {
       const pages = document.querySelectorAll('.ScrollBar > .PageListDiv > p');
       pages.forEach(page => page.classList.remove('actualPage'));
@@ -118,49 +118,35 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error('pas numéro entre 1 et 3 de page');
     }
   }
-  
-  const slider = document.getElementById('slider');
-  let currentSlide = 0;
-  const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
-  let isTransitioning = false;
 
   function scrollToSlide(index, event) {
     if (!event.target.closest('#Carou')) {
       const offset = -index * 100;
       slider.style.transform = `translateY(${offset}vh)`;
 
-      changeActualPage(index+1);
+      changeActualPage(index + 1);
 
       isTransitioning = true;
-      setTimeout(function() {
+      setTimeout(function () {
         let color;
         if (index != 1) {
-            color = 'var(--white)';
+          color = 'var(--white)';
         } else {
-            color = 'var(--black)';
+          color = 'var(--black)';
         }
-        navLinks.forEach(function(link) {
+        navLinks.forEach(function (link) {
           link.style.color = color;
-      });
+        });
       }, 200);
     }
   }
 
-  slider.addEventListener('transitionend', function() {
+  slider.addEventListener('transitionend', function () {
     if (isTransitioning) {
       isTransitioning = false;
       slider.style.transition = '';
     }
   });
-
-  /*document.addEventListener('wheel', function(event) {
-    if (event.deltaY > 0 && currentSlide < 2) {
-      currentSlide++;
-    } else if (event.deltaY < 0 && currentSlide > 0) {
-      currentSlide--;
-    }
-    scrollToSlide(currentSlide, event);
-  });*/  
 
   function detectScroll() {
     let isScrolling = false;
@@ -173,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         scrollToSlide(currentSlide, event);
         isScrolling = true;
-        setTimeout(function() {
+        setTimeout(function () {
           isScrolling = false;
         }, 1000);
       }
@@ -181,37 +167,34 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('wheel', handleScroll);
   }
   detectScroll();
-  
+
   /* --------------------------------------- SCROLLBAR --------------------------------------- */
   const links = document.querySelectorAll(".ScrollBar > .PageListDiv > p");
-
   links.forEach(link => {
-      link.addEventListener('mouseenter', function () {
-        link.style.visibility = "visible";
-        link.style.opacity = "1";
-        link.querySelector("span").style.visibility = "visible"
-        link.style.transition = "opacity 0.5s ease-in-out";
-      });
-
-      link.addEventListener('click', function () {
-        scrollToSlide(link.querySelector("span").innerText - 1, event);
-      });
-
-      link.addEventListener('mouseleave', function () {
-        link.style.transition = "opacity 0.5s ease-in-out";
-        link.style.visibility = "";
-        link.style.opacity = "";
-        link.querySelector("span").style.visibility = ""
-      });
+    link.addEventListener('mouseenter', function () {
+      link.style.visibility = "visible";
+      link.style.opacity = "1";
+      link.querySelector("span").style.visibility = "visible"
+      link.style.transition = "opacity 0.5s ease-in-out";
     });
+
+    link.addEventListener('click', function () {
+      scrollToSlide(link.querySelector("span").innerText - 1, event);
+    });
+
+    link.addEventListener('mouseleave', function () {
+      link.style.transition = "opacity 0.5s ease-in-out";
+      link.style.visibility = "";
+      link.style.opacity = "";
+      link.querySelector("span").style.visibility = ""
+    });
+  });
   /* --------------------------------------- END OF SCROLLBAR --------------------------------------- */
-
-});
-
+}
 /* --------------------------------------- END OF SCROLL --------------------------------------- */
 
 /* --------------------------------------- CV DOWNLOAD BUTTON --------------------------------------- */
-function telechargerPDF() {
+function downloadPDF() {
   var lienPDF = "../external_files/CV Cyprien D'Harambure.pdf";
   var lienTelechargement = document.createElement('a');
   lienTelechargement.href = lienPDF;
@@ -221,8 +204,6 @@ function telechargerPDF() {
   lienTelechargement.click();
   document.body.removeChild(lienTelechargement);
 }
-
-document.getElementById('boutonTelechargement').addEventListener('click', telechargerPDF);
 /* --------------------------------------- END OF CV DOWNLOAD BUTTON --------------------------------------- */
 
 /* --------------------------------------- PRE CHARGE WEBSITE --------------------------------------- */
@@ -246,19 +227,46 @@ const url = 'http://localhost:8000/pages/works_sites/InstantWeather/index.html';
 chargerPage(url);*/
 /* --------------------------------------- END OF PRE CHARGE WEBSITE --------------------------------------- */
 
-document.getElementById('IndexProfilImg').addEventListener('mouseover', function(e) {
-  document.getElementById('hoverText').style.display = 'block';
-  document.getElementById('hoverText').innerText = 'Me, kinda fruity <3';
+/* --------------------------------------- SKILLS LOGO --------------------------------------- */
+document.getElementById(`SubSkills0`).style.display = "flex";
+const boutons = document.querySelectorAll('.skillButton');
+var lastIndex = 0;
+boutons.forEach((bouton, index) => {
+    bouton.addEventListener('click', function() {
+        document.getElementById(`SubSkills${lastIndex}`).style.display = "none";
+        document.getElementById(`SubSkills${index}`).style.display = "flex";
+        lastIndex = index;
+    });
 });
+/* --------------------------------------- END OF SKILLS LOGO --------------------------------------- */
 
-document.getElementById('IndexProfilImg').addEventListener('mouseleave', function(e) {
-  document.getElementById('hoverText'
-  ).style.display = 'none';
-});
 
-document.getElementById('IndexProfilImg').addEventListener('mousemove', function(e) {
-  var hoverText = document.getElementById('hoverText');
-  hoverText.style.left = e.pageX + 'px';
-  hoverText.style.top = e.pageY - 70 + 'px';
-  hoverText.style.zIndex = 9;
+
+document.addEventListener('DOMContentLoaded', function () {
+  var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
+  homeLink.style.width = '100%';
+
+  carrousel();
+
+  cursorHover('#boutonTelechargement', '', 'var(--whiteRGB)');
+  cursorHover('.Works i', '', '');
+  cursorHover('.Carrousel > button', '', '');
+  cursorHover('.Carrousel > div > a.workLink', 'Go see', '');
+  cursorHover('.ScrollBar > div > button', '', '');
+  cursorHover('.ScrollBar > .PageListDiv > p', '', '');
+  cursorHover('.Presentation > div > div > div > a', '', '');
+
+  HoverText('skillButton_HumanSkill', 'Human Skills')
+  HoverText('skillButton_MobileDevelopmentSkill', 'Mobile Development')
+  HoverText('skillButton_DatabaseManagementSkill', 'Database Management')
+  HoverText('skillButton_SystemAdministrationSkill', 'System Administration')
+  HoverText('skillButton_ProgrammingSkill', 'Programming')
+  HoverText('skillButton_WebDevelopmentSkill', 'Web Development')
+  HoverText('skillButton_VirtualizationSkill', 'Virtualization')
+  HoverText('skillButton_ProjectManagementSkill', 'Project Management')
+  HoverText('IndexProfilImg', 'Me, kinda fruity <3')
+
+  document.getElementById('boutonTelechargement').addEventListener('click', downloadPDF);
+
+  scroll();
 });

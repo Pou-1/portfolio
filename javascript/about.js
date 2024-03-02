@@ -1,8 +1,3 @@
-/* --------------------------------------- NAVBAR --------------------------------------- */
-var homeLink = document.querySelector('.NavBar > ul > li:nth-child(3) a > hr');
-homeLink.style.width = '100%';
-/* --------------------------------------- END OF NAVBAR --------------------------------------- */
-
 /* --------------------------------------- MUSIC API DEEZER --------------------------------------- */
 function getTitle(ids, DivId) {
     for (var i = 0; i < ids.length; i++) {
@@ -83,12 +78,6 @@ function getTitle(ids, DivId) {
         })(i);
     }
 }
-
-//get the id with "https://api.deezer.com/search?q=My%20GenerationThe%20Who"
-let ids = ["803034982", "1016945932", "1177977552"];
-
-getTitle(ids, "Music");
-
 /* --------------------------------------- END OF MUSIC API DEEZER --------------------------------------- */
 
 /* --------------------------------------- FIREFLIES FOR MUSIC --------------------------------------- */
@@ -117,43 +106,59 @@ function createFirefly(container) {
     );
 }
 
-const numberOfFireflies = 50;
-var vinylElements = document.querySelectorAll('.vinyl');
-var numberOfVinyls = vinylElements.length;
-for (let i = 0; i < numberOfFireflies + 1; i++) {
-    for (let j = 0; j < numberOfVinyls; j++) {
-        createFirefly(document.getElementById('Music' + j));
+function createSomeFireflies(numberOfFireflies){
+    var vinylElements = document.querySelectorAll('.vinyl');
+    var numberOfVinyls = vinylElements.length;
+    for (let i = 0; i < numberOfFireflies + 1; i++) {
+        for (let j = 0; j < numberOfVinyls; j++) {
+            createFirefly(document.getElementById('Music' + j));
+        }
     }
 }
 /* --------------------------------------- END OF FIREFLIES FOR MUSIC --------------------------------------- */
 
 /* --------------------------------------- SCROLL ON WHITE BACKGROUND --------------------------------------- */
-document.addEventListener("scroll", () => {
-    if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
-        const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
-        NavBarTexts.forEach(NavBarText => {
-            NavBarText.style.color = 'var(--black)'
-        });
-    }
-    if(document.getElementById('whiteBackground').getBoundingClientRect().top >= 135){
-        const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
-        NavBarTexts.forEach(NavBarText => {
-            NavBarText.style.color = 'var(--white)'
-        });
-    }
+function changeNavColorOnWhiteBackground(){
+    document.addEventListener("scroll", () => {
+        if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
+            const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
+            NavBarTexts.forEach(NavBarText => {
+                NavBarText.style.color = 'var(--black)'
+            });
+        }
+        if(document.getElementById('whiteBackground').getBoundingClientRect().top >= 135){
+            const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
+            NavBarTexts.forEach(NavBarText => {
+                NavBarText.style.color = 'var(--white)'
+            });
+        }
 
-    for(var i = 0; i < 3; i++){
-        var actualMusicDiv = document.getElementById('Music' + i);
-        if(actualMusicDiv.getBoundingClientRect().top < 135){
-            actualMusicDiv.style.width = '800px'
-            actualMusicDiv.children[0].style.width = '500px'
-            actualMusicDiv.children[0].children[1].children[0].style.fontSize = '27px'
+        for(var i = 0; i < 3; i++){
+            var actualMusicDiv = document.getElementById('Music' + i);
+            if(actualMusicDiv.getBoundingClientRect().top < 135){
+                actualMusicDiv.style.width = '800px'
+                actualMusicDiv.children[0].style.width = '500px'
+                actualMusicDiv.children[0].children[1].children[0].style.fontSize = '27px'
+            }
+            if(actualMusicDiv.getBoundingClientRect().top < -280 || actualMusicDiv.getBoundingClientRect().top >= 135){
+                actualMusicDiv.style.width = ''
+                actualMusicDiv.children[0].style.width = ''
+                actualMusicDiv.children[0].children[1].children[0].style.fontSize = ''
+            }
         }
-        if(actualMusicDiv.getBoundingClientRect().top < -280 || actualMusicDiv.getBoundingClientRect().top >= 135){
-            actualMusicDiv.style.width = ''
-            actualMusicDiv.children[0].style.width = ''
-            actualMusicDiv.children[0].children[1].children[0].style.fontSize = ''
-        }
-    }
-});
+    });
+}
 /* --------------------------------------- END OF SCROLL ON WHITE BACKGROUND --------------------------------------- */
+
+document.addEventListener('DOMContentLoaded', function () {
+    var homeLink = document.querySelector('.NavBar > ul > li:nth-child(3) a > hr');
+    homeLink.style.width = '100%';
+
+    //get the id with "https://api.deezer.com/search?q=My%20GenerationThe%20Who"
+    let ids = ["803034982", "1016945932", "1177977552"];
+    getTitle(ids, "Music");
+
+    createSomeFireflies(50);
+
+    changeNavColorOnWhiteBackground();
+});

@@ -196,7 +196,7 @@ body {
 .Skills > .Line > .ColumnSubSkill{
   width: 59%;
   margin-left: 100px;
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
 .Skills > .Line{
@@ -208,21 +208,41 @@ body {
   flex-wrap: wrap;
 }
 
-.Skills > .Line > .ColumnSubSkill > div > p > img{
+.Skills > .Line > .ColumnSubSkill > .SubSkills{
+  display: none;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
   font-size: 80px;
   padding: 20px;
   margin: 0;
   margin-top: 20px;
-  width: 150px;
-  border-bottom: 3px solid var(--black);
+  width: 120px;
   display: flex !important;
 }
-.Skills > .Line > .ColumnSubSkill > div > p{
+
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div{
+  z-index: 999;
   transition: all 0.2s ease-in-out;
 }
 
-.Skills > .Line > .ColumnSubSkill > div > p:hover{
-  transform: scale(1.15);
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
+  border: 3px solid var(--black);
+  background-color: var(--black);
+  height: 240px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div:hover{
+  transform: scale(1.15); 
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div:hover > p{
+  border-color: transparent;
+  border-bottom-color: var(--red);
+  border-radius: 0px;
+  background-color: transparent;
 }
 
 .hover-text {
