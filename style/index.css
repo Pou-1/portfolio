@@ -228,10 +228,9 @@ body {
 
 .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
   border: 3px solid var(--black);
-  background-color: var(--black);
-  height: 240px;
+  height: 200px;
+  border-radius: 10px;
   transition: all 0.2s ease-in-out;
-  border-radius: 25px;
 }
 
 .Skills > .Line > .ColumnSubSkill > .SubSkills > div:hover{
@@ -245,7 +244,7 @@ body {
   background-color: transparent;
 }
 
-.hover-text {
+.Skills > .Line > .ColumnSubSkill > .SubSkills > div > .hover-text {
   margin-top: 5px;
   color: var(--black);
   padding: 5px;

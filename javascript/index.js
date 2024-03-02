@@ -236,6 +236,7 @@ boutons.forEach((bouton, index) => {
         document.getElementById(`SubSkills${lastIndex}`).style.display = "none";
         document.getElementById(`SubSkills${index}`).style.display = "flex";
         lastIndex = index;
+        console.log(index)
     });
 });
 /* --------------------------------------- END OF SKILLS LOGO --------------------------------------- */

@@ -19,6 +19,68 @@
         <div class="ColumnSubSkill">
             <div class="Line SubSkills" id="SubSkills0">
                 <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/creative.png" alt=""></p><span class="hover-text">Creative</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/collaboration.png" alt=""></p><span class="hover-text">Collaboration Skills</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/curious.png" alt=""></p><span class="hover-text">Curious</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/communication.png" alt=""></p><span class="hover-text">Communication Skills</span>
+                </div>
+            </div>
+
+            <div class="Line SubSkills" id="SubSkills1">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/kotlin_logo.png" alt=""></p><span class="hover-text">Kotlin</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/compose_logo.png" alt=""></p><span class="hover-text">Compose</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/material_design_logo.png" alt=""></p><span class="hover-text">Material Design</span>
+                </div>
+            </div>
+            <div class="Line SubSkills" id="SubSkills2">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/plsql_logo.png" alt=""></p><span class="hover-text">PLSQL</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/sqlite_logo.png" alt=""></p><span class="hover-text">SQLite</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/mysql_logo.png" alt=""></p><span class="hover-text">MySQL</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/oracle_logo.png" alt=""></p><span class="hover-text">Oracle</span>
+                </div>
+            </div>
+            <div class="Line SubSkills" id="SubSkills3">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/cisco_logo.png" alt=""></p><span class="hover-text">Cisco Packet Tracer</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/linux_logo.png" alt=""></p><span class="hover-text">Linux</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/windows_logo.png" alt=""></p><span class="hover-text">Windows</span>
+                </div>
+            </div>
+            <div class="Line SubSkills" id="SubSkills4">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/java_logo.png" alt=""></p><span class="hover-text">Java</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/c_sharp_logo.png" alt=""></p><span class="hover-text">C#</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/c_logo.png" alt=""></p><span class="hover-text">C</span>
+                </div>
+            </div>
+            <div class="Line SubSkills" id="SubSkills5">
+                <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/html_logo.png" alt=""></p><span class="hover-text">HTML</span>
                 </div>
                 <div class="aligne Column">
@@ -42,43 +104,34 @@
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/tailwind_logo.png" alt=""></p><span class="hover-text">Tailwind</span>
                 </div>
-
-                <!-- <p class="aligne Column"><i class="fa-brands fa-html5 aligne"></i><span class="hover-text">HTML</span></p>
-                            <p class="aligne Column"><i class="fa-brands fa-css3-alt aligne"></i><span class="hover-text">CSS</span></p>
-                            <p class="aligne Column"><i class="fa-brands fa-square-js aligne"></i><span class="hover-text">Javascript</span></p>
-                            <p class="aligne Column"><i class="fa-brands fa-php aligne"></i><span class="hover-text">PHP</span></p>
-                            <p class="aligne Column"><i class="fa-solid fa-database aligne"></i><span class="hover-text">SQL</span></p>
-                            <p class="aligne Column"><i class="fa-solid fa-c aligne"></i><span class="hover-text">C</span></p>
-                            <p class="aligne Column"><i class="fa-brands fa-java aligne"></i><span class="hover-text">JAVA</span></p> -->
-            </div>
-
-            <div class="Line SubSkills" id="SubSkills1">
-                <div class="aligne Column">
-                    <p class="aligne"><img src="img/illustrations/index/skills/agile_logo.png" alt=""></p><span class="hover-text">HTML</span>
-                </div>
-                <div class="aligne Column">
-                    <p class="aligne"><img src="img/illustrations/index/skills/trello_logo.png" alt=""></p><span class="hover-text">CSS</span>
-                </div>
-                <div class="aligne Column">
-                    <p class="aligne"><img src="img/illustrations/index/skills/github_logo.png" alt=""></p><span class="hover-text">JS</span>
-                </div>
-                <div class="aligne Column">
-                    <p class="aligne"><img src="img/illustrations/index/skills/git_logo.png" alt=""></p><span class="hover-text">PHP</span>
-                </div>
-            </div>
-            <div class="Line SubSkills" id="SubSkills2">
-            </div>
-            <div class="Line SubSkills" id="SubSkills3">
-            </div>
-            <div class="Line SubSkills" id="SubSkills4">
-            </div>
-            <div class="Line SubSkills" id="SubSkills5">
             </div>
             <div class="Line SubSkills" id="SubSkills6">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/virtualbox_logo.png" alt=""></p><span class="hover-text">Virtual Box</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/vagrant_logo.png" alt=""></p><span class="hover-text">Vagrant</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/docker_logo.png" alt=""></p><span class="hover-text">Docker</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/proxmox_logo.png" alt=""></p><span class="hover-text">Proxmox</span>
+                </div>
             </div>
             <div class="Line SubSkills" id="SubSkills7">
-            </div>
-            <div class="Line SubSkills" id="SubSkills8">
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/agile_logo.png" alt=""></p><span class="hover-text">Agile Method</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/trello_logo.png" alt=""></p><span class="hover-text">Trello</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/github_logo.png" alt=""></p><span class="hover-text">Github</span>
+                </div>
+                <div class="aligne Column">
+                    <p class="aligne"><img src="img/illustrations/index/skills/git_logo.png" alt=""></p><span class="hover-text">Git</span>
+                </div>
             </div>
         </div>
     </div>
