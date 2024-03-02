@@ -12,7 +12,7 @@
         </div>
         <div class="ColumnSkill">
             <button class="skillButton" id="skillButton_ProgrammingSkill"><i class="fa-solid fa-computer"></i></button>
-            <button class="skillButton" id="skillButton_WebDevelopmentSkill"><i class="fa-solid fa-globe"></i></button>
+            <button class="skillButton skillButtonClick" id="skillButton_WebDevelopmentSkill"><i class="fa-solid fa-globe"></i></button>
             <button class="skillButton" id="skillButton_VirtualizationSkill"><i class="fa-solid fa-layer-group"></i></button>
             <button class="skillButton" id="skillButton_ProjectManagementSkill"><i class="fa-solid fa-people-group"></i></button>
         </div>
@@ -133,6 +133,12 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/git_logo.png" alt=""></p><span class="hover-text">Git</span>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="aligne SkillsTitleBottom">
+        <div class="Column aligne">
+            <h1 id="SkillsTitleBottom">Web Development</h1>
+            <hr>
         </div>
     </div>
 </div>
