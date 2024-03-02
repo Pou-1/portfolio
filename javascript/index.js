@@ -228,8 +228,44 @@ chargerPage(url);*/
 /* --------------------------------------- END OF PRE CHARGE WEBSITE --------------------------------------- */
 
 /* --------------------------------------- SKILLS LOGO --------------------------------------- */
+function changeTextAndAnimate(id) {
+  var titleSkill = document.getElementById('SkillsTitleBottom');
+  console.log(titleSkill)
+  titleSkill.classList.add('change-animation');
+  switch(id) {
+    case 'skillButton_HumanSkill':
+        titleSkill.innerText = 'Human Skills'
+      break;
+    case 'skillButton_MobileDevelopmentSkill':
+        titleSkill.innerText = 'Mobile Development'
+      break;
+    case 'skillButton_DatabaseManagementSkill':
+        titleSkill.innerText = 'Database Management'
+      break;
+    case 'skillButton_SystemAdministrationSkill':
+        titleSkill.innerText = 'System Administration'
+      break;
+    case 'skillButton_ProgrammingSkill':
+        titleSkill.innerText = 'Programming Skills'
+      break;
+    case 'skillButton_WebDevelopmentSkill':
+        titleSkill.innerText = 'Web Development'
+      break;
+    case 'skillButton_VirtualizationSkill':
+        titleSkill.innerText = 'Virtualization Skills'
+      break;
+    case 'skillButton_ProjectManagementSkill':
+        titleSkill.innerText = 'Project Management'
+      break;
+    default:
+      titleSkill.innerText = ''
+  }
+  setTimeout(() => {
+    titleSkill.classList.remove('change-animation');
+  }, 500);
+}
+
 function skillsLogoAddEventListener(){
-  document.getElementById(`SubSkills5`).style.display = "flex";
   const boutons = document.querySelectorAll('.skillButton');
   var lastIndex = 5;
   var lastbuttonClick = document.getElementById('skillButton_WebDevelopmentSkill');
@@ -237,40 +273,24 @@ function skillsLogoAddEventListener(){
       bouton.addEventListener('click', function() {
         lastbuttonClick.classList.remove("skillButtonClick");
         this.classList.add("skillButtonClick");
-        document.getElementById(`SubSkills${lastIndex}`).style.display = "none";
-        document.getElementById(`SubSkills${index}`).style.display = "flex";
-        
-        var titleSkill = document.getElementById('SkillsTitleBottom');
-        switch(this.id) {
-          case 'skillButton_HumanSkill':
-              titleSkill.innerText = 'Human Skills'
-            break;
-          case 'skillButton_MobileDevelopmentSkill':
-              titleSkill.innerText = 'Mobile Development'
-            break;
-          case 'skillButton_DatabaseManagementSkill':
-              titleSkill.innerText = 'Database Management'
-            break;
-          case 'skillButton_SystemAdministrationSkill':
-              titleSkill.innerText = 'System Administration'
-            break;
-          case 'skillButton_ProgrammingSkill':
-              titleSkill.innerText = 'Programming Skills'
-            break;
-          case 'skillButton_WebDevelopmentSkill':
-              titleSkill.innerText = 'Web Development'
-            break;
-          case 'skillButton_VirtualizationSkill':
-              titleSkill.innerText = 'Virtualization Skills'
-            break;
-          case 'skillButton_ProjectManagementSkill':
-              titleSkill.innerText = 'Project Management'
-            break;
-          default:
-            titleSkill.innerText = ''
-        }
-        
+        document.getElementById(`SubSkills${lastIndex}`).classList.remove('SubSkillsVisible');
+        document.getElementById(`SubSkills${index}`).classList.add('SubSkillsVisible');
 
+        const elementsLast = document.querySelectorAll(`.Line.SubSkills:nth-child(${lastIndex+1}) .Column`);
+        elementsLast.forEach((el) => {
+          el.style.animationDuration = ``;
+          el.classList.remove('ColumnSkillsVisible');
+        });
+
+        const elements = document.querySelectorAll(`.Line.SubSkills:nth-child(${index+1}) .Column`);
+        elements.forEach((el, index) => {
+          el.classList.add('ColumnSkillsVisible');
+          el.style.animationDuration = `0.2s`;
+          el.style.animationDelay = `${index*0.2}s`;
+        });
+
+        changeTextAndAnimate(this.id);
+        
         lastIndex = index;
         lastbuttonClick = this;
       });

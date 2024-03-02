@@ -204,7 +204,7 @@ body {
 .Skills > .Line > .ColumnSubSkill{
   width: 59%;
   margin-left: 100px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .Skills > .Line{
@@ -216,15 +216,26 @@ body {
   flex-wrap: wrap;
 }
 
-.Skills > .Line > .ColumnSubSkill > .SubSkills{
-  display: none;
+.Skills > .Line > .ColumnSubSkill > .SubSkills, .Skills > .Line > .ColumnSubSkill > .SubSkills > .Column{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkillsVisible, .Skills > .Line > .ColumnSubSkill > .SubSkills > .ColumnSkillsVisible{
+  opacity: 1;
+  height: auto;
+  width: auto;
+  overflow: unset;
+  animation-name: fadeInUp;
+  animation-fill-mode: both;
 }
 
 .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
   font-size: 80px;
   padding: 20px;
   margin: 0;
-  margin-top: 20px;
   width: 120px;
   display: flex !important;
 }
@@ -236,6 +247,7 @@ body {
 
 .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
   border: 3px solid var(--black);
+  margin: 0px;
   height: 200px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
@@ -276,6 +288,15 @@ body {
   position: absolute;
   bottom: 65px;
   font-size: 30px;
+  background-color: var(--blackLighter);
+  color: var(--red);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.SkillsTitleBottom > div > h1.change-animation{
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .SkillsTitleBottom *{
@@ -284,13 +305,6 @@ body {
   padding: 0;
   margin: 0;
   transition: all 0.25s ease-in-out;
-}
-
-.SkillsTitleBottom > div > hr{
-  width: -moz-available;
-  background-color: var(--red);
-  border: none;
-  height: 3px;
 }
 
 /*

@@ -79,29 +79,29 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/c_logo.png" alt=""></p><span class="hover-text">C</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills5">
-                <div class="aligne Column">
+            <div class="Line SubSkills SubSkillsVisible" id="SubSkills5">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/html_logo.png" alt=""></p><span class="hover-text">HTML</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/css_logo.png" alt=""></p><span class="hover-text">CSS</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/js_logo.png" alt=""></p><span class="hover-text">JS</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/php_logo.png" alt=""></p><span class="hover-text">PHP</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/laravel_logo.png" alt=""></p><span class="hover-text">Laravel</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/bootstrap_logo.png" alt=""></p><span class="hover-text">Bootstrap</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/vue_logo.png" alt=""></p><span class="hover-text">Vue</span>
                 </div>
-                <div class="aligne Column">
+                <div class="aligne Column ColumnSkillsVisible">
                     <p class="aligne"><img src="img/illustrations/index/skills/tailwind_logo.png" alt=""></p><span class="hover-text">Tailwind</span>
                 </div>
             </div>
@@ -138,7 +138,6 @@
     <div class="aligne SkillsTitleBottom">
         <div class="Column aligne">
             <h1 id="SkillsTitleBottom">Web Development</h1>
-            <hr>
         </div>
     </div>
 </div>

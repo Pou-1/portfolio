@@ -75,7 +75,7 @@
 }
 
 .DivPassionsMusics > div{
-    width: 1200px;
+    width: 800px;
     height: auto;
     position: relative;
     padding-top: 20px;
@@ -85,13 +85,14 @@
     border: 2px solid var(--blackLighter);
     border-radius: 25px;
     background-color: var(--blackLighter);
-    font-size: 40px;
+    font-size: 27px;
     transition: all 1.2s ease-in-out;
     color: var(--white);
+    margin-right: 150px;
 }
 
 .DivPassionsMusics > div > .Text{
-    width: 900px;
+    width: 500px;
 }
 
 .DivPassionsMusics > div > .Text > .WidthTextMusic {

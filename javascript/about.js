@@ -118,6 +118,22 @@ function createSomeFireflies(numberOfFireflies){
 /* --------------------------------------- END OF FIREFLIES FOR MUSIC --------------------------------------- */
 
 /* --------------------------------------- SCROLL ON WHITE BACKGROUND --------------------------------------- */
+function changeSizeOfVinyl(){
+    for(var i = 0; i < 3; i++){
+        var actualMusicDiv = document.getElementById('Music' + i);
+        if(actualMusicDiv.getBoundingClientRect().top < 400 && actualMusicDiv.getBoundingClientRect().top >= -20){
+            actualMusicDiv.children[0].style.width = '800px'
+            actualMusicDiv.style.width = '1200px'
+            actualMusicDiv.children[0].children[1].children[0].style.fontSize = '40px'
+        }
+        else{
+            actualMusicDiv.style.width = ''
+            actualMusicDiv.children[0].style.width = ''
+            actualMusicDiv.children[0].children[1].children[0].style.fontSize = ''
+        }
+    }
+}
+
 function changeNavColorOnWhiteBackground(){
     document.addEventListener("scroll", () => {
         if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
@@ -133,19 +149,7 @@ function changeNavColorOnWhiteBackground(){
             });
         }
 
-        for(var i = 0; i < 3; i++){
-            var actualMusicDiv = document.getElementById('Music' + i);
-            if(actualMusicDiv.getBoundingClientRect().top < 135){
-                actualMusicDiv.style.width = '800px'
-                actualMusicDiv.children[0].style.width = '500px'
-                actualMusicDiv.children[0].children[1].children[0].style.fontSize = '27px'
-            }
-            if(actualMusicDiv.getBoundingClientRect().top < -280 || actualMusicDiv.getBoundingClientRect().top >= 135){
-                actualMusicDiv.style.width = ''
-                actualMusicDiv.children[0].style.width = ''
-                actualMusicDiv.children[0].children[1].children[0].style.fontSize = ''
-            }
-        }
+        changeSizeOfVinyl();
     });
 }
 /* --------------------------------------- END OF SCROLL ON WHITE BACKGROUND --------------------------------------- */
