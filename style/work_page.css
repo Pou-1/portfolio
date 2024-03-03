@@ -210,3 +210,14 @@
   }
   
   /* --------------------------------------- END OF CAROUSEL --------------------------------------- */
+
+  #WorksContributorsDiv{
+    gap: 50px;
+    display: flex;
+  }
+
+  #WorksContributorsDiv > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }

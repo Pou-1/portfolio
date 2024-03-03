@@ -294,27 +294,6 @@ function skillsLogoAddEventListener(){
       });
   });
 }
-
-function ajusterStyleSubSkills() {
-  const lignesSubSkills = document.querySelectorAll('.SubSkills');
-  lignesSubSkills.forEach(function(ligne) {
-      const nombreDeP = ligne.querySelectorAll('p').length;
-      if (nombreDeP < 6) {
-          const elementsP = ligne.querySelectorAll('p');
-          const elementsSpan = ligne.querySelectorAll('.hover-text');
-          elementsP.forEach(function(p) {
-              p.style.height = '250px';
-              const image = p.querySelector('img');
-              if (image) {
-                  image.style.width = '180px';
-              }
-          });
-          elementsSpan.forEach(function(span) {
-              span.style.fontSize = '20px';
-          });
-      }
-  });
-}
 /* --------------------------------------- END OF SKILLS LOGO --------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -346,6 +325,36 @@ document.addEventListener('DOMContentLoaded', function () {
   scroll();
 
   skillsLogoAddEventListener();
-
-  ajusterStyleSubSkills()
 });
+function adjustSkillsLayout() {
+  const screenWidth = window.innerWidth;
+  const columnSkills = document.querySelectorAll('.ColumnSkill');
+  if (screenWidth <= 577) {
+      const combinedButtons = [];
+      columnSkills.forEach((column, columnIndex) => {
+          const buttons = column.querySelectorAll('.skillButton');
+          buttons.forEach((button, buttonIndex) => {
+              const combinedIndex = columnIndex + buttonIndex * columnSkills.length;
+              combinedButtons[combinedIndex] = button.cloneNode(true);
+          });
+      });
+      columnSkills.forEach(column => {
+          const buttons = column.querySelectorAll('.skillButton');
+          buttons.forEach(button => button.remove());
+      });
+      combinedButtons.forEach(button => {
+          columnSkills[0].appendChild(button);
+      });
+      columnSkills[1].style.display = 'none';
+  } else {
+      columnSkills.forEach((column, columnIndex) => {
+          const buttons = column.querySelectorAll('.skillButton');
+          buttons.forEach(button => columnSkills[columnIndex].appendChild(button));
+      });
+      columnSkills[1].style.display = 'flex';
+      console.log('za')
+  }
+}
+
+adjustSkillsLayout();
+window.addEventListener('resize', adjustSkillsLayout);

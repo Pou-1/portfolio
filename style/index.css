@@ -209,6 +209,7 @@ body {
 
 .Skills > .Line{
   gap: 50px;
+  z-index: 9;
 }
 
 .Skills > .Line > .ColumnSubSkill > .Line{
@@ -251,6 +252,18 @@ body {
   height: 200px;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p{
+  height: 250px;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > img{
+  width: 180px;
+}
+
+.Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > span{
+  font-size: 20px;
 }
 
 .Skills > .Line > .ColumnSubSkill > .SubSkills > div:hover{
@@ -555,7 +568,55 @@ body {
 /* --------------------------------------- END OF CAROUSEL --------------------------------------- */
 
 @media screen and (max-width: 576px) {
+  .Presentation > div.PresentationImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  .Presentation > div.PresentationImg > img{
+    width: 100px;
+  }
+  .Presentation > div:first-of-type
+  {
+    width: 480px;
+  }
 
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
+    height: 111px;
+  }
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
+    width: 51px;
+  }
+  .Skills > .Line > .ColumnSkill > button.skillButton{
+    height: 60px;
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child {
+    margin-top: -25px;
+  }
+  .Skills > .Line > .ColumnSkill:first-child {
+    margin-left: 2%;
+  }
+  .Skills > .Line {
+    gap: 30px;
+  }
+  .Skills > .Line > .ColumnSubSkill {
+    margin-left: 27px;
+    width: 62%;
+  }
+  .Skills > .Line > .ColumnSubSkill > .Line {
+    gap: 17px;
+  }
+  .ColumnSkill {
+    display: flex;
+    flex-direction: column;
+  }
+  .ColumnSkill:nth-child(2) {
+      display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -594,9 +655,37 @@ body {
   .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
     width: 51px;
   }
+  .Skills > .Line > .ColumnSkill > button.skillButton{
+    height: 70px;
+    width: 70px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child {
+    margin-top: 100px;
+  }
+  .Skills > .Line > .ColumnSkill:first-child {
+    margin-left: 2%;
+  }
+  .Skills > .Line {
+    gap: 30px;
+  }
+  .Skills > .Line > .ColumnSubSkill {
+    margin-left: 27px;
+    width: 62%;
+  }
+  .Skills > .Line > .ColumnSubSkill > .Line {
+    gap: 17px;
+  }
+  .Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p{
+    height: 150px;
+  }
+  .Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > img{
+    width: 95px;
+  }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1400px) {
+@media screen and (min-width: 993px) and (max-width: 1500px) {
   :root
   {
     --font : 15px !important;
@@ -614,19 +703,40 @@ body {
     width: 600px;
   }
 
-  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
+  .Skills > .Line > .ColumnSubSkill > .SubSkills:not(.SubSkillsLessThan5) > div > p{
     height: 130px;
   }
-  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
+  .Skills > .Line > .ColumnSubSkill > .SubSkills:not(.SubSkillsLessThan5) > div > p > img{
     width: 77px;
+  }
+  .Skills > .Line > .ColumnSkill > button.skillButton{
+    height: 70px;
+    width: 70px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child {
+    margin-top: 100px;
   }
 }
 
-@media screen and (max-width: 1400px) {
-  .SkillsTitleBottom{
-    display: none;
-  }
+@media screen and (max-width: 1500px) {
   .Skills > .Line > .ColumnSubSkill{
     height: 85%;
   }
+  .Skills > .Line > .ColumnSubSkill {
+    width: 67%;
+  }
+  .SkillsTitleBottom > div {
+    bottom: -10px;
+  }
+  .SkillsTitleBottom > p {
+    height: 917px;
+  }
+}
+
+
+
+.Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > span{
+  font-size: 20px;
 }

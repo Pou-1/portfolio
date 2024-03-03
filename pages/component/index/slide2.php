@@ -17,7 +17,7 @@
             <button class="skillButton" id="skillButton_ProjectManagementSkill"><i class="fa-solid fa-people-group"></i></button>
         </div>
         <div class="ColumnSubSkill aligne">
-            <div class="Line SubSkills" id="SubSkills0">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills0">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/creative.png" alt=""></p><span class="hover-text">Creative</span>
                 </div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="Line SubSkills" id="SubSkills1">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills1">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/kotlin_logo.png" alt=""></p><span class="hover-text">Kotlin</span>
                 </div>
@@ -43,7 +43,7 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/material_design_logo.png" alt=""></p><span class="hover-text">Material Design</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills2">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills2">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/plsql_logo.png" alt=""></p><span class="hover-text">PLSQL</span>
                 </div>
@@ -57,7 +57,7 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/oracle_logo.png" alt=""></p><span class="hover-text">Oracle</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills3">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills3">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/cisco_logo.png" alt=""></p><span class="hover-text">Cisco Packet Tracer</span>
                 </div>
@@ -68,7 +68,7 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/windows_logo.png" alt=""></p><span class="hover-text">Windows</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills4">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills4">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/java_logo.png" alt=""></p><span class="hover-text">Java</span>
                 </div>
@@ -105,7 +105,7 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/tailwind_logo.png" alt=""></p><span class="hover-text">Tailwind</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills6">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills6">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/virtualbox_logo.png" alt=""></p><span class="hover-text">Virtual Box</span>
                 </div>
@@ -119,7 +119,7 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/proxmox_logo.png" alt=""></p><span class="hover-text">Proxmox</span>
                 </div>
             </div>
-            <div class="Line SubSkills" id="SubSkills7">
+            <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills7">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/agile_logo.png" alt=""></p><span class="hover-text">Agile Method</span>
                 </div>

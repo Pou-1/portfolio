@@ -40,6 +40,12 @@
                 <li>the website need to be responsive and compliant with W3C HTML and CSS validators</li>
                 <li>Meet the accessibility requirements of WCAG AA 2.0</li>
             </ul>
+            <div id="WorksContributorsDiv">
+                <img src="https://github.com/Pou-1.png" alt="">
+                <img src="https://github.com/waterfox-dev.png" alt="">
+                <img src="https://github.com/Elrigabel.png" alt="">
+                <img src="https://github.com/AndgelBrissaud.png" alt="">
+            </div>
             <div class="carousSliderWorks aligne Column">
                 <h2 class="h2Title">Final product</h2>
                 <div class="Carrousel aligne" id="Carou">
