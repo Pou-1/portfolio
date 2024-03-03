@@ -84,7 +84,7 @@ body {
 /* --------------------------------------- PRESENTATION --------------------------------------- */
 .Presentation > .PresentationImg{
   width: 450px;
-  height: 500px;
+  height: 450px;
   border-radius: 450px;
   overflow: hidden;
   margin-left: 50px;
@@ -92,10 +92,9 @@ body {
 }
 
 .Presentation > .PresentationImg > img{
-  transform: scale(1.5);
-  width: 100%;
+  width: 450px;
   position: relative;
-  top: 90px;
+  margin: 0;
 }
 
 .Presentation > div > *{
@@ -105,10 +104,10 @@ body {
 .Presentation > div > div{
   display: flex;
   padding-left: 20px;
+  align-items: baseline;
 }
 
 .Presentation > div > div > div{
-  margin-top: 24.5px;
   margin-left: 10px;
 }
 
@@ -164,7 +163,7 @@ body {
 }
 
 .Skills > .Line > .ColumnSkill:first-child{
-  margin-left: 150px;
+  margin-left: 5%;
 }
 
 .Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child{
@@ -556,11 +555,7 @@ body {
 /* --------------------------------------- END OF CAROUSEL --------------------------------------- */
 
 @media screen and (max-width: 576px) {
-  .Skills > div > p > i{
-    font-size: 35px;
-    height: 50px;
-    width: 50px;
-  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -571,30 +566,33 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .Presentation > div > img{
+  .Presentation > div.PresentationImg{
     display: none;
+  }
+  .Presentation > div > div{
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .Presentation > div > img{
-    width: 150px;
-    border-radius: 150px;
-    margin-left: 20px;
-    margin-right: 40px;
+  .Presentation > div.PresentationImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+  .Presentation > div.PresentationImg > img{
+    width: 100px;
   }
   .Presentation > div:first-of-type
   {
     width: 480px;
   }
 
-  .Skills > div > p > i{
-    font-size: 60px;
-    height: 100px;
-    width: 100px;
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
+    height: 111px;
   }
-  .Skills > .Line{
-    gap: 20px;
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
+    width: 51px;
   }
 }
 
@@ -603,17 +601,32 @@ body {
   {
     --font : 15px !important;
   }
-  .Presentation > div > img{
+  .Presentation > div.PresentationImg{
     width: 300px;
+    height: 300px;
     border-radius: 300px;
-    margin-left: 20px;
-    margin-right: 40px;
+  }
+  .Presentation > div.PresentationImg > img{
+    width: 300px;
   }
   .Presentation > div:first-of-type
   {
     width: 600px;
   }
-  .Presentation > div > div > div{
-    margin-top: 19.5px;
+
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p{
+    height: 130px;
+  }
+  .Skills > .Line > .ColumnSubSkill > .SubSkills > div > p > img{
+    width: 77px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .SkillsTitleBottom{
+    display: none;
+  }
+  .Skills > .Line > .ColumnSubSkill{
+    height: 85%;
   }
 }

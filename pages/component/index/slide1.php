@@ -16,6 +16,6 @@
         </div>
     </div>
     <div class="aligne PresentationImg">
-        <img src="../img/illustrations/index/pfp/profil.jpg" alt="A picture of me" id="IndexProfilImg">
+        <img src="../img/illustrations/index/pfp/pfp.jpeg" alt="A picture of me" id="IndexProfilImg">
     </div>
 </div>
