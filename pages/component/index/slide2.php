@@ -16,7 +16,7 @@
             <button class="skillButton" id="skillButton_VirtualizationSkill"><i class="fa-solid fa-layer-group"></i></button>
             <button class="skillButton" id="skillButton_ProjectManagementSkill"><i class="fa-solid fa-people-group"></i></button>
         </div>
-        <div class="ColumnSubSkill">
+        <div class="ColumnSubSkill aligne">
             <div class="Line SubSkills" id="SubSkills0">
                 <div class="aligne Column">
                     <p class="aligne"><img src="img/illustrations/index/skills/creative.png" alt=""></p><span class="hover-text">Creative</span>
@@ -139,5 +139,7 @@
         <div class="Column aligne">
             <h1 id="SkillsTitleBottom">Web Development</h1>
         </div>
+        <p></p>
+        <p></p>
     </div>
 </div>

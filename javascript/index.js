@@ -59,7 +59,6 @@ function carrousel(){
     var leftInPixels = parseFloat(leftValue);
     var parentWidth = slides.parentElement.offsetWidth;
     var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
-    console.log(leftInPercentage)
     return leftInPercentage;
   }
 
@@ -230,7 +229,6 @@ chargerPage(url);*/
 /* --------------------------------------- SKILLS LOGO --------------------------------------- */
 function changeTextAndAnimate(id) {
   var titleSkill = document.getElementById('SkillsTitleBottom');
-  console.log(titleSkill)
   titleSkill.classList.add('change-animation');
   switch(id) {
     case 'skillButton_HumanSkill':
@@ -296,9 +294,28 @@ function skillsLogoAddEventListener(){
       });
   });
 }
+
+function ajusterStyleSubSkills() {
+  const lignesSubSkills = document.querySelectorAll('.SubSkills');
+  lignesSubSkills.forEach(function(ligne) {
+      const nombreDeP = ligne.querySelectorAll('p').length;
+      if (nombreDeP < 6) {
+          const elementsP = ligne.querySelectorAll('p');
+          const elementsSpan = ligne.querySelectorAll('.hover-text');
+          elementsP.forEach(function(p) {
+              p.style.height = '250px';
+              const image = p.querySelector('img');
+              if (image) {
+                  image.style.width = '180px';
+              }
+          });
+          elementsSpan.forEach(function(span) {
+              span.style.fontSize = '20px';
+          });
+      }
+  });
+}
 /* --------------------------------------- END OF SKILLS LOGO --------------------------------------- */
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
   var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
@@ -329,4 +346,6 @@ document.addEventListener('DOMContentLoaded', function () {
   scroll();
 
   skillsLogoAddEventListener();
+
+  ajusterStyleSubSkills()
 });
