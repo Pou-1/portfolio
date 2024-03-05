@@ -1,3 +1,23 @@
+/* --------------------------------------- ANIMATION SLIDE1 --------------------------------------- */
+function envelopperLettresDansSpan(element) {
+  if (!element) {
+      console.error('L\'élément spécifié n\'existe pas.');
+      return;
+  }
+
+  const texte = element.textContent;
+  element.textContent = '';
+  var cmpt = 0;
+  for (let lettre of texte) {
+      cmpt++;
+      const span = document.createElement('span');
+      span.textContent = lettre;
+      span.style.animation = `textIndexSlide1 ${cmpt*0.5}s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
+      element.appendChild(span);
+  }
+}
+/* --------------------------------------- END OF ANIMATION SLIDE1 --------------------------------------- */
+
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
 function carrousel(){
     const prevBtn = document.getElementById('prevBtn');
@@ -325,6 +345,9 @@ document.addEventListener('DOMContentLoaded', function () {
   scroll();
 
   skillsLogoAddEventListener();
+
+  //const monElement = document.querySelector('.Presentation > div > div > h2');
+  //envelopperLettresDansSpan(monElement);
 });
 function adjustSkillsLayout() {
   const screenWidth = window.innerWidth;
@@ -353,6 +376,7 @@ function adjustSkillsLayout() {
       });
       columnSkills[1].style.display = 'flex';
       console.log('za')
+      skillsLogoAddEventListener();
   }
 }
 
