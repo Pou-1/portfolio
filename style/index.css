@@ -136,9 +136,10 @@ body {
   width: 100%;
 }
 
-.Presentation > div > p{
+.Presentation > div {
   margin: 20px;
   line-height: 1.5;
+  animation: fadeInUp 1.5s normal;
 }
 
 .Presentation > div:first-of-type{

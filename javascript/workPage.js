@@ -1,28 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const elementsToFadeInOut = document.querySelectorAll('.main > *, .ColumnShare img');
-    const windowHeight = window.innerHeight;
+/* --------------------------------------- ANIMATION ON SCROLL --------------------------------------- */
+function scrollPage(){
+  const elementsToFadeInOut = document.querySelectorAll('.main > *, .ColumnShare img');
+  const windowHeight = window.innerHeight;
 
-    function fadeInOutElements() {
-        elementsToFadeInOut.forEach(element => {
-            const rect = element.getBoundingClientRect();
-            const elementTop = rect.top;
-            const elementBottom = rect.bottom;
+  function fadeInOutElements() {
+    elementsToFadeInOut.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const elementTop = rect.top;
+      const elementBottom = rect.bottom;
 
-            if (elementTop < windowHeight && elementBottom >= 0) {
-                element.style.opacity = '1';
-            } else {
-                element.style.opacity = '0';
-            }
-        });
-    }
-
-    fadeInOutElements();
-
-    window.addEventListener('scroll', fadeInOutElements);
-});
+      if (elementTop < windowHeight && elementBottom >= 0) {
+          element.style.opacity = '1';
+      } else {
+          element.style.opacity = '0';
+      }
+    });
+  }
+  fadeInOutElements();
+  window.addEventListener('scroll', fadeInOutElements);
+}
+/* --------------------------------------- END OF ANIMATION ON SCROLL --------------------------------------- */
 
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
-document.addEventListener('DOMContentLoaded', function () {
+function Carrou(){
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
   const slides = document.querySelector('.slides');
@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
   prevBtn.style.display = "none"
 
   function displayButton(){
-      if(currentIndex == 0){
-          prevBtn.style.display = "none"
-      }else{
-          prevBtn.style.display = "flex"
-      }
-      if(currentIndex == lastIndex){
-          nextBtn.style.display = "none"
-      }else{
-          nextBtn.style.display = "flex"
-      }
+    if(currentIndex == 0){
+        prevBtn.style.display = "none"
+    }else{
+        prevBtn.style.display = "flex"
+    }
+    if(currentIndex == lastIndex){
+        nextBtn.style.display = "none"
+    }else{
+        nextBtn.style.display = "flex"
+    }
   }
 
   let scrollButtonDisable = false;
@@ -76,13 +76,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function getPercenntage(add){
-      var computedStyle = window.getComputedStyle(slides);
-      var leftValue = computedStyle.left;
-      var leftInPixels = parseFloat(leftValue);
-      var parentWidth = slides.parentElement.offsetWidth;
-      var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
-      console.log(leftInPercentage)
-      return leftInPercentage;
+    var computedStyle = window.getComputedStyle(slides);
+    var leftValue = computedStyle.left;
+    var leftInPixels = parseFloat(leftValue);
+    var parentWidth = slides.parentElement.offsetWidth;
+    var leftInPercentage = (((leftInPixels / parentWidth) * 100) + add) + '%';
+    console.log(leftInPercentage)
+    return leftInPercentage;
   }
 
   function detectScroll() {
@@ -109,5 +109,9 @@ document.addEventListener('DOMContentLoaded', function () {
     slides.addEventListener('wheel', handleScroll);
   }
   detectScroll();
-});
+}
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+  Carrou();
+  scrollPage();
+});
