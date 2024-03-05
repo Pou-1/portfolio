@@ -1,6 +1,6 @@
 <div class="Skills slide Column">
-    <div class="titleWithHr Column aligne">
-        <h1>Skills</h1>
+    <div class="titleWithHr Column aligne" id="SkillsTitleBottom">
+        <h1>Web Development Skills</h1>
         <hr>
     </div>
     <div class="Line">
@@ -134,11 +134,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="aligne SkillsTitleBottom">
-        <div class="Column aligne">
-            <h1 id="SkillsTitleBottom">Web Development</h1>
-        </div>
-        <p></p>
     </div>
 </div>

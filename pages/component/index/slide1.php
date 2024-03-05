@@ -9,7 +9,7 @@
         </div>
         <p>
             I'm a student in Software & Web Development.
-            Currently studying in the University of Caen in Normandie (France) for a University Bachelor.
+            I'm currently studying in the University of Caen in Normandie (France) for a University Bachelor.
         </p>
         <div class="aligneRight">
             <button id="boutonTelechargement">See my CV</button>
