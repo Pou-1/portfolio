@@ -23,10 +23,10 @@ function slide1StartAnimation() {
       const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDiv');
       IndexSlide1Image.style.animation = 'slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
 
-      NavBar.style.opacity = 1;
-      ScrollBar.style.opacity = 1;
-    }, (cmpt * 100));
-  }, (cmpt * 100) + 200);
+      NavBar.style.animation = 'slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+      ScrollBar.style.animation = 'slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+    }, (cmpt * 60));
+  }, (cmpt * 70));
 }
 /* --------------------------------------- END OF SLIDE 1 START ANIMATION  --------------------------------------- */
 

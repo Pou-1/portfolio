@@ -53,12 +53,26 @@ div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div >
     width: 100%;
 }
 
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton {
+    margin-top: 20px;
+    height: 50px;
+    border: 3px solid var(--red);
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 25px;
+    cursor: none;
+    width: 30%;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton:hover {
+    background-color: var(--red);
+    transform: scale(1.2);
+}
+
 div.Index_Slide1 > div.Index_Slide1-TextDiv > p.Index_Slide1-SubText,
 div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton,
 div.Index_Slide1 > div.Index_Slide1-ImageDiv {
     opacity: 0;
-}
-
-div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton {
-    margin-top: 20px;
 }

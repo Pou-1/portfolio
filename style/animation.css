@@ -187,10 +187,12 @@
 @keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
+    transform: rotate(-300deg);
     opacity: 0;
   }
 
   100% {
+    transform: rotate(0deg);
     transform: translateX(0);
     opacity: 1;
   }

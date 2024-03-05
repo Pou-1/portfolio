@@ -137,20 +137,3 @@
     z-index: 9;
     top: 200vh;
 }
-
-#boutonTelechargement {
-    height: 50px;
-    border: 3px solid var(--red);
-    background-color: transparent;
-    color: var(--white);
-    border-radius: 25px;
-    cursor: none;
-    width: 30%;
-    font-size: 20px;
-    transition: all 0.4s ease-in-out;
-}
-
-#boutonTelechargement:hover {
-    background-color: var(--red);
-    transform: scale(1.1);
-}

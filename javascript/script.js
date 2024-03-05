@@ -150,7 +150,7 @@ function animateTextOfElement(element, cmpt) {
     text.split("").forEach((char) => {
         const charSpan = document.createElement('span');
         charSpan.setAttribute('aria-hidden', 'true');
-        charSpan.style.animationDelay = `${cmpt * 0.04}s`;
+        charSpan.style.animationDelay = `${cmpt * 0.02}s`;
 
         if (char === ' ') {
             charSpan.innerHTML = '&nbsp;';
