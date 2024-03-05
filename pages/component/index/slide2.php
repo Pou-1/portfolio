@@ -140,6 +140,5 @@
             <h1 id="SkillsTitleBottom">Web Development</h1>
         </div>
         <p></p>
-        <p></p>
     </div>
 </div>

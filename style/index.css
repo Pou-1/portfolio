@@ -300,8 +300,8 @@ body {
   font-weight: 600;
   text-align: center;
   position: absolute;
-  bottom: 68px;
-  font-size: 25px;
+  bottom: 24px;
+  font-size: 31px;
   font-family: var(--font-secondary);
   color: var(--blackLighter);
   border-radius: 25px;
@@ -323,10 +323,6 @@ body {
 
 .SkillsTitleBottom > p:nth-child(2){
   bottom: -813px;
-}
-
-.SkillsTitleBottom > p:nth-child(3){
-  bottom: -942px;
 }
 
 .SkillsTitleBottom *{
@@ -617,6 +613,13 @@ body {
   .ColumnSkill:nth-child(2) {
       display: none;
   }
+  .SkillsTitleBottom > div{
+    font-size: 14px;
+  }
+  .SkillsTitleBottom > p {
+    width: 835px;
+    height: 885px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -683,6 +686,9 @@ body {
   .Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > img{
     width: 95px;
   }
+  .SkillsTitleBottom > div{
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1500px) {
@@ -718,6 +724,9 @@ body {
   .Skills > .Line > .ColumnSkill:first-child > button.skillButton:first-child {
     margin-top: 100px;
   }
+  .SkillsTitleBottom > div{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -734,8 +743,6 @@ body {
     height: 917px;
   }
 }
-
-
 
 .Skills > .Line > .ColumnSubSkill > .SubSkillsLessThan5 > div > p > span{
   font-size: 20px;
