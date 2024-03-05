@@ -1,0 +1,156 @@
+.slide > title {
+    width: fit-content;
+}
+
+.titleWithHrWhite {
+    margin-bottom: 30px
+}
+
+.Works {
+    color: var(--white);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.Works > .Tags {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    left: 25px;
+}
+
+.Works > .Tags > p {
+    visibility: hidden;
+}
+
+.Works:hover > .Tags > p {
+    visibility: visible;
+}
+
+.Works img {
+    width: 80%;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.Works h2 {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.Works > div > p {
+    margin: 0;
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.Works .Tag {
+    color: var(--red);
+    background-color: var(--blackLighter);
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.WorkDiv > title {
+    width: fit-content;
+}
+
+.Carrousel {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 65px;
+    position: relative;
+    height: 100%;
+    width: 65%;
+}
+
+.Carrousel > button {
+    width: 10%;
+    background-color: rgba(22, 21, 21, 0.7);
+    color: var(--white);
+    font-size: 25px;
+    border: none;
+    height: 100%;
+    cursor: none;
+    z-index: 999;
+}
+
+.Carrousel > button {
+    z-index: 5;
+    position: absolute;
+    height: 100px;
+    top: 40%;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.Carrousel > #prevBtn {
+    left: 15px;
+}
+
+.Carrousel > #nextBtn {
+    right: 15px;
+}
+
+.carousel-container {
+    display: flex;
+    width: 400%;
+    left: 0%;
+    position: absolute;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    /*gap: 0.3%;*/
+}
+
+.ActualCaroussel {
+    width: 100% !important;
+}
+
+.Works {
+    width: 100%;
+}
+
+.RightSlider {
+    position: absolute;
+    height: 100vh;
+    width: 17.5%;
+    z-index: 9;
+    top: 200vh;
+}
+
+.LeftSlider {
+    position: absolute;
+    height: 100vh;
+    width: 17.5%;
+    right: 0px;
+    top: 0;
+    z-index: 9;
+    top: 200vh;
+}
+
+#boutonTelechargement {
+    height: 50px;
+    border: 3px solid var(--red);
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 25px;
+    cursor: none;
+    width: 30%;
+    font-size: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+#boutonTelechargement:hover {
+    background-color: var(--red);
+    transform: scale(1.1);
+}

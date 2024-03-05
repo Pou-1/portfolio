@@ -1,4 +1,4 @@
-<div class="Skills slide Column">
+<div class="slide Column Index_Slide2">
     <div class="titleWithHr Column aligne" id="SkillsTitleBottom">
         <h1>Web Development Skills</h1>
         <hr>
@@ -40,7 +40,8 @@
                     <p class="aligne"><img src="img/illustrations/index/skills/compose_logo.png" alt=""></p><span class="hover-text">Compose</span>
                 </div>
                 <div class="aligne Column">
-                    <p class="aligne"><img src="img/illustrations/index/skills/material_design_logo.png" alt=""></p><span class="hover-text">Material Design</span>
+                    <p class="aligne"><img src="img/illustrations/index/skills/material_design_logo.png" alt=""></p>
+                    <span class="hover-text">Material Design</span>
                 </div>
             </div>
             <div class="Line SubSkills SubSkillsLessThan5" id="SubSkills2">

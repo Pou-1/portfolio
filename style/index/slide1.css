@@ -1,0 +1,64 @@
+div.Index_Slide1 > div {
+    margin: 20px;
+    line-height: 1.5;
+}
+
+div.Index_Slide1 > div.Index_Slide1-ImageDiv {
+    width: 450px;
+    height: 450px;
+    border-radius: 450px;
+    overflow: hidden;
+    margin-left: 50px;
+    border: 3px solid var(--white);
+}
+
+div.Index_Slide1 > div.Index_Slide1-ImageDiv > img.Index_Slide1-Image {
+    width: 450px;
+    position: relative;
+    margin: 0;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv {
+    width: 800px;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine {
+    display: flex;
+    align-items: baseline;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div > a.Index_Slide1-NameAndSurnameLink {
+    color: var(--red);
+    transition: all 0.4s ease;
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div > a.Index_Slide1-NameAndSurnameLink:hover {
+    color: var(--white);
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div > hr {
+    margin: 0;
+    margin-bottom: 30px;
+    background-color: var(--red);
+    height: 3px;
+    width: 0;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div > a.Index_Slide1-NameAndSurnameLink:hover + hr {
+    width: 100%;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > p.Index_Slide1-SubText,
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton,
+div.Index_Slide1 > div.Index_Slide1-ImageDiv {
+    opacity: 0;
+}
+
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton {
+    margin-top: 20px;
+}

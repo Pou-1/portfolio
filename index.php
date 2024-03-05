@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyprien D'Harambure - Portfolio</title>
     <?php include('pages/component/link.php'); ?>
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/index/index.css">
+    <link rel="stylesheet" href="../style/index/slide1.css">
+    <link rel="stylesheet" href="../style/index/slide2.css">
+    <link rel="stylesheet" href="../style/index/slide3.css">
 </head>
 
 <body>

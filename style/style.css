@@ -1,80 +1,79 @@
-:root
-{
+:root {
   --orangeLighter: #eda14a;
   --orange: #e08319;
   --orangeDarker: #d28023;
   --orangeLighterRGB: 237, 161, 74;
   --orangeRGB: 224, 131, 25;
   --orangeDarkerRGB: 210, 128, 35;
-  
+
   --greenLighter: #2fed2f;
   --green: #2fed2f;
   --greenDarker: #32b732;
   --greenLighterRGB: 47, 237, 47;
   --greenRGB: 47, 237, 47;
   --greenDarkerRGB: 50, 183, 50;
-  
+
   --blueLighter: #5f6ee6;
   --blue: #4659e4;
   --blueDarker: #2a3fdc;
   --blueLighterRGB: 95, 110, 230;
   --blueRGB: 70, 89, 228;
   --blueDarkerRGB: 42, 63, 220;
-  
+
   --purpleLighter: #7d2adc;
   --purple: #7d2adc;
   --purpleDarker: #7d2adc;
   --purpleLighterRGB: 125, 42, 220;
   --purpleRGB: 125, 42, 220;
   --purpleDarkerRGB: 125, 42, 220;
-  
+
   --pinkLighter: #df50dc;
   --pink: #df50dc;
   --pinkDarker: #c833c4;
   --pinkLighterRGB: 223, 80, 220;
   --pinkRGB: 223, 80, 220;
   --pinkDarkerRGB: 200, 51, 196;
-  
+
   --blueLighter: #97dbff;
   --blue: #6cccff;
   --blueDarker: #4b9eca;
   --blueLighterRGB: 151, 219, 255;
   --blueRGB: 108, 204, 255;
   --blueDarkerRGB: 75, 158, 202;
-  
+
   --cyanLighter: #8a93be;
   --cyan: #8a93be;
   --cyanDarker: #8a93be;
   --cyanLighterRGB: 138, 147, 190;
   --cyanRGB: 138, 147, 190;
   --cyanDarkerRGB: 138, 147, 190;
-  
+
   --navyblueLighter: #000080;
   --navyblue: #000080;
   --navyblueDarker: #000080;
   --navyblueLighterRGB: 0, 0, 128;
   --navyblueRGB: 0, 0, 128;
   --navyblueDarkerRGB: 0, 0, 128;
-  
+
   --whiteLighter: #ffffff;
   --white: #eeeeee;
   --whiteRGB: 238, 238, 238;
   --whiteDarker: #e8dfdf;
-  
+
   --greyDarker: #5b5959;
   --grey: #838383;
   --greyLighter: #aeadad;
   --greyDarkerRGB: 91, 89, 89;
   --greyRGB: 131, 131, 131;
   --greyLighterRGB: 174, 173, 173;
-  
+
   --yellowDarker: #e9d44d;
   --yellow: #e9d44d;
   --yellowDarker: #e9d44d;
   --yellowDarkerRGB: 233, 212, 77;
   --yellowRGB: 233, 212, 77;
   --yellowDarkerRGB: 233, 212, 77;
-  
+
   --candyLighter: #d2e924;
   --candy: #ecea4e;
   --candyDarker: #e71f58;
@@ -88,24 +87,24 @@
   --blackRGB: 0, 0, 0;
   --blackLighterRGB: 26, 26, 26;
   --blackLightRGB: 61, 57, 57;
-  
+
   --red: #df2733;
   --redRGB: 223, 39, 51;
-  
+
   --good: #00ff04;
   --bad: #dc2323;
   --goodRGB: 0, 255, 4;
   --badRGB: 220, 35, 35;
-  
-  --BigTitle : 32px;
-  --title : 25px;
-  --font : 20px;
+
+  --BigTitle: 32px;
+  --title: 25px;
+  --font: 20px;
 
   --font-primary: 'Poppins', sans-serif;
   --font-secondary: 'Inter', sans-serif;
 }
 
-.transparent{
+.transparent {
   cursor: none;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
@@ -119,19 +118,20 @@
   color: var(--red);
 }
 
-.main{
+.main {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-html{
+html {
   cursor: none;
 }
 
-body{
+body {
   font-weight: 400;
   margin: 0;
+  padding: 0;
   color: var(--white);
   font-size: var(--font);
   background-color: var(--blackLighter);
@@ -142,13 +142,13 @@ body{
   font-style: normal;
 }
 
-header{
+header {
   z-index: 999;
   top: 50px;
   position: sticky;
 }
 
-a{
+a {
   cursor: none;
   text-decoration: none;
 }
@@ -179,7 +179,7 @@ a{
   transition: width 0.5s, height 0.5s ease;
 }
 
-.hoveredWithText{
+.hoveredWithText {
   position: absolute;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -191,16 +191,16 @@ a{
   transition: width 0.5s, height 0.5s ease;
 }
 
-.hoveredWithText > div{
+.hoveredWithText > div {
   width: fit-content;
   transition: all 6s ease-in-out;
 }
 
-.hoveredWithText > div > p{
+.hoveredWithText > div > p {
   margin: 0;
 }
 
-.hoveredWithText > div > hr{
+.hoveredWithText > div > hr {
   width: 100%;
   background-color: var(--white);
   height: 3px;
@@ -208,47 +208,48 @@ a{
   margin: 0;
   animation: hrWidth 2s normal;
 }
+
 /* --------------------------------------- END OF CURSOR --------------------------------------- */
 
-.aligne{
+.aligne {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.aligneCenterHorizontally{
+.aligneCenterHorizontally {
   display: flex;
   align-items: center;
 }
 
-.aligneCenterVertically{
+.aligneCenterVertically {
   display: flex;
   justify-content: center;
 }
 
-.aligneRight{
+.aligneRight {
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
-.aligneLeft{
+.aligneLeft {
   display: flex;
   align-items: center;
   justify-content: baseline;
 }
 
-.Line{
+.Line {
   display: flex;
   flex-direction: row;
 }
 
-.Column{
+.Column {
   display: flex;
   flex-direction: column;
 }
 
-button.button{
+button.button {
   padding: 15px;
   font-size: 25px;
   background-color: var(--element);
@@ -258,12 +259,12 @@ button.button{
   border-radius: 10px;
 }
 
-button.button:hover{
+button.button:hover {
   color: var(--element);
   background-color: var(--darkness);
 }
 
-.title{
+.title {
   background-color: var(--blackLighter);
   border-radius: 20px;
   text-align: center;
@@ -274,13 +275,13 @@ button.button:hover{
   margin: 0px;
 }
 
-.title > hr{
+.title > hr {
   width: 100%;
   background-color: var(--white);
   height: 3px;
 }
 
-.Subtitle{
+.Subtitle {
   font-size: 20px;
   width: 100%;
   margin-left: 40%;
@@ -290,41 +291,41 @@ button.button:hover{
   margin: 0px;
 }
 
-.Subtitle > hr{
+.Subtitle > hr {
   margin: 0;
   width: 10%;
   height: 3px;
 }
 
-.SubtitleBlack > hr{
+.SubtitleBlack > hr {
   background-color: var(--black);
 }
 
-.content{
+.content {
   width: 100%;
 }
 
-.inline{
+.inline {
   display: block ruby;
 }
 
-.textleft{
+.textleft {
   text-align: left;
 }
 
-.textright{
+.textright {
   text-align: right;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-.SoftColor{
+.SoftColor {
   color: var(--grey) !important;
 }
 
-.titleWithHr > h1{
+.titleWithHr > h1 {
   font-size: 70px;
   font-weight: 300;
   margin-top: 50px;
@@ -337,14 +338,14 @@ button.button:hover{
   padding-right: 10px;
 }
 
-.titleWithHr > hr{
+.titleWithHr > hr {
   position: absolute;
   width: 70%;
   background-color: var(--black);
   height: 3px;
 }
 
-.titleWithHrWhite > h1{
+.titleWithHrWhite > h1 {
   font-size: 70px;
   font-weight: 300;
   margin-top: 50px;
@@ -358,7 +359,7 @@ button.button:hover{
   padding-right: 10px;
 }
 
-.titleWithHrWhite > hr{
+.titleWithHrWhite > hr {
   position: absolute;
   width: 70%;
   background-color: var(--white);
@@ -382,7 +383,8 @@ button.button:hover{
 #hoverText {
   display: none;
   position: absolute;
-  top: -30px; /* Ajustez la position verticale selon vos besoins */
+  top: -30px;
+  /* Ajustez la position verticale selon vos besoins */
   left: 0;
   background-color: var(--blackLighter);
   color: var(--whiteLighter);
@@ -391,12 +393,20 @@ button.button:hover{
   border-bottom: 3px solid var(--red);
 }
 
+span[aria-hidden="true"] {
+  display: inline-block;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
 @media screen and (max-width: 999px) {
   .flex {
     flex-direction: column;
   }
 
-  .left-section, .right-section {
+  .left-section,
+  .right-section {
     width: 100%;
   }
 
@@ -404,7 +414,7 @@ button.button:hover{
     width: 80%;
   }
 
-  .inline{
+  .inline {
     display: block;
   }
 }

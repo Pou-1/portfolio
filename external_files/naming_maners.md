@@ -19,3 +19,6 @@
 #folder :
 - img
 - imgOfCats
+
+#css :
+- classes .block_element-modifier

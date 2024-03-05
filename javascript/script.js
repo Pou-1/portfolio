@@ -21,7 +21,7 @@ function deleteParagraphAndHrToDiv(targetDiv) {
     }
 }
 
-function cursor(){
+function cursor() {
     const customCursor = document.querySelector('.custom-cursor');
     customCursor.style.visibility = 'hidden';
 
@@ -116,7 +116,7 @@ function UwU(trans) {
     }, 1000);
 }
 
-function EasterEgg(){
+function EasterEgg() {
     let userInput = '';
     var yes = 1;
     document.addEventListener('keydown', (event) => {
@@ -135,6 +135,33 @@ function EasterEgg(){
             userInput = '';
         }
     });
+}
+
+function animateTextOfElement(element, cmpt) {
+    if (!element) {
+        console.error("L'élément spécifié n'existe pas.");
+        return;
+    }
+
+    const text = element.textContent;
+    element.textContent = '';
+    element.style.opacity = 1;
+
+    text.split("").forEach((char) => {
+        const charSpan = document.createElement('span');
+        charSpan.setAttribute('aria-hidden', 'true');
+        charSpan.style.animationDelay = `${cmpt * 0.04}s`;
+
+        if (char === ' ') {
+            charSpan.innerHTML = '&nbsp;';
+        } else {
+            charSpan.textContent = char;
+        }
+
+        element.appendChild(charSpan);
+        cmpt++;
+    });
+    return cmpt;
 }
 
 document.addEventListener('DOMContentLoaded', function () {

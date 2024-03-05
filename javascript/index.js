@@ -1,69 +1,81 @@
-/* --------------------------------------- ANIMATION SLIDE1 --------------------------------------- */
-function envelopperLettresDansSpan(element) {
-  if (!element) {
-      console.error('L\'élément spécifié n\'existe pas.');
-      return;
-  }
+/* --------------------------------------- SLIDE 1 START ANIMATION  --------------------------------------- */
+function slide1StartAnimation() {
+  const NavBar = document.getElementById('NavBar');
+  NavBar.style.opacity = 0;
 
-  const texte = element.textContent;
-  element.textContent = '';
-  var cmpt = 0;
-  for (let lettre of texte) {
-      cmpt++;
-      const span = document.createElement('span');
-      span.textContent = lettre;
-      span.style.animation = `textIndexSlide1 ${cmpt*0.5}s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`;
-      element.appendChild(span);
-  }
+  const ScrollBar = document.getElementById('ScrollBar');
+  ScrollBar.style.opacity = 0;
+
+  const IndexSlide1H1 = document.querySelector('.Presentation > div > div > h2');
+  var cmpt = animateTextOfElement(IndexSlide1H1, 0);
+
+  const IndexSlide1RedText = document.querySelector('.Presentation > div > div > div > a');
+  animateTextOfElement(IndexSlide1RedText, cmpt);
+
+  setTimeout(() => {
+    const IndexSlide1SubText = document.querySelector('div.Index_Slide1 > div.Index_Slide1-TextDiv > p.Index_Slide1-SubText');
+    IndexSlide1SubText.style.animation = 'fadeInUp 1.5s normal forwards';
+
+    setTimeout(() => {
+      const IndexSlide1Button = document.querySelector('div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton');
+      IndexSlide1Button.style.animation = 'scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+
+      const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDiv');
+      IndexSlide1Image.style.animation = 'slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+
+      NavBar.style.opacity = 1;
+      ScrollBar.style.opacity = 1;
+    }, (cmpt * 100));
+  }, (cmpt * 100) + 200);
 }
-/* --------------------------------------- END OF ANIMATION SLIDE1 --------------------------------------- */
+/* --------------------------------------- END OF SLIDE 1 START ANIMATION  --------------------------------------- */
 
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
-function carrousel(){
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const slides = document.querySelector('.slides');
-    let currentIndex = 0;
-    var lastIndex = document.querySelectorAll('.Works').length - 1;
+function carrousel() {
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const slides = document.querySelector('.slides');
+  let currentIndex = 0;
+  var lastIndex = document.querySelectorAll('.Works').length - 1;
 
-    prevBtn.style.display = "none"
+  prevBtn.style.display = "none"
 
-    function displayButton() {
-      if (currentIndex == 0) {
-        prevBtn.style.display = "none"
-      } else {
-        prevBtn.style.display = "flex"
-      }
-      if (currentIndex == lastIndex) {
-        nextBtn.style.display = "none"
-      } else {
-        nextBtn.style.display = "flex"
-      }
+  function displayButton() {
+    if (currentIndex == 0) {
+      prevBtn.style.display = "none"
+    } else {
+      prevBtn.style.display = "flex"
     }
+    if (currentIndex == lastIndex) {
+      nextBtn.style.display = "none"
+    } else {
+      nextBtn.style.display = "flex"
+    }
+  }
 
-    let scrollButtonDisable = false;
+  let scrollButtonDisable = false;
 
-    prevBtn.addEventListener('click', function () {
-      if (!scrollButtonDisable) {
-        slides.style.left = getPercenntage(100);
-        document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
-        currentIndex--;
-        document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
-        displayButton();
-        disableScrollButton();
-      }
-    });
+  prevBtn.addEventListener('click', function () {
+    if (!scrollButtonDisable) {
+      slides.style.left = getPercenntage(100);
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
+      currentIndex--;
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
+      displayButton();
+      disableScrollButton();
+    }
+  });
 
-    nextBtn.addEventListener('click', function () {
-      if (!scrollButtonDisable) {
-        slides.style.left = getPercenntage(-100);
-        document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
-        currentIndex++;
-        document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
-        displayButton();
-        disableScrollButton();
-      }
-    });
+  nextBtn.addEventListener('click', function () {
+    if (!scrollButtonDisable) {
+      slides.style.left = getPercenntage(-100);
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.remove('ActualCaroussel');
+      currentIndex++;
+      document.querySelectorAll('.Works')[currentIndex].children[1].classList.add('ActualCaroussel');
+      displayButton();
+      disableScrollButton();
+    }
+  });
   detectScroll();
 
   function disableScrollButton() {
@@ -120,7 +132,7 @@ function carrousel(){
 /* --------------------------------------- END OF CARROUSSEL --------------------------------------- */
 
 /* --------------------------------------- SCROLL --------------------------------------- */
-function scroll(){
+function scroll() {
   const slider = document.getElementById('slider');
   let currentSlide = 0;
   const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
@@ -251,30 +263,30 @@ function changeTextAndAnimate(id) {
   var titleSkillDiv = document.getElementById('SkillsTitleBottom');
   titleSkillDiv.classList.add('change-animation');
   var titleSkill = titleSkillDiv.children[0];
-  switch(id) {
+  switch (id) {
     case 'skillButton_HumanSkill':
-        titleSkill.innerText = 'Human Skills'
+      titleSkill.innerText = 'Human Skills'
       break;
     case 'skillButton_MobileDevelopmentSkill':
-        titleSkill.innerText = 'Mobile Development Skills'
+      titleSkill.innerText = 'Mobile Development Skills'
       break;
     case 'skillButton_DatabaseManagementSkill':
-        titleSkill.innerText = 'Database Management Skills'
+      titleSkill.innerText = 'Database Management Skills'
       break;
     case 'skillButton_SystemAdministrationSkill':
-        titleSkill.innerText = 'System Administration Skills'
+      titleSkill.innerText = 'System Administration Skills'
       break;
     case 'skillButton_ProgrammingSkill':
-        titleSkill.innerText = 'Programming Skills'
+      titleSkill.innerText = 'Programming Skills'
       break;
     case 'skillButton_WebDevelopmentSkill':
-        titleSkill.innerText = 'Web Development Skills'
+      titleSkill.innerText = 'Web Development Skills'
       break;
     case 'skillButton_VirtualizationSkill':
-        titleSkill.innerText = 'Virtualization Skills'
+      titleSkill.innerText = 'Virtualization Skills'
       break;
     case 'skillButton_ProjectManagementSkill':
-        titleSkill.innerText = 'Project Management Skills'
+      titleSkill.innerText = 'Project Management Skills'
       break;
     default:
       titleSkill.innerText = ''
@@ -284,40 +296,42 @@ function changeTextAndAnimate(id) {
   }, 500);
 }
 
-function skillsLogoAddEventListener(){
+function skillsLogoAddEventListener() {
   const boutons = document.querySelectorAll('.skillButton');
   var lastIndex = 5;
   var lastbuttonClick = document.getElementById('skillButton_WebDevelopmentSkill');
   boutons.forEach((bouton, index) => {
-      bouton.addEventListener('click', function() {
-        lastbuttonClick.classList.remove("skillButtonClick");
-        this.classList.add("skillButtonClick");
-        document.getElementById(`SubSkills${lastIndex}`).classList.remove('SubSkillsVisible');
-        document.getElementById(`SubSkills${index}`).classList.add('SubSkillsVisible');
+    bouton.addEventListener('click', function () {
+      lastbuttonClick.classList.remove("skillButtonClick");
+      this.classList.add("skillButtonClick");
+      document.getElementById(`SubSkills${lastIndex}`).classList.remove('SubSkillsVisible');
+      document.getElementById(`SubSkills${index}`).classList.add('SubSkillsVisible');
 
-        const elementsLast = document.querySelectorAll(`.Line.SubSkills:nth-child(${lastIndex+1}) .Column`);
-        elementsLast.forEach((el) => {
-          el.style.animationDuration = ``;
-          el.classList.remove('ColumnSkillsVisible');
-        });
-
-        const elements = document.querySelectorAll(`.Line.SubSkills:nth-child(${index+1}) .Column`);
-        elements.forEach((el, index) => {
-          el.classList.add('ColumnSkillsVisible');
-          el.style.animationDuration = `0.2s`;
-          el.style.animationDelay = `${index*0.2}s`;
-        });
-
-        changeTextAndAnimate(this.id);
-        
-        lastIndex = index;
-        lastbuttonClick = this;
+      const elementsLast = document.querySelectorAll(`.Line.SubSkills:nth-child(${lastIndex + 1}) .Column`);
+      elementsLast.forEach((el) => {
+        el.style.animationDuration = ``;
+        el.classList.remove('ColumnSkillsVisible');
       });
+
+      const elements = document.querySelectorAll(`.Line.SubSkills:nth-child(${index + 1}) .Column`);
+      elements.forEach((el, index) => {
+        el.classList.add('ColumnSkillsVisible');
+        el.style.animationDuration = `0.2s`;
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+
+      changeTextAndAnimate(this.id);
+
+      lastIndex = index;
+      lastbuttonClick = this;
+    });
   });
 }
 /* --------------------------------------- END OF SKILLS LOGO --------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
+  slide1StartAnimation();
+
   var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
   homeLink.style.width = '100%';
 
@@ -346,38 +360,35 @@ document.addEventListener('DOMContentLoaded', function () {
   scroll();
 
   skillsLogoAddEventListener();
-
-  //const monElement = document.querySelector('.Presentation > div > div > h2');
-  //envelopperLettresDansSpan(monElement);
 });
 function adjustSkillsLayout() {
   const screenWidth = window.innerWidth;
   const columnSkills = document.querySelectorAll('.ColumnSkill');
   if (screenWidth <= 577) {
-      const combinedButtons = [];
-      columnSkills.forEach((column, columnIndex) => {
-          const buttons = column.querySelectorAll('.skillButton');
-          buttons.forEach((button, buttonIndex) => {
-              const combinedIndex = columnIndex + buttonIndex * columnSkills.length;
-              combinedButtons[combinedIndex] = button.cloneNode(true);
-          });
+    const combinedButtons = [];
+    columnSkills.forEach((column, columnIndex) => {
+      const buttons = column.querySelectorAll('.skillButton');
+      buttons.forEach((button, buttonIndex) => {
+        const combinedIndex = columnIndex + buttonIndex * columnSkills.length;
+        combinedButtons[combinedIndex] = button.cloneNode(true);
       });
-      columnSkills.forEach(column => {
-          const buttons = column.querySelectorAll('.skillButton');
-          buttons.forEach(button => button.remove());
-      });
-      combinedButtons.forEach(button => {
-          columnSkills[0].appendChild(button);
-      });
-      columnSkills[1].style.display = 'none';
+    });
+    columnSkills.forEach(column => {
+      const buttons = column.querySelectorAll('.skillButton');
+      buttons.forEach(button => button.remove());
+    });
+    combinedButtons.forEach(button => {
+      columnSkills[0].appendChild(button);
+    });
+    columnSkills[1].style.display = 'none';
   } else {
-      columnSkills.forEach((column, columnIndex) => {
-          const buttons = column.querySelectorAll('.skillButton');
-          buttons.forEach(button => columnSkills[columnIndex].appendChild(button));
-      });
-      columnSkills[1].style.display = 'flex';
-      console.log('za')
-      skillsLogoAddEventListener();
+    columnSkills.forEach((column, columnIndex) => {
+      const buttons = column.querySelectorAll('.skillButton');
+      buttons.forEach(button => columnSkills[columnIndex].appendChild(button));
+    });
+    columnSkills[1].style.display = 'flex';
+    console.log('za')
+    skillsLogoAddEventListener();
   }
 }
 
