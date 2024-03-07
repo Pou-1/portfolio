@@ -27,10 +27,13 @@ div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine {
     align-items: baseline;
 }
 
+div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div {
+    margin-left: 10px;
+}
+
 div.Index_Slide1 > div.Index_Slide1-TextDiv > div.Index_Slide1-FirstLine > div > a.Index_Slide1-NameAndSurnameLink {
     color: var(--red);
     transition: all 0.4s ease;
-    margin-left: 10px;
     font-size: 1.5em;
     font-weight: bold;
 }

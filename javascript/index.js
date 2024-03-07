@@ -20,11 +20,18 @@ function slide1StartAnimation() {
       const IndexSlide1Button = document.querySelector('div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton');
       IndexSlide1Button.style.animation = 'scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
 
-      const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDiv');
-      IndexSlide1Image.style.animation = 'slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+      setTimeout(() => {
+        const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDiv');
+        IndexSlide1Image.style.animation = 'slide-in-right-rotating 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
 
-      NavBar.style.animation = 'slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
-      ScrollBar.style.animation = 'slide-in-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+        setTimeout(() => {
+          NavBar.style.animation = 'slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+
+          setTimeout(() => {
+            ScrollBar.style.animation = 'slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+          }, (cmpt * 20));
+        }, (cmpt * 20));
+      }, (cmpt * 40));
     }, (cmpt * 60));
   }, (cmpt * 70));
 }

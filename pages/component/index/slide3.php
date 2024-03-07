@@ -8,16 +8,15 @@
             <i class="fa-solid fa-arrow-left"></i>
         </button>
         <div class="carousel-container aligne Line slides">
-            <a class="Works aligne Line workLink" href="#">
+            <a class="Works aligne Line workLink" href="https://dev-sae301grp3.users.info.unicaen.fr/">
                 <div class="Tags">
-                    <p>NAUTILUS LARAVEL</p>
                     <p class="Tag aligne"><i class="fa-brands fa-html5 aligne"></i></p>
                     <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
                     <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                     <p class="Tag aligne"><i class="fa-brands fa-php aligne"></i></p>
                     <p class="Tag aligne"><i class="fa-brands fa-laravel"></i></p>
                 </div>
-                <img class="ActualCaroussel" src="img/works2/nier.jpg" alt="Picture of a work on a website">
+                <img class="ActualCaroussel" src="../img/works/nautilus/nautilus.png" alt="Picture of a work on a website">
             </a>
 
             <a class="Works aligne Line workLink" href="pages/work_ptiCuisto.php">
@@ -37,7 +36,7 @@
                     <p class="Tag aligne"><i class="fa-brands fa-css3-alt aligne"></i></p>
                     <p class="Tag aligne"><i class="fa-brands fa-square-js aligne"></i></p>
                 </div>
-                <img src="img/works/instant_weather/Instant_weather.png" alt="Picture of a work on a website">
+                <img src="img/works/instant_weather/instant_weather.png" alt="Picture of a work on a website">
             </a>
 
             <a class="Works aligne Line workLink" href="pages/works_sites/Pomodoro/index.html">
