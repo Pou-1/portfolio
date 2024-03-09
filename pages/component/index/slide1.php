@@ -15,7 +15,9 @@
             <button id="boutonTelechargement" class="Index_Slide1-CvLinkButton">See my CV</button>
         </div>
     </div>
-    <div class="aligne Index_Slide1-ImageDiv">
-        <img class="Index_Slide1-Image" src="../img/illustrations/index/pfp/pfp.jpeg" alt="A picture of me" id="IndexProfilImg">
+    <div class="aligne Index_Slide1-ImageDivAbsolute">
+        <div class="Index_Slide1-ImageDiv">
+            <img class="Index_Slide1-Image" src="../img/illustrations/index/pfp/pfp.jpeg" alt="A picture of me" id="IndexProfilImg">
+        </div>
     </div>
 </div>

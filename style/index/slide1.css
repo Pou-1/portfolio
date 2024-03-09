@@ -3,19 +3,24 @@ div.Index_Slide1 > div {
     line-height: 1.5;
 }
 
-div.Index_Slide1 > div.Index_Slide1-ImageDiv {
+div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute {
     width: 450px;
     height: 450px;
-    border-radius: 450px;
-    overflow: hidden;
     margin-left: 50px;
-    border: 3px solid var(--white);
+    position: relative;
 }
 
-div.Index_Slide1 > div.Index_Slide1-ImageDiv > img.Index_Slide1-Image {
+div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv {
+    border: 3px solid var(--white);
+    border-radius: 450px;
+    overflow: hidden;
+    position: absolute;
+}
+
+div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv > img.Index_Slide1-Image {
     width: 450px;
-    position: relative;
     margin: 0;
+    transform: scale(1.03);
 }
 
 div.Index_Slide1 > div.Index_Slide1-TextDiv {
@@ -76,6 +81,6 @@ div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkBu
 
 div.Index_Slide1 > div.Index_Slide1-TextDiv > p.Index_Slide1-SubText,
 div.Index_Slide1 > div.Index_Slide1-TextDiv > div > button.Index_Slide1-CvLinkButton,
-div.Index_Slide1 > div.Index_Slide1-ImageDiv {
+div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv {
     opacity: 0;
 }

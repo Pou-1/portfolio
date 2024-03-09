@@ -21,8 +21,8 @@ function slide1StartAnimation() {
       IndexSlide1Button.style.animation = 'scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
 
       setTimeout(() => {
-        const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDiv');
-        IndexSlide1Image.style.animation = 'slide-in-right-rotating 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
+        const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv');
+        IndexSlide1Image.style.animation = 'moveBottomToTopScale 1s linear forwards';
 
         setTimeout(() => {
           NavBar.style.animation = 'slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
@@ -30,7 +30,7 @@ function slide1StartAnimation() {
           setTimeout(() => {
             ScrollBar.style.animation = 'slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
           }, (cmpt * 20));
-        }, (cmpt * 20));
+        }, (cmpt * 70));
       }, (cmpt * 40));
     }, (cmpt * 60));
   }, (cmpt * 70));
