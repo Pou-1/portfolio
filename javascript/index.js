@@ -37,6 +37,18 @@ function slide1StartAnimation() {
 }
 /* --------------------------------------- END OF SLIDE 1 START ANIMATION  --------------------------------------- */
 
+/* --------------------------------------- SLIDE 2 START ANIMATION  --------------------------------------- */
+function slide2StartAnimation() {
+  console.log('aa')
+}
+/* --------------------------------------- END OF SLIDE 2 START ANIMATION  --------------------------------------- */
+
+/* --------------------------------------- SLIDE 3 START ANIMATION  --------------------------------------- */
+function slide3StartAnimation() {
+  console.log('bb')
+}
+/* --------------------------------------- END OF SLIDE 3 START ANIMATION  --------------------------------------- */
+
 /* --------------------------------------- CARROUSSEL --------------------------------------- */
 function carrousel() {
   const prevBtn = document.getElementById('prevBtn');
@@ -145,6 +157,9 @@ function scroll() {
   const navLinks = document.querySelectorAll('.NavBar > ul > li > a');
   let isTransitioning = false;
 
+  let firstScrollSlide2 = false;
+  let firstScrollSlide3 = false;
+
   function changeActualPage(newPageNumber) {
     const validPageNumbers = [1, 2, 3];
 
@@ -176,6 +191,16 @@ function scroll() {
           link.style.color = color;
         });
       }, 200);
+
+      if(index == 1 && firstScrollSlide2 == false){
+        slide2StartAnimation();
+        firstScrollSlide2 = true;
+      }
+
+      if(index == 2 && firstScrollSlide3 == false){
+        slide3StartAnimation();
+        firstScrollSlide3 = true;
+      }
     }
   }
 
