@@ -1,62 +1,53 @@
-.NavBar {  
+.NavBar {
   padding-top: 50px;
   font-size: 24px;
   display: flex;
   color: var(--white);
-  }
-  
-  .NavBar > ul {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-  }
-  
-  .NavBar > ul > li:first-child {
-    flex-grow: 10;
-  }
+  justify-content: end;
+}
 
-  .NavBar > ul > li {
-    list-style: none;
-    flex-grow: 0.5;
-    display: flex;
-    position: relative;
-  }
-  
-  .NavBar > ul > li > a {
-    height: 50px;
-    transition: all 0.7s ease;
-    color: var(--white);
-    text-decoration: none;
-    padding-left: 5%;
-  }
+.NavBar > ul#UlMenu {
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  background-color: var(--blackLight);
+  display: flex;
+  margin-right: 50px;
+}
 
-  .NavBar span {
-    font-size: 17px;
-    transition: all 0.4s ease;
-    margin-left: 5%;
-  }
+.NavBar > ul#UlMenu > li {
+  list-style: none;
+  display: flex;
+  position: relative;
+}
 
-  .NavBar > ul > li > a{
-    color: var(--white);
-    transition: all 0.7s ease;
-  }
+.NavBar > ul#UlMenu > li > a {
+  padding-inline: 40px;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  height: 50px;
+  transition: all 0.7s ease;
+  color: var(--white);
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.7s ease;
+}
 
-  .NavBar > ul > li > a:hover > hr{
-    width: 100%;
-  }
+.NavBar > ul#UlMenu > li > a:hover > hr {
+  width: 100%;
+}
 
-  .NavBar > ul > li > a > hr{
-    margin: 0;
-    background-color: var(--red);  
-    height: 3px;  
-    width: 0;
-    border: none;
-    transition: all 0.4s ease;
-  }
+.NavBar > ul#UlMenu > li > a > hr {
+  margin: 0;
+  background-color: var(--red);
+  height: 3px;
+  width: 0;
+  border: none;
+  transition: all 0.4s ease;
+}
 
-  @media screen and (max-width: 1400px) {
-    header{
-      top: 0;
-    }
+@media screen and (max-width: 1400px) {
+  header {
+    top: 0;
   }
+}

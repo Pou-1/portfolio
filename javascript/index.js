@@ -39,13 +39,11 @@ function slide1StartAnimation() {
 
 /* --------------------------------------- SLIDE 2 START ANIMATION  --------------------------------------- */
 function slide2StartAnimation() {
-  console.log('aa')
 }
 /* --------------------------------------- END OF SLIDE 2 START ANIMATION  --------------------------------------- */
 
 /* --------------------------------------- SLIDE 3 START ANIMATION  --------------------------------------- */
 function slide3StartAnimation() {
-  console.log('bb')
 }
 /* --------------------------------------- END OF SLIDE 3 START ANIMATION  --------------------------------------- */
 
@@ -164,7 +162,7 @@ function scroll() {
     const validPageNumbers = [1, 2, 3];
 
     if (validPageNumbers.includes(newPageNumber)) {
-      const pages = document.querySelectorAll('.ScrollBar > .PageListDiv > p');
+      const pages = document.querySelectorAll('.ScrollBar > div > .PageListDiv > p');
       pages.forEach(page => page.classList.remove('actualPage'));
       pages[newPageNumber - 1].classList.add('actualPage');
     } else {
@@ -232,7 +230,7 @@ function scroll() {
   detectScroll();
 
   /* --------------------------------------- SCROLLBAR --------------------------------------- */
-  const links = document.querySelectorAll(".ScrollBar > .PageListDiv > p");
+  const links = document.querySelectorAll(".ScrollBar > div > .PageListDiv > p");
   links.forEach(link => {
     link.addEventListener('mouseenter', function () {
       link.style.visibility = "visible";
@@ -364,7 +362,7 @@ function skillsLogoAddEventListener() {
 document.addEventListener('DOMContentLoaded', function () {
   slide1StartAnimation();
 
-  var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
+  var homeLink = document.querySelector('.NavBar > ul > li:nth-child(1) a > hr');
   homeLink.style.width = '100%';
 
   carrousel();
@@ -374,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
   cursorHover('.Carrousel > button', '', '');
   cursorHover('.Carrousel > div > a.workLink', 'Go see', '');
   cursorHover('.ScrollBar > div > button', '', '');
-  cursorHover('.ScrollBar > .PageListDiv > p', '', '');
+  cursorHover('.ScrollBar > div > .PageListDiv > p', '', '');
   cursorHover('.Presentation > div > div > div > a', '', '');
 
   HoverText('skillButton_HumanSkill', 'Human Skills')
@@ -419,7 +417,6 @@ function adjustSkillsLayout() {
       buttons.forEach(button => columnSkills[columnIndex].appendChild(button));
     });
     columnSkills[1].style.display = 'flex';
-    console.log('za')
     skillsLogoAddEventListener();
   }
 }

@@ -15,11 +15,13 @@
 <body>
     <?php include('pages/component/navbar.php'); ?>
     <div class="ScrollBar Line" id="ScrollBar">
-        <hr>
-        <div class="aligne Column PageListDiv">
-            <p class="actualPage"><span>1</span></p>
-            <p><span>2</span></p>
-            <p><span>3</span></p>
+        <div>
+            <hr>
+            <div class="aligne Column PageListDiv">
+                <p class="actualPage"><span>1</span></p>
+                <p><span>2</span></p>
+                <p><span>3</span></p>
+            </div>
         </div>
     </div>
     <div class="main">

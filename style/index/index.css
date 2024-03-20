@@ -10,56 +10,55 @@ body {
   position: sticky;
   cursor: none;
   width: 50px;
-  left: 93%;
+  left: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
   font-size: 30px;
+  background-color: var(--blackLight);
   transition: all 0.4s ease-out;
 }
 
-.ScrollBar > hr {
+.ScrollBar > div > hr {
   position: absolute;
   padding: 0;
-  right: 27px;
   width: 0.5px;
   background-color: var(--grey);
-  height: 100%;
+  height: 135px;
   margin: 0;
   z-index: -1;
 }
 
-.ScrollBar > .PageListDiv > p:not(.actualPage) > span {
+.ScrollBar > div > .PageListDiv > p:not(.actualPage) > span {
   visibility: hidden;
 }
 
-.ScrollBar > .PageListDiv > p {
+.ScrollBar > div > .PageListDiv > p {
   transition: opacity 1.5s ease-in-out;
 }
 
-.ScrollBar > .PageListDiv > p.actualPage {
+.ScrollBar > div > .PageListDiv > p.actualPage {
   opacity: 1;
 }
 
-.ScrollBar > .PageListDiv > p:not(.actualPage) {
+.ScrollBar > div > .PageListDiv > p:not(.actualPage) {
   opacity: 0;
 }
 
-.ScrollBar > .PageListDiv > p {
+.ScrollBar > div > .PageListDiv > p {
   margin: 0;
   border-left: 3px solid var(--grey);
   width: 40px;
   text-align: center;
 }
 
-.ScrollBar > .PageListDiv > p.actualPage {
+.ScrollBar > div > .PageListDiv > p.actualPage {
   border-left: 4px solid var(--red);
 }
 
-.ScrollBar > .PageListDiv > p.actualPage > span {
+.ScrollBar > div > .PageListDiv > p.actualPage > span {
   visibility: visible;
   color: var(--red);
-}
-
-.ScrollBar > .PageListDiv {
-  margin-left: 20px;
 }
 
 /* --------------------------------------- END OF SCROLLBAR --------------------------------------- */
