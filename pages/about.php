@@ -19,8 +19,10 @@
                 <hr>
             </div>
             <?php include('component/about/musics.php'); ?>
-            <?php include('component/about/drawing.php'); ?>
-            <?php include('component/about/design.php'); ?>
+            <!--
+                <?php include('component/about/drawing.php'); ?>
+                <?php include('component/about/design.php'); ?>
+            -->
         </div>
     </div>
 

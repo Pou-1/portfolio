@@ -376,14 +376,14 @@ document.addEventListener('DOMContentLoaded', function () {
   cursorHover('.Presentation > div > div > div > a', '', '');
 
   HoverText('skillButton_HumanSkill', 'Human Skills')
-  HoverText('skillButton_MobileDevelopmentSkill', 'Mobile Development Skills')
-  HoverText('skillButton_DatabaseManagementSkill', 'Database Management Skills')
-  HoverText('skillButton_SystemAdministrationSkill', 'System Administration Skills')
-  HoverText('skillButton_ProgrammingSkill', 'Programming Skills')
-  HoverText('skillButton_WebDevelopmentSkill', 'Web Development Skills')
-  HoverText('skillButton_VirtualizationSkill', 'Virtualization Skills')
-  HoverText('skillButton_ProjectManagementSkill', 'Project Management Skills')
-  HoverText('IndexProfilImg', 'Me, kinda fruity <3')
+  HoverText('skillButton_MobileDevelopmentSkill', 'Mobile Development')
+  HoverText('skillButton_DatabaseManagementSkill', 'Database Management')
+  HoverText('skillButton_SystemAdministrationSkill', 'System Administration')
+  HoverText('skillButton_ProgrammingSkill', 'Programming')
+  HoverText('skillButton_WebDevelopmentSkill', 'Web Development')
+  HoverText('skillButton_VirtualizationSkill', 'Virtualization')
+  HoverText('skillButton_ProjectManagementSkill', 'Project Management')
+  HoverText('IndexProfilImg', 'A picture of me')
 
   document.getElementById('boutonTelechargement').addEventListener('click', downloadPDF);
 

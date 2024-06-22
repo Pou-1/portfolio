@@ -19,8 +19,8 @@ div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv
 
 div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv > img.Index_Slide1-Image {
     width: 450px;
+    height: 450px;
     margin: 0;
-    transform: scale(1.03);
 }
 
 div.Index_Slide1 > div.Index_Slide1-TextDiv {
