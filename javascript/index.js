@@ -177,7 +177,7 @@ function scroll() {
 
       changeActualPage(index + 1);
 
-      isTransitioning = true;
+      /*isTransitioning = true;
       setTimeout(function () {
         let color;
         if (index != 1) {
@@ -188,7 +188,7 @@ function scroll() {
         navLinks.forEach(function (link) {
           link.style.color = color;
         });
-      }, 200);
+      }, 200);*/
 
       if(index == 1 && firstScrollSlide2 == false){
         slide2StartAnimation();

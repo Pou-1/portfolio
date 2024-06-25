@@ -16,7 +16,6 @@
     <?php include('pages/component/navbar.php'); ?>
     <div class="ScrollBar Line" id="ScrollBar">
         <div>
-            <hr>
             <div class="aligne Column PageListDiv">
                 <p class="actualPage"><span>1</span></p>
                 <p><span>2</span></p>
