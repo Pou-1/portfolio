@@ -26,6 +26,7 @@
     background-color: var(--white);
     color: var(--black);
     margin-top: 100px;
+    padding-bottom: 300px;
 }
 
 .content > .titleAbout > h1{
@@ -106,6 +107,7 @@
 .DivPassionsMusics > div > .Text > .WidthTextMusic > .TextWithHr > p{
     padding: 0;
     margin: 0;
+    transition : all 0.9s ease-in-out;
     text-align: center;
 }
 
@@ -147,9 +149,15 @@
 .DivPassionsMusics > div > *{
     padding: 0;
     margin: 0;
+    transition : all 0.9s ease-in-out;
 }
 
-.DivPassionsMusics > div > .vinyl{
+.DivPassionsMusics > div > .vinylSquared{
+    width: 300px;
+    height: 300px;
+}
+
+.DivPassionsMusics > div > .vinylSquared > .vinyl{
     border-radius: 300px;
     width: 300px;
     height: 300px;
@@ -159,11 +167,11 @@
     z-index: 9;
 }
 
-.DivPassionsMusics > div > .vinyl:hover{
+.DivPassionsMusics > div > .vinylSquared > .vinyl:hover{
     border: 2px solid var(--red);
 }
 
-.DivPassionsMusics > div > .vinyl > .PlayButton{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .PlayButton{
     position: absolute;
     visibility: hidden;
     border-radius: 300px;
@@ -178,23 +186,23 @@
     transition: all 0.4s ease-in-out;
 }
 
-.DivPassionsMusics > div > .vinyl > .PlayButton:hover{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .PlayButton:hover{
     border-color: var(--red);
 }
 
-.DivPassionsMusics > div > .vinyl > .PlayButton:hover > i{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .PlayButton:hover > i{
     font-size: 165px;
 }
 
-.DivPassionsMusics > div:hover > .vinyl > .PlayButton{
+.DivPassionsMusics > div:hover > .vinylSquared > .vinyl > .PlayButton{
     visibility: visible;
 }
 
-.DivPassionsMusics > div > .vinyl > .PlayButton > i{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .PlayButton > i{
     transition: all 0.4s ease-in-out;
 }
 
-.DivPassionsMusics > div > .vinyl > .dot{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .dot{
     position: absolute;
     width: 15px;
     height: 15px;
@@ -203,44 +211,44 @@
     background-color: var(--black);
   }
 
-.DivPassionsMusics > div > .vinyl > .sillon{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon{
     position: absolute;
     z-index: 1000;
     background-color: transparent;
     border: 2px solid var(--blackLight);
 }
 
-.DivPassionsMusics > div > .vinyl > .sillon1{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon1{
     width: 90px;
     height: 90px;
     border-radius: 90px;
 }
 
-.DivPassionsMusics > div > .vinyl > .sillon2{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon2{
     width: 140px;
     height: 140px;
     border-radius: 140px;
 }
 
-.DivPassionsMusics > div > .vinyl > .sillon3{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon3{
     width: 200px;
     height: 200px;
     border-radius: 200px;
 }
 
-.DivPassionsMusics > div > .vinyl > .sillon4{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon4{
     width: 250px;
     height: 250px;
     border-radius: 250px;
 }
 
-.DivPassionsMusics > div > .vinyl > .sillon5{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > .sillon5{
     width: 270px;
     height: 270px;
     border-radius: 270px;
 }
 
-.DivPassionsMusics > div > .vinyl > img{
+.DivPassionsMusics > div > .vinylSquared > .vinyl > img{
     border-radius: 200px;
     width: 100px;
     height: 100px;

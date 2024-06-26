@@ -173,5 +173,5 @@ document.addEventListener('DOMContentLoaded', function () {
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > input', '', '');
     cursorHover('.DivPassionsMusics > div > .Text > .Volume > i', '', '');
 
-    EasterEgg();
+    //EasterEgg();
 });

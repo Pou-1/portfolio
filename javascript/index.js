@@ -22,7 +22,7 @@ function slide1StartAnimation() {
 
       setTimeout(() => {
         const IndexSlide1Image = document.querySelector('div.Index_Slide1 > div.Index_Slide1-ImageDivAbsolute > div.Index_Slide1-ImageDiv');
-        IndexSlide1Image.style.animation = 'moveBottomToTopScale 1s linear forwards';
+        IndexSlide1Image.style.animation = 'fadeInUp 1s linear forwards';
 
         setTimeout(() => {
           NavBar.style.animation = 'slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';

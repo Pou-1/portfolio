@@ -18,14 +18,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="vinyl aligne">
-                    <div class="dot"></div>
-                    <div class="sillon1 sillon"></div>
-                    <div class="sillon2 sillon"></div>
-                    <div class="sillon3 sillon"></div>
-                    <div class="sillon4 sillon"></div>
-                    <div class="sillon5 sillon"></div>
-                    <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                <div class="vinylSquared">
+                    <div class="vinyl aligne">
+                        <div class="dot"></div>
+                        <div class="sillon1 sillon"></div>
+                        <div class="sillon2 sillon"></div>
+                        <div class="sillon3 sillon"></div>
+                        <div class="sillon4 sillon"></div>
+                        <div class="sillon5 sillon"></div>
+                        <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
             </div>
 
@@ -43,14 +45,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="vinyl aligne">
-                    <div class="dot"></div>
-                    <div class="sillon1 sillon"></div>
-                    <div class="sillon2 sillon"></div>
-                    <div class="sillon3 sillon"></div>
-                    <div class="sillon4 sillon"></div>
-                    <div class="sillon5 sillon"></div>
-                    <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                <div class="vinylSquared">
+                    <div class="vinyl aligne">
+                        <div class="dot"></div>
+                        <div class="sillon1 sillon"></div>
+                        <div class="sillon2 sillon"></div>
+                        <div class="sillon3 sillon"></div>
+                        <div class="sillon4 sillon"></div>
+                        <div class="sillon5 sillon"></div>
+                        <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
             </div>
 
@@ -68,14 +72,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="vinyl aligne">
-                    <div class="dot"></div>
-                    <div class="sillon1 sillon"></div>
-                    <div class="sillon2 sillon"></div>
-                    <div class="sillon3 sillon"></div>
-                    <div class="sillon4 sillon"></div>
-                    <div class="sillon5 sillon"></div>
-                    <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                <div class="vinylSquared">
+                    <div class="vinyl aligne">
+                        <div class="dot"></div>
+                        <div class="sillon1 sillon"></div>
+                        <div class="sillon2 sillon"></div>
+                        <div class="sillon3 sillon"></div>
+                        <div class="sillon4 sillon"></div>
+                        <div class="sillon5 sillon"></div>
+                        <button class="PlayButton aligne"><i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
             </div>
         </div>

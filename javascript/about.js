@@ -3,7 +3,7 @@ function getTitle(ids, DivId) {
     for (var i = 0; i < ids.length; i++) {
         (function (index) {
             var div = document.getElementById(DivId + index);
-            var imgDiv = div.children[1];
+            var imgDiv = div.children[1].children[0];
             var Title = div.children[0].children[1].children[0].children[0];
             var ArtistName = div.children[0].children[1].children[0].children[2];
 
@@ -12,7 +12,7 @@ function getTitle(ids, DivId) {
             var currentAudio = null;
             window[callbackName] = function (data) {
                 var audio = new Audio(data.preview);
-                var playButton = div.children[1].children[6];
+                var playButton = div.children[1].children[0].children[6];
                 var playIcon = playButton.querySelector("i");
                 var volumeSlider = div.children[0].children[0].children[1];
                 var volumeIcon = div.children[0].children[0].children[0];
@@ -136,7 +136,7 @@ function changeSizeOfVinyl(){
 
 function changeNavColorOnWhiteBackground(){
     document.addEventListener("scroll", () => {
-        if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
+        /*if(document.getElementById('whiteBackground').getBoundingClientRect().top < 135){
             const NavBarTexts = document.querySelectorAll('.NavBar > ul > li > a')
             NavBarTexts.forEach(NavBarText => {
                 NavBarText.style.color = 'var(--black)'
@@ -147,7 +147,7 @@ function changeNavColorOnWhiteBackground(){
             NavBarTexts.forEach(NavBarText => {
                 NavBarText.style.color = 'var(--white)'
             });
-        }
+        }*/
 
         changeSizeOfVinyl();
     });
@@ -155,7 +155,7 @@ function changeNavColorOnWhiteBackground(){
 /* --------------------------------------- END OF SCROLL ON WHITE BACKGROUND --------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
-    var homeLink = document.querySelector('.NavBar > ul > li:nth-child(3) a > hr');
+    var homeLink = document.querySelector('.NavBar > ul > li:nth-child(2) a > hr');
     homeLink.style.width = '100%';
 
     //get the id with "https://api.deezer.com/search?q=My%20GenerationThe%20Who"
