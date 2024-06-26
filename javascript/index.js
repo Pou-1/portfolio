@@ -256,7 +256,7 @@ function scroll() {
 
 /* --------------------------------------- CV DOWNLOAD BUTTON --------------------------------------- */
 function downloadPDF() {
-  var lienPDF = "../external_files/CV Cyprien D'Harambure.pdf";
+  var lienPDF = "external_files/CV Cyprien D'Harambure.pdf";
   var lienTelechargement = document.createElement('a');
   lienTelechargement.href = lienPDF;
   lienTelechargement.download = 'CV-Cyprien-D-Harambure.pdf';
