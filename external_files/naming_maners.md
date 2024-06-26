@@ -1,6 +1,6 @@
 #filenames : 
-- test.php
-- test_two.php
+- test.html
+- test_two.html
 
 #variables :
 - var test
