@@ -1,5 +1,0 @@
-Redirect "/" "/index.html"
-
-Redirect "/about" "/pages/about.html"
-
-Redirect "/works/InstantWeather" "/pages/works_sites/InstantWeather/index.html"
