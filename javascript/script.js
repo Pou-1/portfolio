@@ -89,12 +89,14 @@ function HoverText(id, text) {
 function UwU(trans) {
     const newDiv = document.createElement('div');
     newDiv.className = 'animated-div';
+    const surname = document.querySelector('.Index_Slide1-NameAndSurnameLink');
     if (trans == 1) {
         document.documentElement.style.setProperty('--red', '#dd81be');
         document.documentElement.style.setProperty('--redRGB', '223, 39, 51');
         if (document.getElementById('IndexProfilImg')) {
             document.getElementById('IndexProfilImg').src = 'img/illustrations/index/pfp/profil3.jpg';
             document.getElementById('IndexProfilImg').style.top = '66px';
+            surname.innerText = "Emily D'Harambure";
         }
         newDiv.textContent = `you've been transified hehe OwO`;
     }
@@ -103,6 +105,7 @@ function UwU(trans) {
         document.documentElement.style.setProperty('--redRGB', '221, 129, 190');
         if (document.getElementById('IndexProfilImg')) {
             document.getElementById('IndexProfilImg').src = 'img/illustrations/index/pfp/profil.jpg';
+            surname.innerText = "Cyprien D'Harambure";
             document.getElementById('IndexProfilImg').style.top = '0';
         }
         console.log(document.getElementById('IndexProfilImg'))

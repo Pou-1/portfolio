@@ -256,7 +256,13 @@ function scroll() {
 
 /* --------------------------------------- CV DOWNLOAD BUTTON --------------------------------------- */
 function downloadPDF() {
-  var lienPDF = "external_files/CV Cyprien D'Harambure.pdf";
+  if (document.querySelector(".Index_Slide1-NameAndSurnameLink").innerText == "Emily D'Harambure") {
+    var lienPDF = "external_files/CV Emily D'Harambure.pdf";
+  }
+  else {
+    var lienPDF = "external_files/CV Cyprien D'Harambure.pdf";
+  }
+  console.log(document.querySelector(".Index_Slide1-NameAndSurnameLink").innerText)
   var lienTelechargement = document.createElement('a');
   lienTelechargement.href = lienPDF;
   lienTelechargement.download = 'CV-Cyprien-D-Harambure.pdf';
